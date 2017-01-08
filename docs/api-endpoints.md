@@ -2,7 +2,7 @@
 
 ## HTML API
 ### Root 
-- GET / - loads React web app 
+- `GET /` - loads React web app 
 
 ## JSON API
 ### Users
