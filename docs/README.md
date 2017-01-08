@@ -1,8 +1,8 @@
 # MeetSport 
 
-MeetSport Link 
+[Heroku Link](https://www.heroku.com/) 
 
-Trello Link
+[Trello Link](https://trello.com/b/4ugW4Usp/meetsport)
 
 ## Minimum Viable Product 
 MeetSport is a web application inspired by MeetUp built using Ruby on Rails and React/Redux. 
