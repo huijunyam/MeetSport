@@ -1,6 +1,6 @@
 # MeetSport 
 
-[Heroku Link](https://www.heroku.com/) 
+[Meet Sport](http://meetsport.herokuapp.com) 
 
 [Trello Link](https://trello.com/b/4ugW4Usp/meetsport)
 
