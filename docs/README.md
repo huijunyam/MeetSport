@@ -1,6 +1,6 @@
 # MeetSport 
 
-[Meet Sport](meetsport.herokuapp.com) 
+[Meet Sport](http://meetsport.herokuapp.com) 
 
 [Trello Link](https://trello.com/b/4ugW4Usp/meetsport)
 
