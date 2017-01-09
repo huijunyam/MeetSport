@@ -48,8 +48,8 @@
 | -------------------------------| -----------------------|
 | "/"                            | "App"                  |
 | "/welcome"                     | "Welcome"              |
-| "/welcome/login"               | "AuthFormContainer"    |
-| "/welcome/signup"              | "AuthFormContainer"    |
+| "/login"                       | "AuthFormContainer"    |
+| "/signup"                      | "AuthFormContainer"    |
 | "/home"                        | "CityListContainer"    |
 | "/home/city/:cityId"           | "CityContainer"        |
 | "/home/city/:cityId/member"    | "CityMemberContainer"  |
