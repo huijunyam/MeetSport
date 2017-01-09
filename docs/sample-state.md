@@ -42,30 +42,18 @@
           startTime: "4:00 PM",
           endTime:  "6:00 PM",
           host: {
-            userId: 8,
-            username: "johnny",
-            name: "Johnny Hill",
-            emailAddress: "johnnyhill@yahoo.com"
-            profile_pic ="profile_pic_url1"
+            userId: 8
           },
           description: "Come join us in playing 3 v 3 basketball",
           attendeesNum: 10,
-          attending: [
-            {
-              userId: 10,
-              username: "sarah",
-              name: "Sarah Melon",
-              emailAddress: "sarahmelon@gmail.com"
-              profile_pic ="profile_pic_url2"
+          attending: {
+            1: {
+              userId: 10
             },
-            {
-              userId: 1,
-              username: "guest",
-              name: "guest",
-              emailAddress: "guest@gmail.com"
-              profile_pic ="profile_pic_url"
+            2: {
+              userId: 1
             }
-          ]
+          }
         }
       }
     }
