@@ -32,8 +32,8 @@
 
 ### Attendees
 - `GET /api/cities/:city_id/events/:id/attendees`
-- `POST /api/cities/:city_id/events/:id/attendees`
--  `DELETE /api/cities/:city_id/events/:eventId/attendees/:id`
+- `POST /api/events/:id/attendees`
+-  `DELETE /api/events/:eventId/attendees/:id`
 	
 ### Categories 
 - `GET /api/categories`
