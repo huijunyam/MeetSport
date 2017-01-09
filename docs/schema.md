@@ -38,7 +38,6 @@
 | date           | string    | not null                       |
 | level          | string    |                                |
 | attendees_num  | integer   | not null                       |
-| category_id    | integer   | not null, indexed, foreign key |
 | host_id        | integer   | not null, indexed, foreign key |
 
 ## attendees 
@@ -52,5 +51,11 @@
 | column name | data type | details                           |
 | ----------- | --------- | --------------------------------- |
 | id          | integer   | not null, primary key             |
-| event_id    | integer   | not null, indexed, foreign key    |
 | name        | string    | not null, indexed                 |
+
+## eventTypes 
+| column name   | data type | details                         |
+| ------------- | --------- | ------------------------------- |
+| id            | integer   | not null, primary key           |
+| category_id   | integer   | not null, indexed, foreign key  |
+| event_id      | integer   | not null, indexed, foreign key  |
