@@ -7,7 +7,7 @@
 ## JSON API
 ### Users
 - `POST /api/users`
-- `POST /api/users`
+- `PATCH /api/users`
 
 ### Session 
 - `POST /api/session`
