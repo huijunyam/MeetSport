@@ -40,7 +40,7 @@ bug free navigation, adequate seed data and sufficient CSS styling.
 ### Phase 5: Calendar on city page (1 day)
 **Objective:** A calendar that shows all the events happened in the city 
 
-### Phase 6: Search by category and skill level (2 days)
+### Phase 6: Search by category and skill level (1 day)
 **Objective:** Functional search bar to search by sport category and skill level of the game 
 
 ### Bonus Features(TBD)
