@@ -87,7 +87,7 @@ class SignUpForm extends React.Component {
                 <label> Email Address:
                   <input type="text"
                     value={this.state.email}
-                    onChange={this.update("username")}
+                    onChange={this.update("email")}
                     className="signup-input" />
                 </label>
               <br/>
@@ -106,3 +106,5 @@ class SignUpForm extends React.Component {
     );
   }
 }
+
+export default SignUpForm;
