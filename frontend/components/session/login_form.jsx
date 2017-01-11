@@ -16,6 +16,10 @@ class LoginForm extends React.Component{
     this.handleClick = this.handleClick.bind(this);
   }
 
+  componentDidMount() {
+    this.props.clearError();
+  }
+  
   update(field) {
       return e => this.setState({ [field]: e.target.value });
   }

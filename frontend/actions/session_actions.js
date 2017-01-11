@@ -3,6 +3,7 @@ import * as APIUtil from '../util/session_api_util';
 export const RECEIVE_CURRENT_USER = "RECEIVE_CURRENT_USER";
 export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
 export const RECEIVE_LOGOUT = "RECEIVE_LOGOUT";
+export const CLEAR_ERROR = "CLEAR_ERROR";
 
 export const signup = user => dispatch => (
   APIUtil.signup(user)
@@ -32,4 +33,8 @@ export const receiveErrors = errors => ({
 
 export const receiveLogout = () => ({
   type: RECEIVE_LOGOUT
+});
+
+export const clearError = () => ({
+  type: CLEAR_ERROR
 });
