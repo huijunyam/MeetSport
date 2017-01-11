@@ -6,3 +6,6 @@ root.html.erb
   		user: current_user).html_safe %>
   <% end %>
 </script>
+
+<IndexRedirect to="/welcome" />
+<Route path="/welcome" component={WelcomeContainer} />

@@ -7,7 +7,7 @@ class CityIndex extends React.Component {
   }
 
   redirect() {
-    this.props.router.push("/welcome");
+    this.props.router.push("/");
   }
 
   handleLogout(e) {

@@ -9,28 +9,27 @@ import CityListContainer from './city/city_list_container';
 import App from './app/app';
 
 const Root = ({ store }) => {
-  // const _ensureLoggedIn = (nextState, replace) => {
-  //   const currentUser = store.getState().session.currentUser;
-  //   if (!currentUser) {
-  //     replace('/login');
-  //   }
-  // };
-  //
-  // const _redirectIfLoggedIn = (nextState, replace) => {
-  //   const currentUser = store.getState().session.currentUser;
-  //   if (currentUser) {
-  //     replace('/');
-  //   }
-  // };
+  const _ensureLoggedIn = (nextState, replace) => {
+    const currentUser = store.getState().session.currentUser;
+    if (!currentUser) {
+      replace('/login');
+    }
+  };
+
+  const _redirectIfLoggedIn = (nextState, replace) => {
+    const currentUser = store.getState().session.currentUser;
+    if (currentUser) {
+      replace('/home');
+    }
+  };
   return(
     <Provider store={ store }>
       <Router history= { hashHistory }>
         <Route path="/" component= { App }>
-          <IndexRedirect to="/welcome" />
-          <Route path="/welcome" component={WelcomeContainer} />
-          <Route path="/login" component={LoginFormContainer}  />
-          <Route path="/signup" component={SignUpFormContainer}  />
-          <Route path="/home" component={CityListContainer} />
+          <IndexRoute component={WelcomeContainer} onEnter={_redirectIfLoggedIn}/>
+          <Route path="/login" component={LoginFormContainer} onEnter={_redirectIfLoggedIn} />
+          <Route path="/signup" component={SignUpFormContainer} onEnter={_redirectIfLoggedIn} />
+          <Route path="/home" component={CityListContainer} onEnter={_ensureLoggedIn}/>
         </Route>
       </Router>
     </Provider>
