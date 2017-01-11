@@ -5,6 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# User data
+User.create("email":"guest@gmail.com","password":"password","username":"guest",name:"Guest Demo");
 User.create("email":"plee0@pbs.org","password":"Cu6JV0yo","username":"plee0","name":"Pamela Lee");
 User.create("email":"aryan1@miitbeian.gov.cn","password":"vuLN21","username":"aryan1","name":"Ann Ryan");
 User.create("email":"slawson2@chronoengine.com","password":"K7k80DV","username":"slawson2","name":"Sara Lawson");
@@ -28,3 +31,37 @@ User.create("email":"wbennettj@barnesandnoble.com","password":"WJuYEYKo","userna
 User.create("email":"hmedinak@deviantart.com","password":"xCxdcp","username":"hmedinak","name":"Harry Medina");
 User.create("email":"awilliamsonl@biglobe.ne.jp","password":"1QkuOzZEnk1e","username":"awilliamsonl","name":"Amy Williamson");
 User.create("email":"chendersonm@slashdot.org","password":"svXZxKz","username":"chendersonm","name":"Christopher Henderson");
+
+#city data
+City.create(name: "San Francisco", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150504/hith-golden-gate-144833144-E_z5gl2t.jpg");
+City.create(name: "Los Angeles", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150503/56-3636244-los-angeles-skyline-telephoto_kpcjc8.jpg");
+City.create(name: "Seattle", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150504/609_view1_fwaaxo.jpg");
+City.create(name: "New York", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150506/New-York-City-Skyline_j0xhgh.jpg");
+City.create(name: "Boston", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150504/boston-photo1_yhewmg.jpg");
+City.create(name: "Chicago", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150503/timelapse-video-of-chicago-cloud-gate-or-bean-project-file-chicago-cloud-gatemove-1920x1080_ekww2w4p__S0000_bi7gkb.jpg");
+
+#memberships data
+Membership.create(member_id: 1, city_id: 1)
+Membership.create(member_id: 2, city_id: 2)
+Membership.create(member_id: 3, city_id: 3)
+Membership.create(member_id: 4, city_id: 4)
+Membership.create(member_id: 5, city_id: 5)
+Membership.create(member_id: 6, city_id: 6)
+Membership.create(member_id: 7, city_id: 1)
+Membership.create(member_id: 8, city_id: 2)
+Membership.create(member_id: 9, city_id: 3)
+Membership.create(member_id: 10, city_id: 4)
+Membership.create(member_id: 11, city_id: 5)
+Membership.create(member_id: 12, city_id: 6)
+Membership.create(member_id: 13, city_id: 1)
+Membership.create(member_id: 14, city_id: 2)
+Membership.create(member_id: 15, city_id: 3)
+Membership.create(member_id: 16, city_id: 4)
+Membership.create(member_id: 17, city_id: 5)
+Membership.create(member_id: 18, city_id: 6)
+Membership.create(member_id: 19, city_id: 1)
+Membership.create(member_id: 20, city_id: 2)
+Membership.create(member_id: 21, city_id: 3)
+Membership.create(member_id: 22, city_id: 4)
+Membership.create(member_id: 23, city_id: 5)
+Membership.create(member_id: 24, city_id: 6)
