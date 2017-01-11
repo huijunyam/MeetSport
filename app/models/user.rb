@@ -1,3 +1,18 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :integer          not null, primary key
+#  username        :string           not null
+#  email           :string           not null
+#  password_digest :string           not null
+#  session_token   :string           not null
+#  name            :string           not null
+#  profile_img     :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
 class User < ActiveRecord::Base
   attr_reader :password
   validates :username, :email, :password_digest, :session_token, :name, presence: true
@@ -6,6 +21,15 @@ class User < ActiveRecord::Base
   after_initialize :ensure_session_token
   before_validation :ensure_session_token_uniqueness
 
+  has_many :memberships,
+    primary_key: :id,
+    foreign_key: :member_id,
+    class_name: :Membership
+
+  has_many :cities,
+    through: :memberships,
+    source: :city
+    
   def self.find_by_credentials(username, password)
     user = User.find_by_username(username)
     return nil if user.nil?
