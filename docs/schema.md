@@ -12,10 +12,11 @@
 | profile_img    | string    | default null              |
 
 ## cities 
-| column name | data type | details                    |
-| ----------- | --------- | -------------------------- |
-| id          | integer   | not null, primary key      |
-| name        | string    | not null, indexed, unique  |
+| column name          | data type | details                    |
+| ---------------------| --------- | -------------------------- |
+| id                   | integer   | not null, primary key      |
+| name                 | string    | not null, indexed, unique  |
+| background_image_url | string    | not null                   |
 
 ## memberships 
 | column name | data type | details                        |
