@@ -73,9 +73,16 @@ class Welcome extends React.Component {
               <source src="http://res.cloudinary.com/dirtnmtpc/video/upload/v1484050178/Sunset-Lapse_djfchs.mp4" type="video/mp4" />
             </video>
           </div>
-          <h2 className="welcome-title">Together we explore and connect through sports</h2>
-          <p className="welcome-paragraph">Meet and make friends with people that shares similar interest</p>
-          <button className="signup-button" onClick={this.userSignup}>Sign Up</button>
+          <div className="welcome-title">
+            <h2>Together we explore and connect through sports</h2>
+            <br />
+            <p>Meet and make friends with people that shares similar interest</p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <button className="signup-button" onClick={this.userSignup}>Sign Up</button>
+          </div>
         </div>
 
         {this.description()}

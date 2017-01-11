@@ -56,25 +56,15 @@ video {
 }
 
 .welcome-title {
-  font-size: 45px;
+  font-size: 40px;
   color: $darkest-blue;
   position: absolute;
   font-weight: bolder;
   font-family: $sans-serif;
   z-index: 10;
   top: 30%;
-  left: 15%;
-}
-
-.welcome-paragraph {
-  font-size: 43px;
-  position: absolute;
-  color: $darkest-blue;
-  font-weight: bolder;
-  font-family: $sans-serif;
-  z-index: 10;
-  top: 40%;
-  left: 7%;
+  left: 10%;
+  text-align: center;
 }
 
 .signup-button {
@@ -82,8 +72,7 @@ video {
   font-size: 25px;
   position: absolute;
   z-index: 10;
-  top: 70%;
-  left: 40%;
+  left: 35%;
   background-color: $lighest-blue;
   font-size: $lato;
 }
