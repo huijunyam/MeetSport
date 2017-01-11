@@ -1,23 +1,21 @@
 import React from 'react';
+import CityListContainer from './city_list_container';
+import HeaderContainer from '../layout/header_container';
+import FooterContainer from '../layout/footer_container';
 
 class CityIndex extends React.Component {
   constructor(props){
     super(props);
-    this.handleLogout = this.handleLogout.bind(this);
-  }
 
-  redirect() {
-    this.props.router.push("/");
-  }
-
-  handleLogout(e) {
-    e.preventDefault();
-    this.props.logout().then(() => this.redirect());
   }
 
   render() {
     return (
-      <button onClick={this.handleLogout}>Log Out</button>
+      <div>
+        <HeaderContainer />
+        {this.props.children}
+        <FooterContainer />
+      </div>
     );
   }
 }

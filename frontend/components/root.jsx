@@ -6,6 +6,7 @@ import LoginFormContainer from './session/login_form_container';
 import SignUpFormContainer from './session/sign_up_form_container';
 import WelcomeContainer from './welcome/welcome_container';
 import CityListContainer from './city/city_list_container';
+import HeaderContainer from './layout/header_container';
 import App from './app/app';
 
 const Root = ({ store }) => {
@@ -29,7 +30,9 @@ const Root = ({ store }) => {
           <IndexRoute component={WelcomeContainer} onEnter={_redirectIfLoggedIn}/>
           <Route path="/login" component={LoginFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="/signup" component={SignUpFormContainer} onEnter={_redirectIfLoggedIn} />
-          <Route path="/home" component={CityListContainer} onEnter={_ensureLoggedIn}/>
+          <Route path="/home" component={CityListContainer} onEnter={_ensureLoggedIn} >
+
+            </Route>
         </Route>
       </Router>
     </Provider>

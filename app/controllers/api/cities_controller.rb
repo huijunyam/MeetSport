@@ -1,7 +1,6 @@
 class Api::CitiesController < ApplicationController
   def index
     @cities = City.all
-    @cities = cities.includes(:members)
     render :index
   end
 
@@ -13,6 +12,6 @@ class Api::CitiesController < ApplicationController
   def destroy
     @city = City.find(params[:id])
     @city.destroy
-    render "api/cities/index"
+    render json: {}
   end
 end
