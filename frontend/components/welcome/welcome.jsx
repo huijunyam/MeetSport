@@ -37,15 +37,15 @@ class Welcome extends React.Component {
   description() {
     return (
       <div className="description">
-        <section className="sub-description">
+        <section className="col-third sub-description1">
           <h4>Go Explore</h4>
           <p>Explore your sport interest and try something that you never dream of</p>
         </section>
-        <section className="sub-description">
+        <section className="col-third sub-description2">
           <h4>Meet Up</h4>
           <p>Meet people with similar sport interest wherever you go</p>
         </section>
-        <section className="sub-description">
+        <section className="col-third sub-description3">
           <h4>Discover Happiness</h4>
           <p>Discover your hidden ability and talent in sport that lead a healthy lifestyle</p>
         </section>
@@ -56,28 +56,33 @@ class Welcome extends React.Component {
   render() {
     return (
       <div className="welcome-page">
-        <header className="welcome-header">
+        <div className="welcome-header">
           <div className="site-name-with-logo">
-            <Link to="/"><img className="logo" src={"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484046593/logo_cdpv8c.png"} /></Link>
-            <Link to="/" className="site-name">meetSport</Link>
+            <Link to="/" className="logo"><img src={"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484092751/Logomakr_2rIReH_jz2ink.png"} alt="logomakr"/></Link>
+            <Link to="/" className="site-name-head">meetSport</Link>
           </div>
           <ul className="welcome-page-nav">
-            <li><button onClick={this.guestLogin} className="guest-button">Guest Demo</button></li>
-            <li><button onClick={this.userLogin}>Log In</button></li>
-            <li><button onClick={this.userSignup}>Sign Up</button></li>
+            <li className="welcome-page-list"><button onClick={this.guestLogin} className="guest-button">Guest Demo</button></li>
+            <li className="welcome-page-list"><button onClick={this.userLogin}>Log In</button></li>
+            <li className="welcome-page-list"><button onClick={this.userSignup}>Sign Up</button></li>
           </ul>
-        </header>
-        <div className="homepage-hero-module">
-          <div className="video-container">
-            <div className="filter"></div>
-              <video autoPlay loop className="fillWidth">
-                <source src="http://res.cloudinary.com/dirtnmtpc/video/upload/v1484050178/Sunset-Lapse_djfchs.mp4" type="video/mp4" />
-              </video>
-          </div>
+        </div>
+        <div className="videoPlay">
+          <video autoPlay loop className="videoInsert">
+            <source src="http://res.cloudinary.com/dirtnmtpc/video/upload/v1484050178/Sunset-Lapse_djfchs.mp4" type="video/mp4" />
+          </video>
         </div>
         {this.description()}
         <footer className="welcome-footer">
           <Link to="/" className="site-name">meetSport</Link>
+          <ul className="welcome-page-nav">
+            <li className="welcome-page-list">
+              <Link to="/login">Log In</Link>
+            </li>
+            <li className="welcome-page-list">
+              <Link to="/signup">Sign Up</Link>
+            </li>
+          </ul>
         </footer>
       </div>
     );
