@@ -5,7 +5,7 @@ import { Router, Route, IndexRoute, IndexRedirect, hashHistory } from 'react-rou
 import LoginFormContainer from './session/login_form_container';
 import SignUpFormContainer from './session/sign_up_form_container';
 import WelcomeContainer from './welcome/welcome_container';
-import Welcome from './welcome/welcome';
+import CityListContainer from './city/city_list_container';
 import App from './app/app';
 
 const Root = ({ store }) => {
@@ -30,6 +30,7 @@ const Root = ({ store }) => {
           <Route path="/welcome" component={WelcomeContainer} />
           <Route path="/login" component={LoginFormContainer}  />
           <Route path="/signup" component={SignUpFormContainer}  />
+          <Route path="/home" component={CityListContainer} />
         </Route>
       </Router>
     </Provider>

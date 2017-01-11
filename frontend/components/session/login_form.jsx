@@ -27,7 +27,7 @@ class LoginForm extends React.Component{
   }
 
   redirect() {
-    this.props.router.push('/');
+    this.props.router.push('/home');
   }
 
   renderErrors() {
@@ -86,7 +86,8 @@ class LoginForm extends React.Component{
     								className="auth-input" />
     						</label>
   						<br/>
-                <button>Sign In</button>
+              <br />
+                <input className="button" type="submit" value="Log In"/>
             </div>
           </form>
         </div>

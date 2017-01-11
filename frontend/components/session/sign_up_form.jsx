@@ -29,7 +29,7 @@ class SignUpForm extends React.Component {
   }
 
   redirect() {
-    this.props.router.push("/");
+    this.props.router.push("/home");
   }
 
   renderErrors() {
@@ -58,7 +58,7 @@ class SignUpForm extends React.Component {
   render() {
     return (
       <div>
-        <section className="auth-nav">
+        <section className="auth-nav signup-form">
           <div className="site-name-with-logo">
             <Link to="/" className="logo"><img src={"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484092751/Logomakr_2rIReH_jz2ink.png"} alt="logomakr"/></Link>
             <Link to="/" className="site-name-head">meetSport</Link>
@@ -75,35 +75,32 @@ class SignUpForm extends React.Component {
               <br />
               <br />
                 <label>Username</label>
-                  <br />
+
     							<input type="text"
     								value={this.state.username}
     								onChange={this.update("username")}
     								className="auth-input" />
-  						<br/>
+
                 <label>Name</label>
-                  <br />
                   <input type="text"
                     value={this.state.name}
                     onChange={this.update("name")}
                     className="auth-input" />
-              <br/>
-                <label>Email Address</label>
-                  <br />
+
+                  <label>Email Address</label>
                   <input type="text"
                     value={this.state.email}
                     onChange={this.update("email")}
                     className="auth-input" />
-              <br/>
+
     						<label>Password</label>
-                  <br />
     							<input type="password"
     								value={this.state.password}
     								onChange={this.update("password")}
     								className="auth-input" />
   						<br/>
               <br />
-                <button>Sign Up</button>
+                <input className="button" type="submit" value="Sign Up"/>
             </div>
           </form>
         </div>

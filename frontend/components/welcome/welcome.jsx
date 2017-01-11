@@ -12,7 +12,7 @@ class Welcome extends React.Component {
   }
 
   redirect() {
-    this.props.router.push("/");
+    this.props.router.push("/home");
   }
 
   guestLogin(e) {
@@ -67,11 +67,17 @@ class Welcome extends React.Component {
             <li className="welcome-page-list"><button onClick={this.userSignup}>Sign Up</button></li>
           </ul>
         </div>
-        <div className="videoPlay">
-          <video autoPlay loop className="videoInsert">
-            <source src="http://res.cloudinary.com/dirtnmtpc/video/upload/v1484050178/Sunset-Lapse_djfchs.mp4" type="video/mp4" />
-          </video>
+        <div className="video-signup">
+          <div className="videoPlay">
+            <video autoPlay loop className="videoInsert">
+              <source src="http://res.cloudinary.com/dirtnmtpc/video/upload/v1484050178/Sunset-Lapse_djfchs.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <h2 className="welcome-title">Together we explore and connect through sports</h2>
+          <p className="welcome-paragraph">Meet and make friends with people that shares similar interest</p>
+          <button className="signup-button" onClick={this.userSignup}>Sign Up</button>
         </div>
+
         {this.description()}
         <footer className="welcome-footer">
           <Link to="/" className="site-name">meetSport</Link>
