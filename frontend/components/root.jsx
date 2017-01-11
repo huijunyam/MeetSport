@@ -1,12 +1,12 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, IndexRedirect, hashHistory } from 'react-router';
-import App from './app';
 
 import LoginFormContainer from './session/login_form_container';
 import SignUpFormContainer from './session/sign_up_form_container';
 import WelcomeContainer from './welcome/welcome_container';
 import Welcome from './welcome/welcome';
+import App from './app.jsx';
 
 const Root = ({ store }) => {
   // const _ensureLoggedIn = (nextState, replace) => {
