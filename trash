@@ -6,33 +6,3 @@ root.html.erb
   		user: current_user).html_safe %>
   <% end %>
 </script>
-
-return (
-  <div className="welcome-page">
-    <header className="welcome-header">
-      <div className="site-name-with-logo">
-        <Link to="/" className="logo"><img src={"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484046593/logo_cdpv8c.png"} /></Link>
-        <Link to="/" className="site-name">meetSport</Link>
-      </div>
-      <ul classname="welcome-page-nav">
-        <li><button onClick={this.guestLogin} className="guest-button">Guest Demo</button></li>
-        <li><button onClick={this.userLogin}>Log In</button></li>
-        <li><button onClick={this.userSignup}>Sign Up</button></li>
-      </ul>
-    </header>
-    <div class="homepage-hero-module">
-      <div class="video-container">
-        <div class="filter"></div>
-          <video autoplay loop class="fillWidth">
-            <source src="http://res.cloudinary.com/dirtnmtpc/video/upload/v1484050178/Sunset-Lapse_djfchs.mp4" type="video/mp4" />
-          </video>
-      </div>
-    </div>
-    {this.description()}
-    <footer className="welcome-footer">
-      <Link to="/" className="site-name">meetSport</Link>
-    </footer>
-  </div>
-);
-
-<%= stylesheet_link_tag    'application', media: 'all' %>

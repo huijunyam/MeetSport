@@ -58,10 +58,10 @@ class SignUpForm extends React.Component {
   render() {
     return (
       <div>
-        <header className="signup-nav">
+        <section className="signup-nav">
           <h1>meetSport</h1>
           <button onClick={this.handleClick}>Log In</button>
-        </header>
+        </section>
         <div className="signup-form-container">
           <h2>Sign Up</h2>
           <br />
