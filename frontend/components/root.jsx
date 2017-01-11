@@ -6,7 +6,7 @@ import LoginFormContainer from './session/login_form_container';
 import SignUpFormContainer from './session/sign_up_form_container';
 import WelcomeContainer from './welcome/welcome_container';
 import Welcome from './welcome/welcome';
-import App from './app.jsx';
+import App from './app/app';
 
 const Root = ({ store }) => {
   // const _ensureLoggedIn = (nextState, replace) => {
