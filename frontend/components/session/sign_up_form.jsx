@@ -35,7 +35,7 @@ class SignUpForm extends React.Component {
   renderErrors() {
     if (this.props.errors) {
       return (
-        <ul className="signup-err">
+        <ul className="auth-error">
           {
             this.props.errors.map((err, idx) => (
               <li key={`err-${idx}`}>{err}</li>
@@ -58,47 +58,52 @@ class SignUpForm extends React.Component {
   render() {
     return (
       <div>
-        <section className="signup-nav">
-          <h1>meetSport</h1>
+        <section className="auth-nav">
+          <div className="site-name-with-logo">
+            <Link to="/" className="logo"><img src={"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484092751/Logomakr_2rIReH_jz2ink.png"} alt="logomakr"/></Link>
+            <Link to="/" className="site-name-head">meetSport</Link>
+          </div>
           <button onClick={this.handleClick}>Log In</button>
         </section>
-        <div className="signup-form-container">
+
+        <div className="auth-form-container">
           <h2>Sign Up</h2>
-          <br />
-          <form onSubmit={this.handleSubmit} className="signup-form-box">
-            Already a member{"?"} {this.navLink()}
+          <form onSubmit={this.handleSubmit} className="auth-form-box">
+            <span>Already a member{"?"} {this.navLink()}</span>
             {this.renderErrors()}
-            <div className="signup-form">
+            <div className="auth-form">
               <br />
-                <label> Username:
+              <br />
+                <label>Username</label>
+                  <br />
     							<input type="text"
     								value={this.state.username}
     								onChange={this.update("username")}
-    								className="signup-input" />
-  						  </label>
+    								className="auth-input" />
   						<br/>
-                <label> Name:
+                <label>Name</label>
+                  <br />
                   <input type="text"
                     value={this.state.name}
                     onChange={this.update("name")}
-                    className="signup-input" />
-                </label>
+                    className="auth-input" />
               <br/>
-                <label> Email Address:
+                <label>Email Address</label>
+                  <br />
                   <input type="text"
                     value={this.state.email}
                     onChange={this.update("email")}
-                    className="signup-input" />
-                </label>
+                    className="auth-input" />
               <br/>
-    						<label> Password:
+    						<label>Password</label>
+                  <br />
     							<input type="password"
     								value={this.state.password}
     								onChange={this.update("password")}
-    								className="signup-input" />
-    						</label>
+    								className="auth-input" />
   						<br/>
-                <input type="submit" value="Sign Up" />
+              <br />
+                <button>Sign Up</button>
             </div>
           </form>
         </div>

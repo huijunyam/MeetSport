@@ -33,7 +33,7 @@ class LoginForm extends React.Component{
   renderErrors() {
     if (this.props.errors){
       return(
-        <ul className='login-error'>
+        <ul className='auth-error'>
           {this.props.errors.map((err, idx) => (
             <li key={`err-${idx}`}>
               {err}
@@ -56,33 +56,37 @@ class LoginForm extends React.Component{
   render() {
     return (
       <div>
-        <header className="login-nav">
-          <h1>meetSport</h1>
+        <section className="auth-nav">
+          <div className="site-name-with-logo">
+            <Link to="/" className="logo"><img src={"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484092751/Logomakr_2rIReH_jz2ink.png"} alt="logomakr"/></Link>
+            <Link to="/" className="site-name-head">meetSport</Link>
+          </div>
           <button onClick={this.handleClick}>Sign Up</button>
-        </header>
-        <div className="login-form-container">
+        </section>
+
+        <div className="auth-form-container">
           <h2>Welcome back</h2>
-          <br />
-          <form onSubmit={this.handleSubmit} className="signup-form-box">
-            not registered yet{"?"} {this.navLink()}
+          <form onSubmit={this.handleSubmit} className="auth-form-box">
+            <span>not registered yet{"?"} {this.navLink()}</span>
             {this.renderErrors()}
-            <div className="login-form">
+            <div className="auth-form">
               <br />
-                <label> Username:
+              <br />
+                <label> Username
     							<input type="text"
     								value={this.state.username}
     								onChange={this.update("username")}
-    								className="login-input" />
+    								className="auth-input" />
   						  </label>
   						<br/>
-    						<label> Password:
+    						<label> Password
     							<input type="password"
     								value={this.state.password}
     								onChange={this.update("password")}
-    								className="login-input" />
+    								className="auth-input" />
     						</label>
   						<br/>
-                <input type="submit" value="Sign In" />
+                <button>Sign In</button>
             </div>
           </form>
         </div>
