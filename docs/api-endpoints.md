@@ -21,7 +21,7 @@
 
 ### Memberships 
 - `POST /api/cities/:cityId/memberships`
-- `DELETE /api/cities/:cityId/memberships/:id`
+- `DELETE /api/memberships/:id`
 
 ### Events 
 - `POST /api/cities/:city_id/events`
