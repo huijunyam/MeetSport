@@ -7,7 +7,7 @@ class CityMember extends React.Component {
         {this.props.members.map(member => (
           <li className="member-list" key={`member-${member.id}`}>
             <div>{<img className="member-image" src={member.profile_img}></img>}</div>
-            {<h3>{member.name}</h3>}
+            {<h3 className="member-name">{member.name}</h3>}
           </li>
         ))}
       </ul>

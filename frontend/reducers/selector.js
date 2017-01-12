@@ -1,5 +1,8 @@
 export const checkMembership = (members, currentUser) => {
-  // debugger;
+  if (currentUser === null) {
+    return false;
+  }
+
   for (let i = 0; i < members.length; i++) {
     if (members[i].username === currentUser.username) {
       return true;
