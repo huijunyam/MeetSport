@@ -33,7 +33,7 @@ class SignUpForm extends React.Component {
   }
 
   redirect() {
-    this.props.router.push("/home");
+    this.props.router.push("/cities");
   }
 
   renderErrors() {

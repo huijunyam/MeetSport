@@ -9,3 +9,13 @@ root.html.erb
 
 <IndexRedirect to="/welcome" />
 <Route path="/welcome" component={WelcomeContainer} />
+
+<Route path="/city/cityId" component={CityContainer} />
+
+<Link to={`/city/${city.id}`} className="city-img">
+  <img src={city["background_image_url"]}/>
+</Link>
+
+<Link to={`/city/${city.id}`} className="city-img">
+  <img src={city["background_image_url"]}/>
+</Link>

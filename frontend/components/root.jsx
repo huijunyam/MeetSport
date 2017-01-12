@@ -2,12 +2,14 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, IndexRedirect, hashHistory } from 'react-router';
 
+import App from './app/app';
+import WelcomeContainer from './welcome/welcome_container';
 import LoginFormContainer from './session/login_form_container';
 import SignUpFormContainer from './session/sign_up_form_container';
-import WelcomeContainer from './welcome/welcome_container';
-import CityListContainer from './city/city_list_container';
+
 import HeaderContainer from './layout/header_container';
-import App from './app/app';
+import CityListContainer from './city/city_list_container';
+import CityContainer from './city/city_container';
 
 const Root = ({ store }) => {
   const _ensureLoggedIn = (nextState, replace) => {
@@ -20,7 +22,7 @@ const Root = ({ store }) => {
   const _redirectIfLoggedIn = (nextState, replace) => {
     const currentUser = store.getState().session.currentUser;
     if (currentUser) {
-      replace('/home');
+      replace('/cities');
     }
   };
   return(
@@ -30,9 +32,8 @@ const Root = ({ store }) => {
           <IndexRoute component={WelcomeContainer} onEnter={_redirectIfLoggedIn}/>
           <Route path="/login" component={LoginFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="/signup" component={SignUpFormContainer} onEnter={_redirectIfLoggedIn} />
-          <Route path="/home" component={CityListContainer} onEnter={_ensureLoggedIn} >
-
-            </Route>
+          <Route path="/cities" component={CityListContainer} onEnter={_ensureLoggedIn} />
+          <Route path="/city/:cityId" component={CityContainer} />
         </Route>
       </Router>
     </Provider>

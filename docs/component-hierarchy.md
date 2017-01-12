@@ -1,26 +1,26 @@
 # Component Hierarchy
-### Welcome 
+### Welcome
 - Header
 - AuthForm
-- Footer 
+- Footer
 
-### AuthFormContainer 
+### AuthFormContainer
 - AuthForm
 
-### HomeContainer 
+### CitiesContainer
 - Header
 - Search
 - CityList/SearchResult
-- Footer 
+- Footer
 
-### CityContainer 
+### CityContainer
 - Header
 - CityHeader
 - Sublists
-- Footer 
+- Footer
 
 ### CityMemberContainer
-- Header 
+- Header
 - CityHeader
 - Sublists
 - Members
@@ -30,31 +30,30 @@
 - Header
 - CityHeader
 - Sublists
-- Calendar 
+- Calendar
 - Footer
 
-### EventContainer 
+### EventContainer
 - Header
-- EventHeader 
+- EventHeader
 - Event
 - Footer
- 
+
 ### SearchResultContainer
 - SearchBar
 - SearchResult
 
-### Routes 
-| Path                           | Component              |
-| -------------------------------| -----------------------|
-| "/"                            | "App"                  |
-| "/welcome"                     | "Welcome"              |
-| "/login"                       | "AuthFormContainer"    |
-| "/signup"                      | "AuthFormContainer"    |
-| "/home"                        | "CityListContainer"    |
-| "/home/city/:cityId"           | "CityContainer"        |
-| "/home/city/:cityId/member"    | "CityMemberContainer"  |
-| "/home/city/:cityId/calendar"  | "CityCalendarContainer"|
-| "/home/city/:cityId/event"     | "CityEventContainer"   |
-| "/home/city/:cityId/event/:id" | "EventContainer"       |
-| "/home/city/:cityId/create"    | "EventFormContainer"   |
-| "/home/search"                 | "SearchResultContainer"|
+### Routes
+| Path                             | Component              |
+| ---------------------------------| -----------------------|
+| "/"                              | "App"                  |
+| "/login"                         | "AuthFormContainer"    |
+| "/signup"                        | "AuthFormContainer"    |
+| "/cities"                        | "CityListContainer"    |
+| "/city/:cityId"                  | "CityContainer"        |
+| "/city/:cityId/member"           | "CityMemberContainer"  |
+| "/city/:cityId/calendar"         | "CityCalendarContainer"|
+| "/city/:cityId/event"            | "CityEventContainer"   |
+| "/city/:cityId/event/:id"        | "EventContainer"       |
+| "/city/:cityId/create"           | "EventFormContainer"   |
+| "/cities/search"                 | "SearchResultContainer"|

@@ -1,23 +1,38 @@
 import React from 'react';
-import CityListContainer from './city_list_container';
 import HeaderContainer from '../layout/header_container';
 import FooterContainer from '../layout/footer_container';
+import CityListItem from './city_list_item';
 
-class CityIndex extends React.Component {
+class CityList extends React.Component {
   constructor(props){
     super(props);
-
+  }
+  componentDidMount() {
+    this.props.fetchCities();
   }
 
   render() {
     return (
       <div>
         <HeaderContainer />
-        {this.props.children}
+        <div className="sub-header">
+          <h2>Choose a City</h2>
+
+          <p>Explore all the sport events that happen in your city</p>
+        </div>
+        <div className="search-bar">
+          
+        </div>
+        <div className="city-list-container">
+          <ul className="citylist">
+            {this.props.cities.map(city => (<CityListItem city={city} />))}
+          </ul>
+        </div>
+        // {this.props.children}
         <FooterContainer />
       </div>
     );
   }
 }
 
-export default CityIndex;
+export default CityList;

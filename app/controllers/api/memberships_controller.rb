@@ -12,7 +12,7 @@ class Api::MembershipsController < ApplicationController
   def destroy
     @membership = Membership.find(params[:id])
     @membership.destroy
-    render json: {}
+    render json: {} 
   end
 
   private

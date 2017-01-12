@@ -19,7 +19,7 @@ class LoginForm extends React.Component{
   componentDidMount() {
     this.props.clearError();
   }
-  
+
   update(field) {
       return e => this.setState({ [field]: e.target.value });
   }
@@ -31,7 +31,7 @@ class LoginForm extends React.Component{
   }
 
   redirect() {
-    this.props.router.push('/home');
+    this.props.router.push('/cities');
   }
 
   renderErrors() {

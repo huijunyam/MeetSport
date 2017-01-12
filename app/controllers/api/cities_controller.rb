@@ -12,6 +12,6 @@ class Api::CitiesController < ApplicationController
   def destroy
     @city = City.find(params[:id])
     @city.destroy
-    render json: {}
+    render json: {};
   end
 end

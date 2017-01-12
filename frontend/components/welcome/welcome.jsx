@@ -12,7 +12,7 @@ class Welcome extends React.Component {
   }
 
   redirect() {
-    this.props.router.push("/home");
+    this.props.router.push("/cities");
   }
 
   guestLogin(e) {

@@ -1,1 +1,1 @@
-json.partial! 'api/cities/city', city: @city
+json.extract! city, :id, :name, :members, :background_image_url
