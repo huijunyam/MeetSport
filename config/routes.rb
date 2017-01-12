@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     resources :cities, only: [:index, :destroy, :show] do
       resources :memberships, only: [:create]
       resources :events, only: [:create, :index, :show, :destroy] do
-        resources :attendees, only: [:index, :create]
+        resources :attendees, only: [:create]
       end
     end
     resources :memberships, only: [:destroy]

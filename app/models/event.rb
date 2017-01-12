@@ -44,4 +44,8 @@ class Event < ActiveRecord::Base
     primary_key: :id,
     foreign_key: :event_id,
     class_name: :Attendee
+
+  has_many :attendings,
+    through: :attendees,
+    source: :user
 end
