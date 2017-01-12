@@ -4,15 +4,13 @@
   height: 200px;
   margin: 10px 0 10px 0;
   text-align: center;
-
 }
 
 .sub-city-header img {
   width: 80%;
   height: 100%;
-  opacity: 0.8;
-  background-color: $light-blue;
-  opacity: 0.6;
+  opacity: 0.5;
+  // background-color: $light-blue;
 }
 
 .sub-city-header h2 {
@@ -38,4 +36,41 @@
   box-shadow: 0 0 10px #ccc;
   opacity: 0.8;
   // background: $white;
+}
+
+.city-home-list {
+  margin: 10px auto;
+  display: flex;
+  padding: 10px;
+  width: 80%;
+  // justify-content: space-between;
+}
+
+.city-sublist {
+  // border: 5px $dark-blue solid;
+  margin: 5px;
+  // padding: 10px;
+  text-align: center;
+  margin-right: 20px;
+  padding-right: 0;
+}
+
+.city-sub-home-list {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 50px;
+  font-family: $sans-serif;
+  border: 5px $dark-blue solid;
+  background-color: $lighest-blue;
+  color: $dark-blue;
+  border-radius: 3px;
+}
+
+.city-sublist:last-child {
+  border-bottom: 0px;
+}
+
+.city-sublist-content {
+  margin: 5px;
+  border: 1px solid orange;
 }

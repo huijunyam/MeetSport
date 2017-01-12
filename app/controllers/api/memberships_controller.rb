@@ -10,9 +10,10 @@ class Api::MembershipsController < ApplicationController
   end
 
   def destroy
-    @membership = Membership.find(params[:id])
-    @membership.destroy
-    render json: {} 
+    membership = Membership.find(params[:id])
+    @city = membership.city
+    membership.destroy
+    render "api/cities/show"
   end
 
   private

@@ -27,9 +27,9 @@ export const joinCity = (membership) => (
   })
 );
 
-// export const unjoinCity = (membership) => (
-//   $.ajax({
-//     method: "DELETE",
-//     url: /api/memberships/:id
-//   })
-// );
+export const unjoinCity = (id) => (
+  $.ajax({
+    method: "DELETE",
+    url: `/api/memberships/${id}`
+  })
+);

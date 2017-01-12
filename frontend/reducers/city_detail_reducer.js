@@ -8,12 +8,13 @@ const defaultState = {
 };
 
 const CityDetailReducer = (state = defaultState, action) => {
-  // debugger
   Object.freeze(state);
   switch (action.type) {
     case REQUEST_CITY:
+    // debugger;
       return action.cityDetail;
     default:
+    // debugger;
       return state;
   }
 };

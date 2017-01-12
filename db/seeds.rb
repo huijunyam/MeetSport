@@ -41,7 +41,7 @@ city5 = City.create(name: "Boston", background_image_url: "http://res.cloudinary
 city6 = City.create(name: "Chicago", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150503/timelapse-video-of-chicago-cloud-gate-or-bean-project-file-chicago-cloud-gatemove-1920x1080_ekww2w4p__S0000_bi7gkb.jpg");
 
 #memberships data
-Membership.create(member_id: user1.id, city_id: city1.id)
+# Membership.create(member_id: user1.id, city_id: city1.id)
 Membership.create(member_id: user2.id, city_id: city2.id)
 Membership.create(member_id: user3.id, city_id: city3.id)
 Membership.create(member_id: user4.id, city_id: city4.id)
