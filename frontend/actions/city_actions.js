@@ -9,10 +9,14 @@ export const requestCities = (cities) => ({
   cities
 });
 
-export const requestCity = (city) => ({
-  type: REQUEST_CITY,
-  city
-});
+export const requestCity = (cityDetail) => {
+  // debugger
+  return {
+    type: REQUEST_CITY,
+    cityDetail
+  };
+};
+
 
 export const removeCity = (city) => ({
   type: REMOVE_CITY,
@@ -24,9 +28,17 @@ export const fetchCities = () => dispatch => (
 );
 
 export const fetchCity = (id) => dispatch => (
-  CityApiUtil.fetchCity().then(city => dispatch(requestCity(city)))
+  CityApiUtil.fetchCity(id).then(city => dispatch(requestCity(city)))
 );
 
 export const deleteCity = (id) => dispatch => (
   CityApiUtil.deleteCity(id).then(city => dispatch(removeCity(city)))
+);
+
+export const joinCity = (membership) => dispatch => (
+  CityApiUtil.joinCity(membership).then(city => dispatch(requestCity(city)))
+);
+
+export const unjoinCity = (membership) => dispatch => (
+  CityApiUtil.unjoinCity(membership).then(city => dispatch(requestCity(city)))
 );

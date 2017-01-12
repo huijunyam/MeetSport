@@ -21,11 +21,11 @@ class CityList extends React.Component {
           <p>Explore all the sport events that happen in your city</p>
         </div>
         <div className="search-bar">
-          
+
         </div>
         <div className="city-list-container">
           <ul className="citylist">
-            {this.props.cities.map(city => (<CityListItem city={city} />))}
+            {this.props.cities.map(city => (<CityListItem key={city.id} city={city} />))}
           </ul>
         </div>
         // {this.props.children}

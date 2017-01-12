@@ -18,3 +18,18 @@ export const deleteCity = (id) => (
     url: `api/cities/${id}`
   })
 );
+
+export const joinCity = (membership) => (
+  $.ajax({
+    method: "POST",
+    url: `/api/cities/${membership.city_id}/memberships`,
+    data: { membership }
+  })
+);
+
+// export const unjoinCity = (membership) => (
+//   $.ajax({
+//     method: "DELETE",
+//     url: /api/memberships/:id
+//   })
+// );
