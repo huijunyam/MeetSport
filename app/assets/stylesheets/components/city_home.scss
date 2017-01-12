@@ -43,22 +43,19 @@
   display: flex;
   padding: 10px;
   width: 80%;
-  // justify-content: space-between;
 }
 
 .city-sublist {
-  // border: 5px $dark-blue solid;
   margin: 5px;
-  // padding: 10px;
   text-align: center;
   margin-right: 20px;
   padding-right: 0;
 }
 
 .city-sub-home-list {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
-  padding: 50px;
+  padding: 20px;
   font-family: $sans-serif;
   border: 5px $dark-blue solid;
   background-color: $lighest-blue;
@@ -66,8 +63,22 @@
   border-radius: 3px;
 }
 
-.city-sublist:last-child {
-  border-bottom: 0px;
+.city-sub-home-list:hover {
+  background-color: $blue;
+  box-shadow: -3px -6px 55px -1px rgba(255,255,255,1);
+
+}
+
+.city-sublist-link {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 50px;
+  color: $dark-blue;
+  font-family: $sans-serif;
+}
+
+.city-sublist-link:hover {
+  color: $white;
 }
 
 .city-sublist-content {

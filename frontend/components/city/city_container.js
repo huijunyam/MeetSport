@@ -7,9 +7,7 @@ const mapStateToProps = (state, ownProps) => {
   const cityId = parseInt(ownProps.params.cityId);
   const cityDetail = state.cityDetail;
   const currentUser = state.session.currentUser;
-  // const members = state.cityDetail.members;
   const hasMember = checkMembership(state.cityDetail.members, state.session.currentUser);
-  // debugger;
   return {
     cityId,
     cityDetail,

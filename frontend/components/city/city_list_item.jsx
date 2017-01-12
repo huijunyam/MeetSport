@@ -8,7 +8,6 @@ class CityListItem extends React.Component {
 
   render() {
     const {city} = this.props;
-    // debugger
     return (
       <li className="city-list-item">
         <div className="city-list-div">

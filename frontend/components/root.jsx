@@ -10,6 +10,7 @@ import SignUpFormContainer from './session/sign_up_form_container';
 import HeaderContainer from './layout/header_container';
 import CityListContainer from './city/city_list_container';
 import CityContainer from './city/city_container';
+import CityMemberContainer from './city/city_member_container';
 
 const Root = ({ store }) => {
   const _ensureLoggedIn = (nextState, replace) => {
@@ -33,7 +34,9 @@ const Root = ({ store }) => {
           <Route path="/login" component={LoginFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="/signup" component={SignUpFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="/cities" component={CityListContainer} onEnter={_ensureLoggedIn} />
-          <Route path="/city/:cityId" component={CityContainer} />
+          <Route path="/city/:cityId" component={CityContainer} >
+            <Route path="/city/:cityId/member" component={CityMemberContainer} />
+          </Route>
         </Route>
       </Router>
     </Provider>

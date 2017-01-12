@@ -37,14 +37,14 @@ class City extends React.Component {
           <button onClick={this.handleClick} className="sub-city-header-button">{buttonType}</button>
         </div>
         <div className="city-home-list">
-          <section className="city-sublist .col-third">
+          <section className="city-sublist col-third">
             <div className="city-sub-home-list">All Events</div>
-            <div className="city-sub-home-list">All Members</div>
+            <div className="city-sub-home-list"><Link to={`/city/${this.props.cityId}/member`} className="city-sublist-link">All Members</Link></div>
             <div className="city-sub-home-list">Calendar</div>
             <div className="city-sub-home-list">Sport Category</div>
             <div className="city-sub-home-list">Create Event</div>
           </section>
-          <section className="city-sublist-content">
+          <section className="city-sublist-content col-last">
               <div>{this.props.children}</div>
           </section>
         </div>

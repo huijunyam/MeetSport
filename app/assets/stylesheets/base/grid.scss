@@ -29,6 +29,10 @@ with a class attribute containing 'col-' */
   width: 50%;
 }
 
+.col-last {
+  width: 70%
+}
+
 .cf:after {
   content: "";
   display: block;

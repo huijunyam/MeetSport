@@ -11,10 +11,8 @@ const CityDetailReducer = (state = defaultState, action) => {
   Object.freeze(state);
   switch (action.type) {
     case REQUEST_CITY:
-    // debugger;
       return action.cityDetail;
     default:
-    // debugger;
       return state;
   }
 };
