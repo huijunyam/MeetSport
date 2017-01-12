@@ -29,7 +29,17 @@ class User < ActiveRecord::Base
   has_many :cities,
     through: :memberships,
     source: :city
-    
+
+  has_many :events,
+    primary_key: :id,
+    foreign_key: :host_id,
+    class_name: :Event
+
+  has_many :attendings,
+    primary_key: :id,
+    foreign_key: :attendee_id,
+    class_name: :Attendee
+
   def self.find_by_credentials(username, password)
     user = User.find_by_username(username)
     return nil if user.nil?

@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170111162626) do
+ActiveRecord::Schema.define(version: 20170112225715) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "attendees", force: :cascade do |t|
+    t.integer  "attendee_id", null: false
+    t.integer  "event_id",    null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["attendee_id", "event_id"], name: "index_attendees_on_attendee_id_and_event_id", unique: true, using: :btree
+  end
 
   create_table "cities", force: :cascade do |t|
     t.string   "name",                 null: false
@@ -21,6 +29,23 @@ ActiveRecord::Schema.define(version: 20170111162626) do
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
     t.index ["name"], name: "index_cities_on_name", unique: true, using: :btree
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.integer  "city_id",       null: false
+    t.string   "name",          null: false
+    t.string   "location",      null: false
+    t.string   "category",      null: false
+    t.text     "description",   null: false
+    t.string   "start_time",    null: false
+    t.string   "end_time",      null: false
+    t.string   "date",          null: false
+    t.string   "level",         null: false
+    t.integer  "attendees_num", null: false
+    t.integer  "host_id",       null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["city_id", "host_id"], name: "index_events_on_city_id_and_host_id", unique: true, using: :btree
   end
 
   create_table "memberships", force: :cascade do |t|

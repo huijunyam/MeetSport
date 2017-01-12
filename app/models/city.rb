@@ -20,4 +20,9 @@ class City < ActiveRecord::Base
   has_many :members,
   through: :memberships,
   source: :member
+
+  has_many :events,
+    primary_key: :id,
+    foreign_key: :city_id,
+    class_name: :Event
 end

@@ -12,6 +12,9 @@ import CityListContainer from './city/city_list_container';
 import CityContainer from './city/city_container';
 import CityMemberContainer from './city/city_member_container';
 
+import CityEventContainer from './city/city_event_container';
+import EventContainer from './city/event_container';
+
 const Root = ({ store }) => {
   const _ensureLoggedIn = (nextState, replace) => {
     const currentUser = store.getState().session.currentUser;
@@ -36,6 +39,8 @@ const Root = ({ store }) => {
           <Route path="/cities" component={CityListContainer} onEnter={_ensureLoggedIn} />
           <Route path="/city/:cityId" component={CityContainer} onEnter={_ensureLoggedIn} >
             <Route path="/city/:cityId/member" component={CityMemberContainer} onEnter={_ensureLoggedIn}/>
+            <Route path="/city/:cityId/event" component={CityEventContainer} onEnter={_ensureLoggedIn}/>
+            <Route path="/city/:cityId/event/:eventId" component={EventContainer} onEnter={_ensureLoggedIn}/>
           </Route>
         </Route>
       </Router>
