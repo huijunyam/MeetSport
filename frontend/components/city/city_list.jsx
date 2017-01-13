@@ -28,7 +28,6 @@ class CityList extends React.Component {
             {this.props.cities.map(city => (<CityListItem key={city.id} city={city} />))}
           </ul>
         </div>
-        // {this.props.children}
         <FooterContainer />
       </div>
     );

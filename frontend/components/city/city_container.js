@@ -1,18 +1,19 @@
 import { connect } from 'react-redux';
 import City from './city';
 import { fetchCity, joinCity, unjoinCity } from '../../actions/city_actions';
-import { checkMembership, selectCity } from '../../reducers/selector';
+import { checkMembership, getMembershipId } from '../../reducers/selector';
 
 const mapStateToProps = (state, ownProps) => {
   const cityId = parseInt(ownProps.params.cityId);
   const cityDetail = state.cityDetail;
   const currentUser = state.session.currentUser;
+  const membershipId = getMembershipId(state, currentUser, cityId);
   const hasMember = checkMembership(state.cityDetail.members, state.session.currentUser);
-  // debugger
   return {
     cityId,
     cityDetail,
     currentUser,
+    membershipId,
     hasMember
   };
 };

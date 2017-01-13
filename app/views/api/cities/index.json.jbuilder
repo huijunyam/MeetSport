@@ -4,6 +4,7 @@
     json.name city.name
     json.background_image_url city.background_image_url
     json.members city.members
+    json.memberships city.memberships
     # json.events city.events
   end
 end

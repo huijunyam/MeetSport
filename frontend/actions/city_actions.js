@@ -4,10 +4,13 @@ export const REQUEST_CITIES = "REQUEST_CITIES";
 export const REQUEST_CITY = "REQUEST_CITY";
 export const REMOVE_CITY = "REMOVE_CITY";
 
-export const requestCities = (cities) => ({
-  type: REQUEST_CITIES,
-  cities
-});
+export const requestCities = (cities) => {
+  // debugger
+  return {
+    type: REQUEST_CITIES,
+    cities
+  };
+};
 
 export const requestCity = (cityDetail) => {
   // debugger

@@ -10,3 +10,16 @@ export const checkMembership = (members, currentUser) => {
   }
   return false;
 };
+
+export const getMembershipId = ({cityDetail}, currentUser, id) => {
+  if (currentUser === null) {
+    return null;
+  }
+
+  for (let i = 0; i < cityDetail.memberships.length; i++) {
+    if (currentUser.id === cityDetail.memberships[i].member_id) {
+      return cityDetail.memberships[i];
+    }
+  }
+  return null;
+};

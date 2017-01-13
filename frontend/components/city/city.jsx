@@ -13,21 +13,20 @@ class City extends React.Component {
     this.props.fetchCity(this.props.cityId);
   }
 
-
   handleClick(e) {
     e.preventDefault();
     const membership = { member_id: this.props.currentUser.id,
                          city_id: this.props.cityId };
-
     if (!this.props.hasMember) {
       this.props.joinCity(membership);
     } else {
-      this.props.unjoinCity(this.props.cityDetail.membershipId);
+      this.props.unjoinCity(this.props.membershipId.id);
     }
   }
 
   render() {
     let buttonType = (this.props.hasMember) ? "Unjoin" : "Join Us";
+
     return (
       <div>
         <HeaderContainer />
