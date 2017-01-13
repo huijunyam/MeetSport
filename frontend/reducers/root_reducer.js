@@ -9,6 +9,7 @@ const RootReducer = combineReducers({
   cities: CityReducer,
   cityDetail: CityDetailReducer,
   cityEvent: CityEventReducer
+  
 });
 
 export default RootReducer;

@@ -23,3 +23,42 @@ root.html.erb
 
 <Route path="/city/:cityId/event" component={CityEventContainer} onEnter={_ensureLoggedIn}/>
 <Route path="/city/:cityId/event/:eventId" component={EventContainer} onEnter={_ensureLoggedIn}/>
+
+
+return (
+  <li className="city-event">
+    <ul className="city-event-detail">
+      <li>{event.name}</li>
+      <li>{event.host}</li>
+      <li>{event.date}</li>
+      <li>{event.start_time}</li>
+
+      <li>{`${event.attendings.length + 1} going`}</li>
+      <li>{event.description}</li>
+    </ul>
+  </li>
+);
+
+<li>
+  <ul>
+    {event.attendings.map(member =>(
+      <li key={member.id}><img src={member.profile_img} className="member-attending-img"/></li>
+    ))}
+  </ul>
+</li>
+
+return (
+  <div>
+    <h3>{event.name}</h3>
+    <h4>{event.host}</h4>
+    <h4>{event.date}</h4>
+    <h4>{event.start_time}</h4>
+      <div>
+        {event.attendings.map(member =>(
+          <div key={member.id}><img src={member.profile_img} className="member-attending-img"/></div>
+        ))}
+      </div>
+    <h4>{`${event.attendings.length + 1} going`}</h4>
+    <p>{event.description}</p>
+  </div>
+);
