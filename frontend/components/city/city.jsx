@@ -25,7 +25,7 @@ class City extends React.Component {
   }
 
   render() {
-    let buttonType = (this.props.hasMember) ? "Unjoin" : "Join Us";
+    let buttonType = (this.props.hasMember) ? "Leave the City" : "Join Us";
 
     return (
       <div>
@@ -37,7 +37,7 @@ class City extends React.Component {
         </div>
         <div className="city-home-list">
           <section className="city-sublist col-third">
-            <div className="city-sub-home-list">All Events</div>
+            <div className="city-sub-home-list"><Link to={`/city/${this.props.cityId}/event`} className="city-sublist link">All Events</Link></div>
             <div className="city-sub-home-list"><Link to={`/city/${this.props.cityId}/member`} className="city-sublist-link">All Members</Link></div>
             <div className="city-sub-home-list">Calendar</div>
             <div className="city-sub-home-list">Sport Category</div>

@@ -1,10 +1,11 @@
 class Api::EventsController < ApplicationController
   def index
-    @events = Event.all
+    @events = Event.where("city_id = ?", params[:city_id])
     render :index
   end
 
   def show
+    @event = Event.where("city_id = ? AND id = ?", params[:city_id], params[:id])
     @event = Event.find(params[:id])
     render :show
   end
@@ -16,6 +17,21 @@ class Api::EventsController < ApplicationController
     else
       render json: @event.errors.full_messages, status: 422
     end
+  end
+
+  def update
+    @event = Event.find(params[:id])
+    if @event.update(event_params)
+      render :show
+    else
+      render json: @event.errors.full_messages, status: 422
+    end
+  end
+
+  def destroy
+    event = Event.find(params[:id])
+    @city = event.city
+    render "api/cities/show"
   end
 
   private

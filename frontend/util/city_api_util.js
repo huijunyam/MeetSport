@@ -27,7 +27,7 @@ export const joinCity = (membership) => (
   })
 );
 
-export const unjoinCity = (id) => (
+export const unjoinCity = id => (
   $.ajax({
     method: "DELETE",
     url: `/api/memberships/${id}`

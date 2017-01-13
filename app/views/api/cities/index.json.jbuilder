@@ -5,6 +5,6 @@
     json.background_image_url city.background_image_url
     json.members city.members
     json.memberships city.memberships
-    # json.events city.events
+    json.events city.events
   end
 end

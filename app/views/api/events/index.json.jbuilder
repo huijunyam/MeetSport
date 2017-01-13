@@ -12,6 +12,7 @@
     json.level event.level
     json.attendees_num event.attendees_num
     json.host event.host
-    json.attending event.attending
+    json.attendings event.attendings
+    json.attendees event.attendees
   end
 end

@@ -5,7 +5,8 @@ const defaultState = {
   name: "",
   members: [],
   background_image_url: "",
-  memberships: []
+  memberships: [],
+  events: []
 };
 
 const CityDetailReducer = (state = defaultState, action) => {
