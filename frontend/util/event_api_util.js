@@ -38,7 +38,8 @@ export const deleteEvent = id => (
 export const joinEvent = attendee => (
   $.ajax({
     method: "POST",
-    url: `api/events/${attendee.event_id}/attendees`
+    url: `api/events/${attendee.event_id}/attendees`,
+    data: { attendee }
   })
 );
 

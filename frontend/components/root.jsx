@@ -13,7 +13,7 @@ import CityContainer from './city/city_container';
 import CityMemberContainer from './city/city_member_container';
 
 import CityEventContainer from './city/city_event_container';
-import EventContainer from './city/event_container';
+import EventContainer from './event/event_container';
 
 const Root = ({ store }) => {
   const _ensureLoggedIn = (nextState, replace) => {

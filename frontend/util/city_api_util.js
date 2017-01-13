@@ -19,7 +19,7 @@ export const deleteCity = (id) => (
   })
 );
 
-export const joinCity = (membership) => (
+export const joinCity = membership => (
   $.ajax({
     method: "POST",
     url: `/api/cities/${membership.city_id}/memberships`,

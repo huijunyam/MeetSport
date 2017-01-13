@@ -24,13 +24,21 @@ export const fetchEvents = (cityId) => dispatch => (
 );
 
 export const fetchEvent = eventId => dispatch => (
-  EventApiUtil.fetchEvent(eventId).then(eventDetail => dispatch(requestEvent(eventDetail)))
+  EventApiUtil.fetchEvent(eventId).then(event => dispatch(requestEvent(event)))
 );
 
 export const createEvent = event => dispatch => (
-  EventApiUtil.createEvent(event).then(eventDetail => dispatch(requestEvent(eventDetail)))
+  EventApiUtil.createEvent(event).then(event => dispatch(requestEvent(event)))
 );
 
 export const updateEvent = event => dispatch => (
-  EventApiUtil.updateEvent(event).then(eventDetail => dispatch(requestEvent(eventDetail)))
+  EventApiUtil.updateEvent(event).then(event => dispatch(requestEvent(event)))
+);
+
+export const joinEvent = attendee => dispatch => (
+  EventApiUtil.joinEvent(attendee).then(event => dispatch(requestEvent(event)))
+);
+
+export const unjoinEvent = id => dispatch => (
+  EventApiUtil.unjoinEvent(id).then(event => dispatch(requestEvent(event)))
 );

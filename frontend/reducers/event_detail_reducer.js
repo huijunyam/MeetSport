@@ -12,7 +12,9 @@ const defaultState = {
   end_time: "",
   host: "",
   description: "",
-  attendees_Num: 10,
+  attendees_Num: 0,
+  attendings: [],
+  attendees: []
 };
 
 const EventDetailReducer = (state = defaultState, action) => {

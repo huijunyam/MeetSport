@@ -23,18 +23,18 @@ export const fetchCities = () => dispatch => (
   CityApiUtil.fetchCities().then(cities => dispatch(requestCities(cities)))
 );
 
-export const fetchCity = (id) => dispatch => (
+export const fetchCity = id => dispatch => (
   CityApiUtil.fetchCity(id).then(city => dispatch(requestCity(city)))
 );
 
-export const deleteCity = (id) => dispatch => (
+export const deleteCity = id => dispatch => (
   CityApiUtil.deleteCity(id).then(city => dispatch(removeCity(city)))
 );
 
-export const joinCity = (membership) => dispatch => (
+export const joinCity = membership => dispatch => (
   CityApiUtil.joinCity(membership).then(city => dispatch(requestCity(city)))
 );
 
-export const unjoinCity = (membership) => dispatch => (
-  CityApiUtil.unjoinCity(membership).then(city => dispatch(requestCity(city)))
+export const unjoinCity = id => dispatch => (
+  CityApiUtil.unjoinCity(id).then(city => dispatch(requestCity(city)))
 );

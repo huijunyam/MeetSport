@@ -23,3 +23,29 @@ export const getMembershipId = ({cityDetail}, currentUser, id) => {
   }
   return null;
 };
+
+export const getAttendeeId = ({eventDetail}, currentUser, id) => {
+  if (currentUser === null) {
+    return null;
+  }
+
+  for (let i = 0; i < eventDetail.attendees.length; i++) {
+    if (currentUser.id === eventDetail.attendees[i].attendee_id) {
+      return eventDetail.attendees[i];
+    }
+  }
+  return null;
+};
+
+export const checkAttendee = (attendees, currentUser) => {
+  if (currentUser === null) {
+    return false;
+  }
+
+  for (let i = 0; i < attendees.length; i++) {
+    if (attendees[i].username === currentUser.username) {
+      return true;
+    }
+  }
+  return false;
+};
