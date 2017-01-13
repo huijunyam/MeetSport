@@ -23,14 +23,14 @@ export const fetchEvents = (cityId) => dispatch => (
   EventApiUtil.fetchEvents(cityId).then(events => dispatch(requestEvents(events)))
 );
 
-export const fetchEvent = (cityId, eventId) => dispatch => (
-  EventApiUtil.fetchEvent(cityId, eventId).then(eventDetail => dispatch(requestEvent(eventDetail)))
+export const fetchEvent = eventId => dispatch => (
+  EventApiUtil.fetchEvent(eventId).then(eventDetail => dispatch(requestEvent(eventDetail)))
 );
 
-export const createEvent = (cityId, event) => dispatch => (
-  EventApiUtil.createEvent(cityId, event).then(eventDetail => dispatch(requestEvent(eventDetail)))
+export const createEvent = event => dispatch => (
+  EventApiUtil.createEvent(event).then(eventDetail => dispatch(requestEvent(eventDetail)))
 );
 
-export const updateEvent = (cityId, event) => dispatch => (
-  EventApiUtil.updateEvent(cityId, event).then(eventDetail => dispatch(requestEvent(eventDetail)))
+export const updateEvent = event => dispatch => (
+  EventApiUtil.updateEvent(event).then(eventDetail => dispatch(requestEvent(eventDetail)))
 );

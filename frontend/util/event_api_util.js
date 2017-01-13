@@ -1,44 +1,44 @@
-export const fetchEvents = (cityId) => (
+export const fetchEvents = cityId => (
   $.ajax({
     method: "GET",
     url: `api/cities/${cityId}/events`
   })
 );
 
-export const fetchEvent = (cityId, id) => (
+export const fetchEvent = id => (
   $.ajax({
     method: "GET",
-    url: `api/cities/${cityId}/events/${id}`
+    url: `api/events/${id}`
   })
 );
 
-export const createEvent = (cityId, event) => (
+export const createEvent = event => (
   $.ajax({
     method: "POST",
-    url: `api/cities/${cityId}/events`,
+    url: `api/events`,
     data: { event }
   })
 );
 
-export const updateEvent = (cityId, event) => (
+export const updateEvent = event => (
   $.ajax({
     method: "PATCH",
-    url: `api/cities/${cityId}/events/${event.id}`,
+    url: `api/events/${event.id}`,
     data: { event }
   })
 );
 
-export const deleteEvent = (cityId, id) => (
+export const deleteEvent = id => (
   $.ajax({
     method: "DELETE",
-    url: `api/cities/${cityId}/events/${id}`
+    url: `api/events/${id}`
   })
 );
 
-export const joinEvent = (cityId, attendee) => (
+export const joinEvent = attendee => (
   $.ajax({
     method: "POST",
-    url: `api/cities/${cityId}/events/${attendee.event_id}/attendees`
+    url: `api/events/${attendee.event_id}/attendees`
   })
 );
 
