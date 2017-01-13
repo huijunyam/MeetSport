@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170112225715) do
+ActiveRecord::Schema.define(version: 20170113012633) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20170112225715) do
     t.integer  "event_id",    null: false
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.index ["attendee_id", "event_id"], name: "index_attendees_on_attendee_id_and_event_id", unique: true, using: :btree
+    t.index ["attendee_id", "event_id"], name: "index_attendees_on_attendee_id_and_event_id", using: :btree
   end
 
   create_table "cities", force: :cascade do |t|

@@ -1,5 +1,5 @@
 class Attendee < ActiveRecord::Base
-  validates :attendee_id, :event_id, presence: true, uniqueness: true
+  validates :attendee_id, :event_id, presence: true
 
   belongs_to :user,
     primary_key: :id,
@@ -9,5 +9,5 @@ class Attendee < ActiveRecord::Base
   belongs_to :event,
     primary_key: :id,
     foreign_key: :event_id,
-    class_name: :Event 
+    class_name: :Event
 end

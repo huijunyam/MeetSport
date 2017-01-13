@@ -19,3 +19,7 @@ root.html.erb
 <Link to={`/city/${city.id}`} className="city-img">
   <img src={city["background_image_url"]}/>
 </Link>
+
+
+<Route path="/city/:cityId/event" component={CityEventContainer} onEnter={_ensureLoggedIn}/>
+<Route path="/city/:cityId/event/:eventId" component={EventContainer} onEnter={_ensureLoggedIn}/>

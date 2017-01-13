@@ -20,7 +20,8 @@
 
 class Event < ActiveRecord::Base
   validates :city_id, :name, :location, :category, :description,
-            :start_time, :end_time, :date, :level, :attendees_num, :host_id
+            :start_time, :end_time, :date, :level, :attendees_num,
+            :host_id, presence: true
 
   CATEGORY = ["air sports", "archery", "basketball",
               "bat and ball", "board sports", "climbing", "cycling",
@@ -28,7 +29,7 @@ class Event < ActiveRecord::Base
               "football", "flying disc sports", "golf", "gymnastics",
               "handball", "ice sports", "kite sports", "mixed discipline",
               "racquet sports", "running", "sailing", "snow sports",
-              "shooting sports", "water sports"]
+              "shooting sports", "water sports", "hiking"]
 
   belongs_to :city,
     primary_key: :id,
