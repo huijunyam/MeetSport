@@ -3,13 +3,14 @@ import SessionReducer from './session_reducer';
 import CityReducer from './city_reducer';
 import CityDetailReducer from './city_detail_reducer';
 import CityEventReducer from './city_event_reducer';
+import EventDetailReducer from './event_detail_reducer';
 
 const RootReducer = combineReducers({
   session: SessionReducer,
   cities: CityReducer,
   cityDetail: CityDetailReducer,
-  cityEvent: CityEventReducer
-  
+  cityEvent: CityEventReducer,
+  eventDetail: EventDetailReducer
 });
 
 export default RootReducer;

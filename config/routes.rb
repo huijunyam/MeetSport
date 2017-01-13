@@ -7,10 +7,11 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     resources :cities, only: [:index, :destroy, :show] do
       resources :memberships, only: [:create]
-      resources :events, only: [:create, :index, :update, :show, :destroy] do
+      resources :events, only: [:index] do
         resources :attendees, only: [:create]
       end
     end
+    resources :events, only: [:create, :update, :show, :destroy] do
     resources :memberships, only: [:destroy]
     resources :attendees, only: [:destroy]
   end

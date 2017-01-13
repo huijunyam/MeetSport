@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-const EventListItem = ({event}) => {
-  // debugger
+const EventListItem = ({event, cityId}) => {
   return (
     <li className="city-event">
       <ul className="city-event-detail">
-        <li>{event.name}</li>
+        <li><Link to={`/event/${event.id}`} >{event.name}</Link></li>
         <li>{event.host.name}</li>
         <li>{event.date}</li>
         <li>{event.start_time}</li>

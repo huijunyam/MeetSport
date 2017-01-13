@@ -39,10 +39,11 @@ const Root = ({ store }) => {
           <Route path="/cities" component={CityListContainer} onEnter={_ensureLoggedIn} />
           <Route path="/city/:cityId" component={CityContainer} onEnter={_ensureLoggedIn} >
             <Route path="/city/:cityId/member" component={CityMemberContainer} onEnter={_ensureLoggedIn}/>
-            <Route path="/city/:cityId/event" component={CityEventContainer} onEnter={_ensureLoggedIn} >
-              <Route path="/city/:cityId/event/:eventId" component={EventContainer} onEnter={_ensureLoggedIn} />
-            </Route >
+            <Route path="/city/:cityId/event" component={CityEventContainer} onEnter={_ensureLoggedIn} />
+
           </Route>
+          <Route path="/event/:eventId" component={EventContainer} onEnter={_ensureLoggedIn} />
+
         </Route>
       </Router>
     </Provider>

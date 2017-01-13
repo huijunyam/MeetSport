@@ -5,7 +5,7 @@ class Api::EventsController < ApplicationController
   end
 
   def show
-    @event = Event.where("city_id = ? AND id = ?", params[:city_id], params[:id])
+    # @event = Event.where("city_id = ? AND id = ?", params[:city_id], params[:id])
     @event = Event.find(params[:id])
     render :show
   end
