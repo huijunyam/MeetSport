@@ -54,6 +54,6 @@
 | "/city/:cityId/member"           | "CityMemberContainer"  |
 | "/city/:cityId/calendar"         | "CityCalendarContainer"|
 | "/city/:cityId/event"            | "CityEventContainer"   |
-| "/event/:id"                     | "EventContainer"       |
+| "/event/:eventId"                | "EventContainer"       |
 | "/city/:cityId/create"           | "EventFormContainer"   |
 | "/cities/search"                 | "SearchResultContainer"|
