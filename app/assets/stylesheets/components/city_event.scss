@@ -1,0 +1,99 @@
+.header-event {
+  font-size: 30px;
+  font-weight: bold;
+  color: $darkest-blue;
+  font-family: $sans-serif;
+  margin: 10px;
+  padding-left: 10px;
+}
+
+.city-event {
+  display: flex;
+  justify-content: space-between;
+}
+
+.city-event-detail {
+  margin: 10px;
+  margin-bottom: 0;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.event-name {
+  font-size: 25px;
+  font-family: $sans-serif;
+  font-weight: bold;
+  color: $dark-blue;
+  margin-bottom: 30px;
+}
+
+.event-name:hover {
+  color: $blue;
+}
+
+.host-name, .event-date, .event-start_time,
+.wording-event-attendance, .event-description-header{
+  font-size: 15px;
+  font-family: $lato;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.host-name {
+  margin-top: 10px;
+}
+
+
+.member-attending-img {
+  height: 30px;
+  width: 30px;
+}
+
+.sub-event-detail {
+  text-align: left;
+  margin: 10px;
+}
+
+.num-attendance {
+  padding-top: 40px;
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.spot-left {
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.event-detail-button {
+  margin: 10px;
+  background-color: $blue;
+}
+
+.link-button {
+  color: $white
+}
+
+.city-event-detail-attendance {
+  margin-left: 10px;
+  padding: 10px;
+  padding-top: 0;
+  margin-right: 10px;
+}
+
+.event-attendance {
+  display: flex
+}
+
+.event-description {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.city-event-detail-attendance:last-child {
+  border-bottom: 1px solid $darkest-blue;
+}

@@ -12,7 +12,7 @@ const defaultState = {
   end_time: "",
   host: "",
   description: "",
-  attendees_Num: 0,
+  attendees_num: 0,
   attendings: [],
   attendees: []
 };

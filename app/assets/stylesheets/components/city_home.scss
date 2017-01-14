@@ -10,7 +10,6 @@
   width: 80%;
   height: 100%;
   opacity: 0.5;
-  // background-color: $light-blue;
 }
 
 .sub-city-header h2 {
@@ -66,5 +65,9 @@
 .city-sub-home-list:hover {
   background-color: $blue;
   box-shadow: -3px -6px 55px -1px rgba(255,255,255,1);
+  color: $white;
+}
 
+div .city-sub-home-list:focus {
+  background-color: $dark-blue;
 }

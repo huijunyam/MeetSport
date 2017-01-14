@@ -1,0 +1,49 @@
+.sub-event-header {
+  position: relative;
+  width: 80%;
+  height: 200px;
+  margin: 10px auto 10px auto;
+  text-align: center;
+  background-color: $bright-blue;
+  opacity: 0.9;
+}
+
+.sub-event-header h2 {
+  padding: 70px;
+  font-size: 50px;
+  font-family: $sans-serif;
+  font-weight: bold;
+  color: $white;
+}
+
+.sub-event-header-button {
+  position: absolute;
+  top: 75%;
+  left: 85%;
+  width: 150px;
+  background: $darkest-blue;
+  color: $white;
+}
+
+.sub-event-header-button:hover {
+  background-color: $blue;
+}
+
+.event-home-list {
+  border: 1px solid $dark-blue;
+  margin: 20px auto;
+  // display: flex;
+  padding: 10px;
+  width: 78%;
+}
+
+.event-detail-item {
+  font-size: 15px;
+  font-family: $lato;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.date {
+  font-size: 40px;
+}

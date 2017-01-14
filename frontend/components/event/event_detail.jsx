@@ -4,22 +4,23 @@ class EventDetail extends React.Component {
   render() {
     const {eventDetail} = this.props;
     return (
-      <div className="event">
-        <div className="event-detail-container">
+      <div className="event-home-list">
+        <div className="event-detail-container col-last">
           <ul className="event-detail">
-            <li>{eventDetail.date}</li>
-            <li>{eventDetail.start_time}</li>
-            <li>{eventDetail.end_time}</li>
-            <li>{eventDetail.location}</li>
-            <li>{eventDetail.city.name}</li>
-            <li>{eventDetail.category}</li>
-            <li>{eventDetail.level}</li>
-            <li>{eventDetail.attendees_num}</li>
-            <li>{eventDetail.host.name}</li>
-            <li>{eventDetail.description}</li>
+            <li className="event-detail-item"><strong>Date: </strong>{eventDetail.date}</li>
+            <li className="event-detail-item"><strong>Start Time: </strong>{eventDetail.start_time}</li>
+            <li className="event-detail-item"><strong>End Time: </strong>{eventDetail.end_time}</li>
+            <li className="event-detail-item"><strong>Location: </strong>{eventDetail.location}</li>
+            <li className="event-detail-item"><strong>City: </strong>{eventDetail.city.name}</li>
+            <li className="event-detail-item"><strong>Sport Category: </strong>{eventDetail.category}</li>
+            <li className="event-detail-item"><strong>Sport Level: </strong>{eventDetail.level}</li>
+            <li className="event-detail-item"><strong>Number of Attendees: </strong>{eventDetail.attendees_num}</li>
+            <li className="event-detail-item"><strong>Hosted by: </strong>{eventDetail.host.name}</li>
+            <li className="event-detail-item"><strong>Description: </strong></li>
+            <li className="event-detail-item">{eventDetail.description}</li>
           </ul>
         </div>
-        <div className="aside-event-detail">
+        <div className="aside-event-detail col-third">
           <h3>{`${eventDetail.attendings.length + 1} going`}</h3>
           <ul>
             <li><img src={eventDetail.host.profile_img} className="member-attending-img" /></li>

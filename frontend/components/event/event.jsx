@@ -34,7 +34,7 @@ class Event extends React.Component {
         <HeaderContainer />
         <div className="sub-event-header">
           <h2>{eventDetail.name}</h2>
-          <button onClick={this.handleClick} className="sub-city-header-button">{rsvp}</button>
+          <button onClick={this.handleClick} className="sub-event-header-button">{rsvp}</button>
         </div>
         <EventDetail eventDetail={eventDetail} />
         <FooterContainer />

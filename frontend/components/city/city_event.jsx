@@ -9,11 +9,14 @@ class CityEvent extends React.Component {
 
   render() {
     return (
-      <ul className="city-event-list">
-        {this.props.cityEvent.map(event => (
-          <li key={event.id}><EventListItem cityId={this.props.cityId} event={event} /></li>
-        ))}
-      </ul>
+      <div>
+        <h2 className="header-event">All Events</h2>
+        <ul className="city-event-list">
+          {this.props.cityEvent.map(event => (
+            <EventListItem key={event.id} cityId={this.props.cityId} event={event} />
+          ))}
+        </ul>
+      </div>
     );
   }
 }
