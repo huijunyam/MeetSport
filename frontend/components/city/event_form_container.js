@@ -5,9 +5,11 @@ import { createEvent, clearError } from '../../actions/event_actions';
 const mapStateToProps = (state, ownProps) => {
   const cityId = parseInt(ownProps.params.cityId);
   const currentUser = state.session.currentUser;
+  const errors = state.errors;
   return {
     cityId,
-    currentUser
+    currentUser,
+    errors
   };
 };
 
