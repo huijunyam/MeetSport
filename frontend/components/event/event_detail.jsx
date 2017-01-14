@@ -5,11 +5,11 @@ class EventDetail extends React.Component {
     const {eventDetail} = this.props;
     return (
       <div className="event-home-list">
-        <div className="event-detail-container col-last">
+        <div className="event-page col-last">
           <ul className="event-detail">
-            <li className="event-detail-item"><strong>Date: </strong>{eventDetail.date}</li>
-            <li className="event-detail-item"><strong>Start Time: </strong>{eventDetail.start_time}</li>
-            <li className="event-detail-item"><strong>End Time: </strong>{eventDetail.end_time}</li>
+            <li className="event-detail-item-date"><strong>Date: </strong>{eventDetail.date}</li>
+            <li className="event-detail-item-time"><strong>Start Time: </strong>{eventDetail.start_time}</li>
+            <li className="event-detail-item-time"><strong>End Time: </strong>{eventDetail.end_time}</li>
             <li className="event-detail-item"><strong>Location: </strong>{eventDetail.location}</li>
             <li className="event-detail-item"><strong>City: </strong>{eventDetail.city.name}</li>
             <li className="event-detail-item"><strong>Sport Category: </strong>{eventDetail.category}</li>

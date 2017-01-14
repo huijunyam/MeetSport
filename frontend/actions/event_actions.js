@@ -3,6 +3,8 @@ import * as EventApiUtil from '../util/event_api_util';
 export const REQUEST_EVENTS = "REQUEST_EVENTS";
 export const REQUEST_EVENT = "REQUEST_EVENT";
 export const REMOVE_EVENT = "REMOVE_EVENT";
+export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
+export const CLEAR_ERROR = "CLEAR_ERROR";
 
 export const requestEvents = events => ({
   type: REQUEST_EVENTS,
@@ -19,6 +21,15 @@ export const removeEvent = event => ({
   event
 });
 
+export const receiveErrors = errors => ({
+  type: RECEIVE_ERRORS,
+  errors
+});
+
+export const clearError = () => ({
+  type: CLEAR_ERROR
+})
+
 export const fetchEvents = (cityId) => dispatch => (
   EventApiUtil.fetchEvents(cityId).then(events => dispatch(requestEvents(events)))
 );
@@ -28,7 +39,9 @@ export const fetchEvent = eventId => dispatch => (
 );
 
 export const createEvent = event => dispatch => (
-  EventApiUtil.createEvent(event).then(event => dispatch(requestEvent(event)))
+  EventApiUtil.createEvent(event)
+    .then(event => dispatch(requestEvent(event)),
+      err => dispatch(receiveErrors(err.responseJSON)))
 );
 
 export const updateEvent = event => dispatch => (

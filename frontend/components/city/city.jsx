@@ -40,8 +40,7 @@ class City extends React.Component {
             <Link to={`/city/${this.props.cityId}/event`}><div className="city-sub-home-list">All Events</div></Link>
             <Link to={`/city/${this.props.cityId}/member`}><div className="city-sub-home-list">All Members</div></Link>
             <Link to={`/city/${this.props.cityId}/calendar`}><div className="city-sub-home-list">Calendar</div></Link>
-            <div className="city-sub-home-list">Sport Category</div>
-            <div className="city-sub-home-list">Create Event</div>
+            <Link to={`/city/${this.props.cityId}/create`}><div className="city-sub-home-list">Create Event</div></Link>
           </section>
           <section className="city-sublist-content col-last">
               <div>{this.props.children}</div>

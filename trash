@@ -62,3 +62,5 @@ return (
     <p>{event.description}</p>
   </div>
 );
+
+<Route path="/city/:cityId/calendar" component={CityCalendarContainer} onEnter={_ensureLoggedIn} />

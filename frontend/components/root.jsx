@@ -11,8 +11,9 @@ import HeaderContainer from './layout/header_container';
 import CityListContainer from './city/city_list_container';
 import CityContainer from './city/city_container';
 import CityMemberContainer from './city/city_member_container';
-import CityCalendarContainer from './city/city_event_container';
+import CityCalendarContainer from './city/city_calendar_container';
 import CityEventContainer from './city/city_event_container';
+import EventFormContainer from './city/event_form_container';
 
 import EventContainer from './event/event_container';
 
@@ -42,6 +43,7 @@ const Root = ({ store }) => {
             <Route path="/city/:cityId/member" component={CityMemberContainer} onEnter={_ensureLoggedIn}/>
             <Route path="/city/:cityId/event" component={CityEventContainer} onEnter={_ensureLoggedIn} />
             <Route path="/city/:cityId/calendar" component={CityCalendarContainer} onEnter={_ensureLoggedIn} />
+            <Route path="/city/:cityId/create" component={EventFormContainer} onEnter={_ensureLoggedIn} />
           </Route>
           <Route path="/event/:eventId" component={EventContainer} onEnter={_ensureLoggedIn} />
         </Route>
