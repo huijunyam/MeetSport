@@ -46,25 +46,25 @@ class EventForm extends React.Component {
     return e => this.setState({ [field]: e.target.value });
   }
 
-  // checkTimeErr(start, end) {
-  //   let startTime = start.toLowerCase().split(" ").join("");
-  //   let endTime = end.toLowerCase().split(" ").join("");
-  //   let startstr = "";
-  //   let endstr = "";
-  //   if (startTime.indexOf("a") !== -1) {
-  //     startstr = "h:mma";
-  //   } else {
-  //     startstr = "h:mmA";
-  //   }
-  //   if (endTime.indexOf("a") !== -1) {
-  //     endstr = "h:mma";
-  //   } else {
-  //     endstr = "h:mmA";
-  //   }
-  //   let begin = moment(startTime, startstr);
-  //   let ending = moment(endTime, endstr);
-  //   return begin.isBefore(ending);
-  // }
+  checkTimeErr(start, end) {
+    let startTime = start.toLowerCase().split(" ").join("");
+    let endTime = end.toLowerCase().split(" ").join("");
+    let startstr = "";
+    let endstr = "";
+    if (startTime.indexOf("a") !== -1) {
+      startstr = "h:mma";
+    } else {
+      startstr = "h:mmA";
+    }
+    if (endTime.indexOf("a") !== -1) {
+      endstr = "h:mma";
+    } else {
+      endstr = "h:mmA";
+    }
+    let begin = moment(startTime, startstr);
+    let ending = moment(endTime, endstr);
+    return begin.isBefore(ending);
+  }
 
   handleDateTime(field, value) {
     if (field === "date") {
@@ -95,28 +95,24 @@ class EventForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    // debugger
-    // const event = {
-    //   city_id: this.props.cityId,
-    //   name: this.state.name,
-    //   location: this.state.location,
-    //   category: this.state.category,
-    //   description: this.state.description,
-    //   start_time: this.handleDateTime("time", this.state.start_time),
-    //   end_time: this.handleDateTime("time", this.state.end_time),
-    //   date: this.handleDateTime("date", this.state.date),
-    //   level: this.state.level,
-    //   attendees_num: this.state.attendees_num,
-    //   host_id: this.state.host_id
-    // };
-    // if (!this.checkTimeErr(event["start_time"], event["end_time"])) {
-    //   this.props.sendError(["End time should be after start time"]);
-    // } else {
-    //   this.props.createEvent(event).then(() => this.redirect());
-    // }
-      const event = this.state;
+    const event = {
+      city_id: this.props.cityId,
+      name: this.state.name,
+      location: this.state.location,
+      category: this.state.category,
+      description: this.state.description,
+      start_time: this.handleDateTime("time", this.state.start_time),
+      end_time: this.handleDateTime("time", this.state.end_time),
+      date: this.handleDateTime("date", this.state.date),
+      level: this.state.level,
+      attendees_num: this.state.attendees_num,
+      host_id: this.props.currentUser.id
+    };
+    if (!this.checkTimeErr(event["start_time"], event["end_time"])) {
+      this.props.sendError(["End time should be after start time"]);
+    } else {
       this.props.createEvent(event).then(() => this.redirect());
-
+    }
   }
 
   redirect() {
@@ -138,77 +134,77 @@ class EventForm extends React.Component {
   }
 
   render() {
-    return (
-      <div className="form-container">
-        <h2>Create An Event</h2>
-        <form onSubmit={this.handleSubmit} className="form-box">
-          {this.renderErrors()}
-          <div className="event-form">
-            <label>Event Name</label>
-              <input type="text"
-                value={this.state.name}
-                onChange={this.update("name")}
-                className="event-input" />
+       return (
+         <div className="form-container">
+           <h2>Create An Event</h2>
+           <form onSubmit={this.handleSubmit} className="form-box">
+             {this.renderErrors()}
+             <div className="event-form">
+               <label>Event Name</label>
+                 <input type="text"
+                   value={this.state.name}
+                   onChange={this.update("name")}
+                   className="event-input" />
 
-              <label>Location/Address</label>
-                <input type="text"
-                  value={this.state.location}
-                  onChange={this.update("location")}
-                  className="event-input" />
+                 <label>Location/Address</label>
+                   <input type="text"
+                     value={this.state.location}
+                     onChange={this.update("location")}
+                     className="event-input" />
 
-              <label>Date</label>
-                <input type="date"
-                  value={this.state.date}
-                  onChange={this.update("date")}
-                  className="event-input" />
+                 <label>Date</label>
+                   <input type="date"
+                     value={this.state.date}
+                     onChange={this.update("date")}
+                     className="event-input" />
 
-              <label>Start Time</label>
-                <input type="time"
-                  value={this.state.start_time}
-                  onChange={this.update("start_time")}
-                  className="event-input" />
+                 <label>Start Time</label>
+                   <input type="time"
+                     value={this.state.start_time}
+                     onChange={this.update("start_time")}
+                     className="event-input" />
 
-              <label>End Time</label>
-                <input type="time"
-                  value={this.state.end_time}
-                  onChange={this.update("end_time")}
-                  className="event-input" />
+                 <label>End Time</label>
+                   <input type="time"
+                     value={this.state.end_time}
+                     onChange={this.update("end_time")}
+                     className="event-input" />
 
-                <label>Sport Category</label>
-                  <select
-                    value={this.state.category}
-                    onChange={this.update('category')}>
-                    <option>Select sport category</option>
-                    {this.sportCategory().map((type, i) => {
-                      return <option value={type} key={i}>{type}</option>;
-                    })}
-                  </select>
+                   <label>Sport Category</label>
+                     <select
+                       value={this.state.category}
+                       onChange={this.update('category')}>
+                       <option>Select sport category</option>
+                       {this.sportCategory().map((type, i) => {
+                         return <option value={type} key={i}>{type}</option>;
+                       })}
+                     </select>
 
-                <label>Skill Level</label>
-                  <select
-                    value={this.state.level}
-                    onChange={this.update('level')}>
-                    <option>Select skill level</option>
-                    {this.skillLevel().map((type, i) => {
-                      return <option value={type} key={i}>{type}</option>;
-                    })}
-                  </select>
+                   <label>Skill Level</label>
+                     <select
+                       value={this.state.level}
+                       onChange={this.update('level')}>
+                       <option>Select skill level</option>
+                       {this.skillLevel().map((type, i) => {
+                         return <option value={type} key={i}>{type}</option>;
+                       })}
+                     </select>
 
-                <label>Number of Attendees</label>
-                  <input
-                    type="number"
-                    value={this.state.attendees_num}
-                    onChange={this.update('attendees_num')}/>
+                   <label>Number of Attendees</label>
+                     <input
+                       type="number"
+                       value={this.state.attendees_num}
+                       onChange={this.update('attendees_num')}/>
 
-                  <label>Event Description</label>
-                    <textarea value={this.state.description} onChange={this.update('description')} />
+                     <label>Event Description</label>
+                       <textarea value={this.state.description} onChange={this.update('description')} />
 
-                <input className="event-button" type="submit" value="Create Event"/>
-          </div>
-        </form>
-      </div>
-    );
-  }
+                   <input className="event-button" type="submit" value="Create Event"/>
+             </div>
+           </form>
+         </div>
+       );
+     }
 }
 
 export default EventForm;
