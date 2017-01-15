@@ -11,7 +11,26 @@ class Api::UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    render :show 
+    render :show
+  end
+
+  def update
+    @user = User.find(params[:id])
+    if @user.update(user_params)
+      render :show
+    else
+      render json: @user.errors.full_messages, status: 422
+    end
+  end
+
+  def delete
+    @user = User.find(params[:id])
+    if @user === currentUser
+      @user.destroy
+      render :show
+    else
+      render json @user.errors.full_messages, status: 422
+    end
   end
 
   private

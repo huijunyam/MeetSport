@@ -1,2 +1,2 @@
-json.extract! user, :id, :username, :name, :email, :profile_img, :cities,
-                    :events, :event_attendees
+json.extract! user, :id, :username, :name, :email, :profile_img, :about_me, :created_at,
+                    :cities, :events, :event_attendees

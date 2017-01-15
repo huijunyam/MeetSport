@@ -27,7 +27,7 @@ class Header extends React.Component{
             <Link to="/" className="site-name-head">meetSport</Link>
           </div>
           <ul className="welcome-page-nav">
-            <li className="welcome-page-list">Profile</li>
+            <li className="welcome-page-list"><Link to={`/users/${this.props.currentUser.id}`}>Profile</Link></li>
             <li className="welcome-page-list"><button onClick={this.handleSubmit}>Log Out</button></li>
           </ul>
         </div>
