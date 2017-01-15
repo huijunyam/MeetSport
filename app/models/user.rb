@@ -44,6 +44,10 @@ class User < ActiveRecord::Base
     through: :attendings,
     source: :event
 
+  def image?
+    
+  end
+
   def self.find_by_credentials(username, password)
     user = User.find_by_username(username)
     return nil if user.nil?
