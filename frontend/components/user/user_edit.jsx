@@ -1,4 +1,6 @@
 import React from 'react';
+import HeaderContainer from '../layout/header_container';
+import FooterContainer from '../layout/footer_container';
 
 class UserEdit extends React.Component {
   constructor(props) {
@@ -11,6 +13,25 @@ class UserEdit extends React.Component {
     };
   }
 
+  componentDidMount() {
+    this.props.clearError();
+  }
+  
+  update(field) {
+
+  }
+
+  render() {
+    return (
+      <div>
+        <HeaderContainer />
+        <div>
+
+        </div>
+        <FooterContainer />
+      </div>
+    );
+  }
 
 }
 

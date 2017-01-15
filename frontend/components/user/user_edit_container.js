@@ -5,9 +5,16 @@ import { updateUser } from '../../actions/user_actions';
 const mapStateToProps = (state, ownProps) => {
   const userId = parseInt(ownProps.params.userId);
   const userDetail = state.userDetail;
+  const currentUser = state.session.currentUser;
+  let currentUserId = null;
+  if (currentUser !== null){
+    currentUserId = state.session.currentUser.id;
+  }
   return {
     userId,
-    userDetail
+    userDetail,
+    currentUser,
+    currentUserId
   };
 };
 
