@@ -18,6 +18,7 @@ class User < ActiveRecord::Base
   validates :username, :email, :password_digest, :session_token, :name, presence: true
   validates :username, :email, :session_token, uniqueness: true
   validates :password, length: { minimum: 6 }, allow_nil: :true
+  validate :validates_image_path
   after_initialize :ensure_session_token
   before_validation :ensure_session_token_uniqueness
 
@@ -44,8 +45,11 @@ class User < ActiveRecord::Base
     through: :attendings,
     source: :event
 
-  def image?
-    
+  def validates_image_path
+    if !(profile_img.downcase.include?(".png") || profile_img.downcase.include?(".jpeg") ||
+        profile_img.downcase.include?(".jpg") || profile_img.downcase.include?(".gif"))
+        errors.add(:profile_img, "Image format need to be either png, gif or jpg")
+    end 
   end
 
   def self.find_by_credentials(username, password)

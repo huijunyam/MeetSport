@@ -23,7 +23,7 @@ class Event < ActiveRecord::Base
             :start_time, :end_time, :date, :level, :attendees_num,
             :host_id, presence: true
 
-  validates :attendees_num,:numericality => { :greater_than_or_equal_to => 2 }
+  validates :attendees_num, :numericality => { :greater_than_or_equal_to => 2 }
 
   CATEGORY = ["air sports", "archery", "basketball",
               "bat and ball", "board sports", "climbing", "cycling",
