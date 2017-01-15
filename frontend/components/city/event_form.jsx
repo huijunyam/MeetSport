@@ -1,5 +1,4 @@
 import React from 'react';
-import DateTimePicker from 'react-widgets/lib/DateTimePicker';
 import moment from 'moment';
 
 class EventForm extends React.Component {

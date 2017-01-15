@@ -8,14 +8,25 @@ class User extends React.Component {
   constructor(props){
     super(props);
     this.convertTimefromX = this.convertTimefromX.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+    this.redirect = this.redirect.bind(this);
   }
 
   componentDidMount() {
     this.props.getUser(this.props.userId);
   }
 
+  redirect() {
+    this.props.router.push(`/users/${this.props.currentUserId}/edit`);
+  }
+
+  handleClick(e) {
+    e.preventDefault();
+    this.redirect();
+  }
+
   checkUser() {
-    if (this.props.userId === this.props.currentUser.id) {
+    if (this.props.userId === this.props.currentUserId) {
       return (
         <button onClick={this.handleClick}>Edit Profile</button>
       );
@@ -64,8 +75,8 @@ class User extends React.Component {
             <img src={userDetail.profile_img}/>
           </div>
         </div>
-        <div>
-
+        <div className="user-foot-container">
+          {this.checkUser()}
         </div>
         <FooterContainer />
       </div>
