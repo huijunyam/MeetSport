@@ -25,16 +25,6 @@ class User extends React.Component {
     this.redirect();
   }
 
-  checkUser() {
-    if (this.props.userId === this.props.currentUserId) {
-      return (
-        <button onClick={this.handleClick}>Edit Profile</button>
-      );
-    } else {
-      return (<p></p>);
-    }
-  }
-
   convertTimefromX() {
     let date = this.props.userDetail.created_at;
     let dateIdx = date.indexOf("T");
@@ -51,7 +41,7 @@ class User extends React.Component {
         <div className="user-container">
           <div className="user-bio">
             <h3>{userDetail.name}</h3>
-            <h4>Member since: {this.convertTimefromX}</h4>
+            <h4>Member since: {this.convertTimefromX()}</h4>
             <h4>About me</h4>
             <p>{userDetail.about_me}</p>
             <h4>{userDetail.name} has joined</h4>
@@ -76,7 +66,7 @@ class User extends React.Component {
           </div>
         </div>
         <div className="user-foot-container">
-          {this.checkUser()}
+          <button onClick={this.handleClick}>Edit Profile</button>
         </div>
         <FooterContainer />
       </div>

@@ -1,11 +1,12 @@
 import { connect } from 'react-redux';
 import UserEdit from './user_edit';
-import { updateUser } from '../../actions/user_actions';
+import { updateUser, clearUserError } from '../../actions/user_actions';
 
 const mapStateToProps = (state, ownProps) => {
   const userId = parseInt(ownProps.params.userId);
   const userDetail = state.userDetail;
   const currentUser = state.session.currentUser;
+  const errors = state.errors;
   let currentUserId = null;
   if (currentUser !== null){
     currentUserId = state.session.currentUser.id;
@@ -14,12 +15,14 @@ const mapStateToProps = (state, ownProps) => {
     userId,
     userDetail,
     currentUser,
-    currentUserId
+    currentUserId,
+    errors
   };
 };
 
 const mapDispatchToProps = dispatch => ({
-  updateUser: (id) => dispatch(updateUser(id))
+  updateUser: (user) => dispatch(updateUser(user)),
+  clearUserError: () => dispatch(clearUserError())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(UserEdit);
