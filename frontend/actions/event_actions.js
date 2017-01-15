@@ -5,6 +5,7 @@ export const REQUEST_EVENT = "REQUEST_EVENT";
 export const REMOVE_EVENT = "REMOVE_EVENT";
 export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
 export const CLEAR_ERROR = "CLEAR_ERROR";
+export const SEND_ERROR = "SEND_ERROR";
 
 export const requestEvents = events => ({
   type: REQUEST_EVENTS,
@@ -28,7 +29,12 @@ export const receiveErrors = errors => ({
 
 export const clearError = () => ({
   type: CLEAR_ERROR
-})
+});
+
+export const sendError = error => ({
+  type: SEND_ERROR,
+  error
+});
 
 export const fetchEvents = (cityId) => dispatch => (
   EventApiUtil.fetchEvents(cityId).then(events => dispatch(requestEvents(events)))

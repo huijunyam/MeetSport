@@ -46,6 +46,26 @@ class EventForm extends React.Component {
     return e => this.setState({ [field]: e.target.value });
   }
 
+  checkTimeErr(start, end) {
+    let startTime = start.toLowerCase().split(" ").join("");
+    let endTime = end.toLowerCase().split(" ").join("");
+    let startstr = "";
+    let endstr = "";
+    if (startTime.indexOf("a") !== -1) {
+      startstr = "h:mma";
+    } else {
+      startstr = "h:mmA";
+    }
+    if (endTime.indexOf("a") !== -1) {
+      endstr = "h:mma";
+    } else {
+      endstr = "h:mmA";
+    }
+    let begin = moment(startTime, startstr);
+    let ending = moment(endTime, endstr);
+    return begin.isBefore(ending);
+  }
+
   handleDateTime(field, value) {
     if (field === "date") {
       let target = value;
@@ -62,6 +82,9 @@ class EventForm extends React.Component {
         return target;
       } else if (parseInt(target[0]) > 12) {
         target = `${(target[0] - 12)}` + ":" + target[1] + " PM";
+        return target;
+      } else if (parseInt(target[0]) < 10) {
+        target = `${parseInt(target[0])}` + ":" + target[1] + " AM";
         return target;
       } else {
         target = target.join(":") + " AM";
@@ -85,7 +108,11 @@ class EventForm extends React.Component {
       attendees_num: this.state.attendees_num,
       host_id: this.props.currentUser.id
     };
-    this.props.createEvent(event).then(() => this.redirect());
+    if (!this.checkTimeErr(event["start_time"], event["end_time"])) {
+      this.props.sendError(["End time should be after start time"]);
+    } else {
+      this.props.createEvent(event).then(() => this.redirect());
+    }
   }
 
   redirect() {
