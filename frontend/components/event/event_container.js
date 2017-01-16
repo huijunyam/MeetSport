@@ -9,7 +9,7 @@ const mapStateToProps = (state, ownProps) => {
   const currentUser = state.session.currentUser;
   const attendeeId = getAttendeeId(state, currentUser, eventId);
   const hasAttendance = checkAttendee(
-    state.eventDetail.attendings, state.session.currentUser
+    state.eventDetail.attendings, state.eventDetail.host, state.session.currentUser
   );
   return {
     eventId,

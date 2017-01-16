@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class EventDetail extends React.Component {
   render() {
@@ -23,9 +24,15 @@ class EventDetail extends React.Component {
         <div className="aside-event-detail col-third">
           <h3>{`${eventDetail.attendings.length + 1} going`}</h3>
           <ul>
-            <li><img src={eventDetail.host.profile_img} className="member-attending-img" /></li>
+            <li key={eventDetail.host.id}>
+              <div>{<img src={eventDetail.host.profile_img} className="member-attending-img"/>}</div>
+              <Link to={`/users/show/${eventDetail.host.id}`}><h3 className="member-name">{eventDetail.host.name}</h3></Link>
+            </li>
             {eventDetail.attendings.map(member =>(
-              <li key={member.id}><img src={member.profile_img} className="member-attending-img"/></li>
+              <li key={member.id}>
+                <div>{<img src={member.profile_img} className="member-attending-img"/>}</div>
+                <Link to={`/users/show/${member.id}`}><h3 className="member-name">{member.name}</h3></Link>
+              </li>
             ))}
           </ul>
         </div>

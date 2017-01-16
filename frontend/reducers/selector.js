@@ -37,15 +37,17 @@ export const getAttendeeId = ({eventDetail}, currentUser, id) => {
   return null;
 };
 
-export const checkAttendee = (attendees, currentUser) => {
+export const checkAttendee = (attendees, host, currentUser) => {
   if (currentUser === null) {
     return false;
   }
 
   for (let i = 0; i < attendees.length; i++) {
-    if (attendees[i].username === currentUser.username) {
+    if (attendees[i].username === currentUser.username ||
+      currentUser.username === host.username) {
       return true;
     }
   }
+
   return false;
 };
