@@ -24,26 +24,41 @@ class OtherUser extends React.Component {
 
   render() {
     const { userDetail } = this.props;
+    let event = "";
+    if (userDetail.events.length === 1 || userDetail.events.length === 0) {
+      event = "event";
+    } else {
+      event = "events";
+    }
+
+    let city = "";
+    if (userDetail.cities.length === 1 || userDetail.cities.length === 0) {
+      city = "city";
+    } else {
+      city = "cities";
+    }
+
     return (
       <div>
         <HeaderContainer />
         <div className="user-container">
           <div className="user-bio">
-            <h3>{userDetail.name}</h3>
-            <h4>Member since: {this.convertTimefromX()}</h4>
-            <h4>About me</h4>
-            <p>{userDetail.about_me}</p>
-            <h4>{userDetail.name} has joined</h4>
+            <h3 className="user-name">{userDetail.name}</h3>
+            <h4 className="user-member"><strong>Member since:</strong> {this.convertTimefromX()}</h4>
+            <h4 className="user-member-about-me"><strong>About me:</strong></h4>
+            <p className="about-me-description">{userDetail.about_me}</p>
+            <h4>{userDetail.name} has joined {userDetail.cities.length} {city}</h4>
             <ul className="user-join-city">
               {userDetail.cities.map((city, id) => (<li key={`city-${id}`}>{city.name}</li>))}
             </ul>
-            <h4>{userDetail.name} has hosted: </h4>
-            <ul>
+            <br />
+            <h4>{userDetail.name} has hosted {userDetail.events.length} {event}</h4>
+            <ul className="user-host-event">
               {userDetail.events.map((event, id) => (
                 <UserHostEvent key={`host-${id}`} event={event} />
               ))}
             </ul>
-            <h4>{userDetail.name} has joined: </h4>
+            <h4>{userDetail.name} has joined {userDetail.event_attendees.length} {event}</h4>
             <ul className="user-join-event">
               {userDetail.event_attendees.map(event => (
                 <UserJoinEvent key={`event-${event.id}`} event={event} />

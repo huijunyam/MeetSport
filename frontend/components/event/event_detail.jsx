@@ -29,7 +29,7 @@ class EventDetail extends React.Component {
         </div>
         <div className="aside-event-detail col-third">
           <h3 className="num-attendees">{`${eventDetail.attendings.length + 1} going`}</h3>
-          <h3 className="spot-left">{`${eventDetail.attendees_num - (eventDetail.attendings.length + 1)}`} {spot} left</h3>
+          <h3 className="num-spot-left">{`${eventDetail.attendees_num - (eventDetail.attendings.length + 1)}`} {spot} left</h3>
           <ul>
             <li className="joining-member-list" key={eventDetail.host.id}>
               <div>{<img src={eventDetail.host.profile_img} className="member-attending-img"/>}</div>
