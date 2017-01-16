@@ -4,6 +4,12 @@ import { Link } from 'react-router';
 class EventDetail extends React.Component {
   render() {
     const {eventDetail} = this.props;
+    let spot = "";
+    if (eventDetail.attendees_num - (1 + eventDetail.attendings.length) === 1) {
+      spot = "spot";
+    } else {
+      spot = "spots";
+    }
     return (
       <div className="event-home-list">
         <div className="event-page col-last">
@@ -23,6 +29,7 @@ class EventDetail extends React.Component {
         </div>
         <div className="aside-event-detail col-third">
           <h3 className="num-attendees">{`${eventDetail.attendings.length + 1} going`}</h3>
+          <h3 className="spot-left">{`${eventDetail.attendees_num - (eventDetail.attendings.length + 1)}`} {spot} left</h3>
           <ul>
             <li className="joining-member-list" key={eventDetail.host.id}>
               <div>{<img src={eventDetail.host.profile_img} className="member-attending-img"/>}</div>
