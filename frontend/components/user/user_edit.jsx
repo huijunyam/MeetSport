@@ -9,7 +9,7 @@ class UserEdit extends React.Component {
       id: this.props.currentUserId,
       name: this.props.userDetail.name,
       email: this.props.userDetail.email,
-      about_me: ""
+      about_me: this.props.about_me
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
@@ -27,7 +27,6 @@ class UserEdit extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    // debugger
     const userDetail = Object.assign({}, this.state);
     this.props.updateUser(userDetail).then(() => this.redirect());
   }

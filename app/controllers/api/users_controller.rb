@@ -16,6 +16,7 @@ class Api::UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
+    # debugger
     if @user.update(user_params)
       render :show
     else
@@ -25,7 +26,7 @@ class Api::UsersController < ApplicationController
 
   def delete
     @user = User.find(params[:id])
-    if @user === currentUser
+    if @user == currentUser
       @user.destroy
       render :show
     else

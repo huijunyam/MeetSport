@@ -7,7 +7,7 @@ const OtherUserHostEvent = ({event}) => (
       <li>Name: <Link to={`/event/${event.id}`}>{event.name}</Link></li>
       <li>Date: {event.date}</li>
       <li>Location: {event.location}</li>
-      <li>Sport Category: {event.category}</li>
+      <li>Sport Category: {event.category.name}</li>
     </ul>
   </li>
 );

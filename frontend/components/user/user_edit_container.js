@@ -7,6 +7,7 @@ const mapStateToProps = (state, ownProps) => {
   const userDetail = state.userDetail;
   const currentUser = state.session.currentUser;
   const errors = state.errors;
+  const about_me = state.userDetail.about_me || "";
   let currentUserId = null;
   if (currentUser !== null){
     currentUserId = state.session.currentUser.id;
@@ -16,7 +17,8 @@ const mapStateToProps = (state, ownProps) => {
     userDetail,
     currentUser,
     currentUserId,
-    errors
+    errors,
+    about_me
   };
 };
 

@@ -64,3 +64,43 @@ return (
 );
 
 <Route path="/city/:cityId/calendar" component={CityCalendarContainer} onEnter={_ensureLoggedIn} />
+
+category1= Category.create(name: "air sports")
+category2= Category.create(name: "archery")
+category3= Category.create(name: "basketball")
+category4= Category.create(name: "bat and ball")
+category5= Category.create(name: "board sports")
+category6= Category.create(name: "climbing")
+category7= Category.create(name: "cycling")
+category8= Category.create(name: "combat sports")
+category9= Category.create(name: "cue sports")
+category10= Category.create(name: "equine sports")
+category11= Category.create(name: "fishing")
+category12= Category.create(name: "football")
+category13= Category.create(name: "flying disc sports")
+category14= Category.create(name: "golf")
+category15= Category.create(name: "gymnastics")
+category16= Category.create(name: "handball")
+category17= Category.create(name: "ice sports")
+category18= Category.create(name: "kite sports")
+category19= Category.create(name: "mixed discipline")
+category20= Category.create(name: "racquet sports")
+category21= Category.create(name: "running")
+category22= Category.create(name: "sailing")
+category23= Category.create(name: "snow sports")
+category24= Category.create(name: "shooting sports")
+category25= Category.create(name: "water sports")
+category26= Category.create(name: "hiking")
+
+EventType.create(category_id: category3.id, event_id: event1.id);
+EventType.create(category_id: category20.id, event_id: event2.id);
+EventType.create(category_id: category20.id, event_id: event3.id);
+EventType.create(category_id: category12.id, event_id: event4.id);
+EventType.create(category_id: category25.id, event_id: event5.id);
+EventType.create(category_id: category21.id, event_id: event6.id);
+EventType.create(category_id: category7.id, event_id: event7.id);
+EventType.create(category_id: category4.id, event_id: event8.id);
+EventType.create(category_id: category26.id, event_id: event9.id);
+EventType.create(category_id: category21.id, event_id: event10.id);
+EventType.create(category_id: category20.id, event_id: event11.id);
+EventType.create(category_id: category22.id, event_id: event12.id);

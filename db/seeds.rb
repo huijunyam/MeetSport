@@ -41,7 +41,7 @@ city5 = City.create(name: "Boston", background_image_url: "http://res.cloudinary
 city6 = City.create(name: "Chicago", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150503/timelapse-video-of-chicago-cloud-gate-or-bean-project-file-chicago-cloud-gatemove-1920x1080_ekww2w4p__S0000_bi7gkb.jpg");
 
 #memberships data
-# Membership.create(member_id: user1.id, city_id: city1.id)
+Membership.create(member_id: user1.id, city_id: city1.id)
 Membership.create(member_id: user2.id, city_id: city2.id)
 Membership.create(member_id: user3.id, city_id: city3.id)
 Membership.create(member_id: user4.id, city_id: city4.id)
@@ -66,30 +66,58 @@ Membership.create(member_id: user22.id, city_id: city4.id)
 Membership.create(member_id: user23.id, city_id: city5.id)
 Membership.create(member_id: user24.id, city_id: city6.id)
 
+category1= Category.create(name: "air sports")
+category2= Category.create(name: "archery")
+category3= Category.create(name: "basketball")
+category4= Category.create(name: "bat and ball")
+category5= Category.create(name: "board sports")
+category6= Category.create(name: "climbing")
+category7= Category.create(name: "cycling")
+category8= Category.create(name: "combat sports")
+category9= Category.create(name: "cue sports")
+category10= Category.create(name: "equine sports")
+category11= Category.create(name: "fishing")
+category12= Category.create(name: "football")
+category13= Category.create(name: "flying disc sports")
+category14= Category.create(name: "golf")
+category15= Category.create(name: "gymnastics")
+category16= Category.create(name: "handball")
+category17= Category.create(name: "ice sports")
+category18= Category.create(name: "kite sports")
+category19= Category.create(name: "mixed discipline")
+category20= Category.create(name: "racquet sports")
+category21= Category.create(name: "running")
+category22= Category.create(name: "sailing")
+category23= Category.create(name: "snow sports")
+category24= Category.create(name: "shooting sports")
+category25= Category.create(name: "water sports")
+category26= Category.create(name: "hiking")
+
+
 #events data
-event1 = Event.create(city_id: city1.id,name: "Leisure Basketball", location: "401 Berry St", category: "basketball", description: "We are all just beginner",
+event1 = Event.create(city_id: city1.id,name: "Leisure Basketball", location: "401 Berry St", description: "We are all just beginner",
 start_time: "4:40 PM", end_time: "6:00 PM", date: "01/25/2017", level: "beginner", attendees_num: 10, host_id: user2.id)
-event2 = Event.create(city_id: city2.id,name: "Table Tennis Double", location: "5870 W Olympic Blvd", category: "racquet sports", description: "Come join us to have fun",
+event2 = Event.create(city_id: city2.id,name: "Table Tennis Double", location: "5870 W Olympic Blvd", description: "Come join us to have fun",
 start_time: "9:00 AM", end_time: "11:00 AM", date: "02/25/2017", level: "intermediate", attendees_num: 4, host_id: user5.id)
-event3 = Event.create(city_id: city3.id,name: "Squash Rally", location: "IMA Sports Field", category: "racquet sports", description: "Anyone is welcome to have rally with me",
+event3 = Event.create(city_id: city3.id,name: "Squash Rally", location: "IMA Sports Field", description: "Anyone is welcome to have rally with me",
 start_time: "1:30 PM", end_time: "4:30 PM", date: "01/22/2017", level: "advance", attendees_num: 4, host_id: user6.id )
-event4 = Event.create(city_id: city4.id,name: "Football Lover", location: "Central Park", category: "football", description: "Anyone is welcomed",
+event4 = Event.create(city_id: city4.id,name: "Football Lover", location: "Central Park", description: "Anyone is welcomed",
 start_time: "2:00 PM", end_time: "5:00 PM", date: "02/01/2017", level: "all", attendees_num: 20, host_id: user23.id )
-event5 = Event.create(city_id: city5.id,name: "Swimming Competition", location: "Mirabella Pool", category: "water sports", description: "Come to join us at swimming competiion, prizes provided",
+event5 = Event.create(city_id: city5.id,name: "Swimming Competition", location: "Mirabella Pool", description: "Come to join us at swimming competiion, prizes provided",
 start_time: "8:00 AM", end_time: "10:00 AM", date: "01/18/2017", level: "advance", attendees_num: 10, host_id: user21.id)
-event6 =Event.create(city_id: city6.id,name: "Running Marathon", location: "Millennium Park", category: "running", description: "Morning run is good for you, come join us for 10 miles run",
+event6 =Event.create(city_id: city6.id,name: "Running Marathon", location: "Millennium Park", description: "Morning run is good for you, come join us for 10 miles run",
 start_time: "7:00 AM", end_time: "10:40 AM", date: "01/19/2017", level: "all", attendees_num: 10, host_id: user19.id )
-event7 =Event.create(city_id: city1.id,name: "Sunset Cycling", location: "Ferry Building", category: "cycling", description: "Group Cycling and enjoying the beautiful sunset",
+event7 =Event.create(city_id: city1.id,name: "Sunset Cycling", location: "Ferry Building", description: "Group Cycling and enjoying the beautiful sunset",
 start_time: "4:40 PM", end_time: "6:40 PM", date: "01/24/2017", level: "all", attendees_num: 15, host_id: user10.id )
-event8 =Event.create(city_id: city2.id,name: "Night Baseball Game", location: "Dedeaux Field", category: "bat and ball", description: "Expert level batting",
+event8 =Event.create(city_id: city2.id,name: "Night Baseball Game", location: "Dedeaux Field", description: "Expert level batting",
 start_time: "8:00 PM", end_time: "10:40 PM", date: "01/13/2017", level: "advance", attendees_num: 20, host_id: user23.id)
-event9 =Event.create(city_id: city3.id,name: "Evening Hiking", location: "Mt PilChuck", category: "hiking", description: "Fun Hike",
+event9 =Event.create(city_id: city3.id,name: "Evening Hiking", location: "Mt PilChuck", description: "Fun Hike",
 start_time: "4:40 PM", end_time: "7:40 PM", date: "01/15/2017", level: "all", attendees_num: 20, host_id: user4.id)
-event10 =Event.create(city_id: city4.id,name: "Latenight Run", location: "Central Park", category: "running", description: "Run in the dark",
+event10 =Event.create(city_id: city4.id,name: "Latenight Run", location: "Central Park", description: "Run in the dark",
 start_time: "10:00 PM", end_time: "11:40 PM", date: "02/20/2017", level: "all", attendees_num: 5, host_id: user22.id)
-event11 =Event.create(city_id: city5.id,name: "Early Bird Squash", location: "Boston Sports Clubs", category: "racquet sports", description: "Morning swing",
+event11 =Event.create(city_id: city5.id,name: "Early Bird Squash", location: "Boston Sports Clubs", description: "Morning swing",
 start_time: "8:00 AM", end_time: "10:00 AM", date: "02/02/2017", level: "beginner", attendees_num: 4, host_id: user14.id)
-event12 =Event.create(city_id: city1.id,name: "Evening Sailing", location: "Sailing San Francisco", category: "sailing", description: "Fun in the sea",
+event12 =Event.create(city_id: city1.id,name: "Evening Sailing", location: "Sailing San Francisco", description: "Fun in the sea",
 start_time: "4:00 PM", end_time: "6:00 PM", date: "01/17/2017", level: "intermediate", attendees_num: 5, host_id: user15.id)
 
 #attendees
@@ -117,3 +145,17 @@ Attendee.create(attendee_id: user21.id, event_id: event9.id)
 Attendee.create(attendee_id: user22.id, event_id: event10.id)
 Attendee.create(attendee_id: user23.id, event_id: event11.id)
 Attendee.create(attendee_id: user24.id, event_id: event1.id)
+
+
+EventType.create(category_id: category3.id, event_id: event1.id);
+EventType.create(category_id: category20.id, event_id: event2.id);
+EventType.create(category_id: category20.id, event_id: event3.id);
+EventType.create(category_id: category12.id, event_id: event4.id);
+EventType.create(category_id: category25.id, event_id: event5.id);
+EventType.create(category_id: category21.id, event_id: event6.id);
+EventType.create(category_id: category7.id, event_id: event7.id);
+EventType.create(category_id: category4.id, event_id: event8.id);
+EventType.create(category_id: category26.id, event_id: event9.id);
+EventType.create(category_id: category21.id, event_id: event10.id);
+EventType.create(category_id: category20.id, event_id: event11.id);
+EventType.create(category_id: category22.id, event_id: event12.id);

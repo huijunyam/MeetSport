@@ -19,7 +19,7 @@
 #
 
 class Event < ActiveRecord::Base
-  validates :city_id, :name, :location, :category, :description,
+  validates :city_id, :name, :location, :description,
             :start_time, :end_time, :date, :level, :attendees_num,
             :host_id, presence: true
 
@@ -51,4 +51,13 @@ class Event < ActiveRecord::Base
   has_many :attendings,
     through: :attendees,
     source: :user
+
+  has_one :event_type,
+    primary_key: :id,
+    foreign_key: :event_id,
+    class_name: :EventType
+
+  has_one :category,
+    through: :event_type,
+    source: :category
 end

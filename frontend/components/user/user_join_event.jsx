@@ -6,7 +6,7 @@ const UserJoinEvent = ({event}) => (
     <ul>
       <li>Name: <Link to={`/event/${event.id}`}>{event.name}</Link></li>
       <li>Date: {event.date}</li>
-      <li>Sport Category: {event.category}</li>
+      <li>Sport Category: {event.category.name}</li>
     </ul>
   </li>
 );

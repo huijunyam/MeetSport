@@ -11,8 +11,11 @@ Rails.application.routes.draw do
     end
     resources :events, only: [:create, :update, :show, :destroy] do
       resources :attendees, only: [:create]
+      resources :event_types, only: [:create]
     end
     resources :memberships, only: [:destroy]
     resources :attendees, only: [:destroy]
+    resources :event_types, only: [:destroy]
+    resources :categories, only: [:show, :index]
   end
 end

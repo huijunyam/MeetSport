@@ -20,7 +20,6 @@ class User < ActiveRecord::Base
   validates :password, length: { minimum: 6 }, allow_nil: :true
   validate :validates_image_path
   after_initialize :ensure_session_token
-  before_validation :ensure_session_token_uniqueness
 
   has_many :memberships,
     primary_key: :id,
@@ -49,7 +48,7 @@ class User < ActiveRecord::Base
     if !(profile_img.downcase.include?(".png") || profile_img.downcase.include?(".jpeg") ||
         profile_img.downcase.include?(".jpg") || profile_img.downcase.include?(".gif"))
         errors.add(:profile_img, "Image format need to be either png, gif or jpg")
-    end 
+    end
   end
 
   def self.find_by_credentials(username, password)
