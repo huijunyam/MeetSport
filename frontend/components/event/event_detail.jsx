@@ -5,10 +5,10 @@ class EventDetail extends React.Component {
   render() {
     const {eventDetail} = this.props;
     let spot = "";
-    if (eventDetail.attendees_num - (1 + eventDetail.attendings.length) === 1) {
-      spot = "spot";
-    } else {
+    if (eventDetail.attendees_num - (1 + eventDetail.attendings.length) > 1) {
       spot = "spots";
+    } else {
+      spot = "spot";
     }
     return (
       <div className="event-home-list">
