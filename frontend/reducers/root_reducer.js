@@ -6,6 +6,7 @@ import CityEventReducer from './city_event_reducer';
 import EventDetailReducer from './event_detail_reducer';
 import ErrorReducer from './error_reducer';
 import UserReducer from './user_reducer';
+import CategoryReducer from './category_reducer';
 
 const RootReducer = combineReducers({
   session: SessionReducer,
@@ -14,7 +15,8 @@ const RootReducer = combineReducers({
   cityEvent: CityEventReducer,
   eventDetail: EventDetailReducer,
   errors: ErrorReducer,
-  userDetail: UserReducer
+  userDetail: UserReducer,
+  category: CategoryReducer
 });
 
 export default RootReducer;

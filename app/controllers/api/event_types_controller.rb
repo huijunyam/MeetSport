@@ -9,10 +9,10 @@ class Api::EventTypesController < ApplicationController
     end
   end
 
-  def destroy
-    event_type = EventType.find(params[:id])
-    event_type.destroy
-    render "api/cities/show"
-  end
+  # def destroy
+  #   event_type = EventType.find(params[:id])
+  #   event_type.destroy
+  #   render "api/cities/show"
+  # end
 
 end

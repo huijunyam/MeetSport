@@ -88,6 +88,11 @@
   padding: 10px;
   padding-left: 0;
 }
+
+.event-detail-item-city a:hover {
+  color: $dark-blue
+}
+
 .event-detail-item-description-header {
   margin-top: 50px;
   font-size: 23px;
@@ -141,4 +146,8 @@
   font-family: $lato;
   color: $blue;
   padding-bottom: 15px;
+}
+
+.joining-member-name:hover {
+  color: $dark-blue
 }
