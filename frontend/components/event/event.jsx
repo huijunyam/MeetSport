@@ -7,10 +7,28 @@ class Event extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.handleButton = this.handleButton.bind(this);
+    this.rsvp = this.rsvp.bind(this);
   }
 
   componentDidMount() {
     this.props.fetchEvent(this.props.eventId);
+  }
+
+  handleButton() {
+    if (this.props.currentUserIsHost) {
+      return (<button disabled className="sub-event-header-button">{this.rsvp()}</button>);
+    } else {
+      return (<button onClick={this.handleClick} className="sub-event-header-button">{this.rsvp()}</button>);
+    }
+  }
+
+  rsvp() {
+    if (this.props.hasAttendance || this.props.currentUserIsHost) {
+      return "Leave Event";
+    } else {
+      return "Join Event";
+    }
   }
 
   handleClick(e) {
@@ -27,14 +45,13 @@ class Event extends React.Component {
   }
 
   render() {
-    let rsvp = (this.props.hasAttendance) ? "Leave Event" : "Join Event";
     const { eventDetail } = this.props;
     return (
       <div>
         <HeaderContainer />
         <div className="sub-event-header">
           <h2>{eventDetail.name}</h2>
-          <button onClick={this.handleClick} className="sub-event-header-button">{rsvp}</button>
+          {this.handleButton()}
         </div>
         <EventDetail eventDetail={eventDetail} />
         <FooterContainer />

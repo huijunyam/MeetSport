@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import Event from './event';
 import { fetchEvent, joinEvent, unjoinEvent } from '../../actions/event_actions';
-import { checkAttendee, getAttendeeId } from '../../reducers/selector';
+import { checkAttendee, getAttendeeId, checkHost } from '../../reducers/selector';
 
 const mapStateToProps = (state, ownProps) => {
   const eventId = parseInt(ownProps.params.eventId);
@@ -9,14 +9,16 @@ const mapStateToProps = (state, ownProps) => {
   const currentUser = state.session.currentUser;
   const attendeeId = getAttendeeId(state, currentUser, eventId);
   const hasAttendance = checkAttendee(
-    state.eventDetail.attendings, state.eventDetail.host, state.session.currentUser
+    state.eventDetail.attendings, state.session.currentUser
   );
+  const currentUserIsHost = checkHost(state.eventDetail.host, state.session.currentUser);
   return {
     eventId,
     eventDetail,
     currentUser,
     attendeeId,
-    hasAttendance
+    hasAttendance,
+    currentUserIsHost
   };
 };
 
