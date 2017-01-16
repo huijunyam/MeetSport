@@ -72,7 +72,7 @@ start_time: "4:40 PM", end_time: "6:00 PM", date: "01/25/2017", level: "beginner
 event2 = Event.create(city_id: city2.id,name: "Table Tennis Double", location: "5870 W Olympic Blvd", category: "racquet sports", description: "Come join us to have fun",
 start_time: "9:00 AM", end_time: "11:00 AM", date: "02/25/2017", level: "intermediate", attendees_num: 4, host_id: user5.id)
 event3 = Event.create(city_id: city3.id,name: "Squash Rally", location: "IMA Sports Field", category: "racquet sports", description: "Anyone is welcome to have rally with me",
-start_time: "1:30 PM", end_time: "4:30 PM", date: "01/22/2017", level: "advance", attendees_num: 2, host_id: user6.id )
+start_time: "1:30 PM", end_time: "4:30 PM", date: "01/22/2017", level: "advance", attendees_num: 4, host_id: user6.id )
 event4 = Event.create(city_id: city4.id,name: "Football Lover", location: "Central Park", category: "football", description: "Anyone is welcomed",
 start_time: "2:00 PM", end_time: "5:00 PM", date: "02/01/2017", level: "all", attendees_num: 20, host_id: user23.id )
 event5 = Event.create(city_id: city5.id,name: "Swimming Competition", location: "Mirabella Pool", category: "water sports", description: "Come to join us at swimming competiion, prizes provided",
