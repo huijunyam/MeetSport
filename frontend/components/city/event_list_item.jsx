@@ -9,10 +9,10 @@ class EventListItem extends React.Component {
   render() {
     const {event} = this.props;
     let spot = "";
-    if (event.attendees_num - (1 + event.attendings.length) === 1) {
-      spot = "spot";
-    } else {
+    if (event.attendees_num - (1 + event.attendings.length) > 1) {
       spot = "spots";
+    } else {
+      spot = "spot";
     }
     return (
       <div className="event-detail-container">
