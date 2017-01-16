@@ -17,9 +17,9 @@ class Event extends React.Component {
 
   handleButton() {
     if (this.props.currentUserIsHost) {
-      return (<button disabled className="sub-event-header-button">{this.rsvp()}</button>);
+      return (<div></div>);
     } else if (this.props.hasAttendance === false && this.props.eventDetail.attendees_num === (1 + this.props.eventDetail.attendings.length)){
-      return (<button disabled className="sub-event-header-button">{this.rsvp()}</button>);
+      return (<button disabled className="sub-event-header-button-disabled">{this.rsvp()}</button>);
     } else {
       return (<button onClick={this.handleClick} className="sub-event-header-button">{this.rsvp()}</button>);
     }

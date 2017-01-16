@@ -1,0 +1,77 @@
+.event-form-container {
+  // border: 3px $dark-blue solid;
+  // border-radius: 4px;
+  padding: 20px;
+  margin: auto;
+  width: 70%;
+  // text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-form-container h2{
+  font-family: $sans-serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: $blue;
+  margin-bottom: 50px;
+}
+
+.event-form-container label{
+  display: block;
+  font-family: $sans-serif;
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  color: $blue;
+}
+
+.event-form-error {
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-family: $lato;
+  color: red;
+}
+
+.error-form {
+  padding: 5px;
+}
+
+.event-input {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 10px 0 25px 0;
+    border: 1px solid $dark-blue;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: $sans-serif;
+}
+
+.number {
+  border: 1px solid $dark-blue;
+  text-align: left;
+  font-size: 15px;
+  width: 40%;
+  padding: 8px 10px;
+  margin: 10px 0 25px 0;
+}
+
+select {
+  border: 1px solid $dark-blue;
+  text-align: left;
+  font-size: 15px;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 10px 0 25px 0;
+}
+
+textarea {
+  width: 100%;
+	height: 120px;
+  margin: 10px 0 25px 0;
+	border: 1px solid $dark-blue;
+	padding: 8px 10px;
+  font-size: 15px;
+	font-family: $sans-serif;
+}

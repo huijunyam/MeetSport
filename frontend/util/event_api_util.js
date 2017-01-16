@@ -28,13 +28,6 @@ export const updateEvent = event => (
   })
 );
 
-export const deleteEvent = id => (
-  $.ajax({
-    method: "DELETE",
-    url: `api/events/${id}`
-  })
-);
-
 export const joinEvent = attendee => (
   $.ajax({
     method: "POST",

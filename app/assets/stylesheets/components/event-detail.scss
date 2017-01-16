@@ -29,6 +29,20 @@
   background-color: $blue;
 }
 
+.sub-event-header-button-disabled {
+  position: absolute;
+  top: 75%;
+  left: 85%;
+  width: 150px;
+  background: gray;
+  color: $white;
+}
+
+.sub-event-header-button-disabled:hover {
+  background-color: gray;
+  cursor: default;
+}
+
 .event-homepage-container {
   display: block;
 }

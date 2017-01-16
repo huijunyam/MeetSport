@@ -19,3 +19,10 @@ export const deleteUser = (id) => (
     url: `api/users/${id}`
   })
 );
+
+export const deleteEvent = id => (
+  $.ajax({
+    method: "DELETE",
+    url: `api/events/${id}`
+  })
+);

@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderContainer from '../layout/header_container';
 import FooterContainer from '../layout/footer_container';
 import UserJoinEvent from './user_join_event';
-import UserHostEvent from './user_host_event';
+import OtherUserHostEvent from './other_user_host_event';
 
 class OtherUser extends React.Component {
   constructor(props){
@@ -55,7 +55,7 @@ class OtherUser extends React.Component {
             <h4>{userDetail.name} has hosted {userDetail.events.length} {event}</h4>
             <ul className="user-host-event">
               {userDetail.events.map((event, id) => (
-                <UserHostEvent key={`host-${id}`} event={event} />
+                <OtherUserHostEvent key={`host-${id}`} event={event} />
               ))}
             </ul>
             <h4>{userDetail.name} has joined {userDetail.event_attendees.length} {event}</h4>

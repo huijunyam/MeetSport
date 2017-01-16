@@ -124,7 +124,7 @@ class EventForm extends React.Component {
         <ul className="event-form-error">
           {
             this.props.errors.map((err, idx) => (
-              <li key={`event-err-${idx}`}>{err}</li>
+              <li className="error-form" key={`event-err-${idx}`}>{err}</li>
             ))
           }
         </ul>
@@ -134,7 +134,7 @@ class EventForm extends React.Component {
 
   render() {
        return (
-         <div className="form-container">
+         <div className="event-form-container">
            <h2>Create An Event</h2>
            <form onSubmit={this.handleSubmit} className="form-box">
              {this.renderErrors()}
@@ -169,6 +169,12 @@ class EventForm extends React.Component {
                      onChange={this.update("end_time")}
                      className="event-input" />
 
+                 <label>Number of Attendees</label>
+                   <input className="number"
+                     type="number"
+                     value={this.state.attendees_num}
+                     onChange={this.update('attendees_num')}/>
+
                    <label>Sport Category</label>
                      <select
                        value={this.state.category}
@@ -188,12 +194,6 @@ class EventForm extends React.Component {
                          return <option value={type} key={i}>{type}</option>;
                        })}
                      </select>
-
-                   <label>Number of Attendees</label>
-                     <input
-                       type="number"
-                       value={this.state.attendees_num}
-                       onChange={this.update('attendees_num')}/>
 
                      <label>Event Description</label>
                        <textarea value={this.state.description} onChange={this.update('description')} />

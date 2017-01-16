@@ -28,6 +28,6 @@ export const updateUser = id => dispatch => (
   UserApiUtil.updateUser(id).then(userDetail => dispatch(receiveUser(userDetail)))
 );
 
-// export const deleteUser = id => dispatch => (
-//
-// );
+export const deleteEvent = id => dispatch => (
+  UserApiUtil.deleteEvent(id).then(userDetail => dispatch(receiveUser(userDetail)))
+);
