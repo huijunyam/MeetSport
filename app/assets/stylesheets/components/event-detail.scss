@@ -29,28 +29,92 @@
   background-color: $blue;
 }
 
+.event-homepage-container {
+  display: block;
+}
+
 .event-home-list {
   margin: 20px auto;
   display: flex;
-  padding: 10px;
-  width: 78%;
+  width: 80%;
 }
 
 .event-page {
+  padding: 10px;
+}
+
+.event-detail-item {
+  font-size: 23px;
+  font-family: $lato;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.date-icon, .time-icon, .location-icon{
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+
+.event-detail-item strong {
+  font-weight: bold;
+}
+
+.event-detail-item-city {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: $lato;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.event-detail-item-description-header {
+  margin-top: 50px;
+  font-size: 23px;
+  font-family: $lato;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.event-detail-item-description {
+  font-size: 15px;
+  font-family: $lato;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.aside-event-detail {
   border: 2px solid $dark-blue;
+  padding: 5px;
+}
+
+.num-attendees {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: $lato;
   padding: 10px;
 }
 
-.event-detail-item-date {
-  font-size: 20px;
-  font-family: $lato;
+.joining-member-list {
+  display: flex;
   padding: 10px;
-  padding-left: 0;
+  vertical-align: text-top;
 }
 
-.event-detail-item-time {
+.member-attending-img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.joining-member-name {
+  display: inline-block;
+  padding-left: 15px;
+  padding-top: 15px;
   font-size: 20px;
+  font-weight: bold;
   font-family: $lato;
-  padding: 10px;
-  padding-left: 0;
+  color: $blue;
+  padding-bottom: 15px;
 }
