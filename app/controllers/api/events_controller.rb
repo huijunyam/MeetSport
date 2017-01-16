@@ -11,8 +11,11 @@ class Api::EventsController < ApplicationController
   end
 
   def create
+    category = params[:event][:category]
     @event = Event.new(event_params)
+    category_id = Category.where("name = ?", category).first.id
     if @event.save
+      EventType.create(category_id: category_id, event_id: @event.id)
       render :show
     else
       render json: @event.errors.full_messages, status: 422
@@ -37,7 +40,7 @@ class Api::EventsController < ApplicationController
   private
   def event_params
     params.require(:event).permit(
-    :city_id, :name, :location, :category, :description, :start_time,
+    :city_id, :name, :location, :description, :start_time,
     :end_time, :date, :level, :attendees_num, :host_id
     )
   end

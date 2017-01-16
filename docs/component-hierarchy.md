@@ -39,7 +39,7 @@
 - Event
 - Footer
 
-### SearchResultContainer
+### SearchContainer
 - SearchBar
 - SearchResult
 
@@ -56,4 +56,4 @@
 | "/city/:cityId/event"            | "CityEventContainer"   |
 | "/event/:eventId"                | "EventContainer"       |
 | "/city/:cityId/create"           | "EventFormContainer"   |
-| "/cities/search"                 | "SearchResultContainer"|
+| "/cities/search"                 | "SearchContainer"      |
