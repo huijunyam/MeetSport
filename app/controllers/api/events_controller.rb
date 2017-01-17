@@ -1,11 +1,25 @@
 class Api::EventsController < ApplicationController
   def index
-    @events = Event.where("city_id = ?", params[:city_id])
+    if params[:city_id]
+      @events = Event.where("city_id = ?", params[:city_id])
+    elsif params[:search]
+      if params[:search] == ""
+        @events = []
+      else
+        keyword = "#{params[:search]}%"
+        category = Category.where("name LIKE ?", keyword)
+        category_id = category.map{ |el| el.id }
+        event = EventType.where("category_id IN (?)", category_id)
+        event_id = event.map{ |el| el.event_id }
+        @events = Event.where("id IN (?)", event_id)
+      end 
+    else
+      @event = Event.all
+    end
     render :index
   end
 
   def show
-    # @event = Event.where("city_id = ? AND id = ?", params[:city_id], params[:id])
     @event = Event.find(params[:id])
     render :show
   end

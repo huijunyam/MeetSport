@@ -42,7 +42,9 @@ const Root = ({ store }) => {
           <IndexRoute component={WelcomeContainer} onEnter={_redirectIfLoggedIn}/>
           <Route path="/login" component={LoginFormContainer} onEnter={_redirectIfLoggedIn} />
           <Route path="/signup" component={SignUpFormContainer} onEnter={_redirectIfLoggedIn} />
-          <Route path="/cities" component={CityListContainer} onEnter={_ensureLoggedIn} />
+          <Route path="/cities" component={CityListContainer} onEnter={_ensureLoggedIn} >
+            <Route path="/cities/search" component={SearchContainer} onEnter={_ensureLoggedIn} />
+          </Route>
           <Route path="/users/:userId" component={UserContainer} onEnter={_ensureLoggedIn} />
           <Route path="/users/show/:otheruserId" component={OtherUserContainer} onEnter={_ensureLoggedIn} />
           <Route path="/users/:userId/edit" component={UserEditContainer} onEnter={_ensureLoggedIn} />
