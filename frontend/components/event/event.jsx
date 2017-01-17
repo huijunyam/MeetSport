@@ -47,6 +47,7 @@ class Event extends React.Component {
   }
 
   render() {
+    // debuggesr
     const { eventDetail } = this.props;
     return (
       <div>

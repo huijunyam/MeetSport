@@ -6,6 +6,7 @@ import App from './app/app';
 import WelcomeContainer from './welcome/welcome_container';
 import LoginFormContainer from './session/login_form_container';
 import SignUpFormContainer from './session/sign_up_form_container';
+import SearchContainer from './search/search_container';
 
 import HeaderContainer from './layout/header_container';
 import CityListContainer from './city/city_list_container';

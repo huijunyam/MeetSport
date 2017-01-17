@@ -10,6 +10,7 @@ class EventDetail extends React.Component {
     } else {
       spot = "spot";
     }
+    // debugger
     return (
       <div className="event-home-list">
         <div className="event-page col-last">

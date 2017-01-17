@@ -104,3 +104,5 @@ EventType.create(category_id: category26.id, event_id: event9.id);
 EventType.create(category_id: category21.id, event_id: event10.id);
 EventType.create(category_id: category20.id, event_id: event11.id);
 EventType.create(category_id: category22.id, event_id: event12.id);
+
+<Route path="/category/:categoryId" component={SearchContainer} onEnter={_ensureLoggedIn} />

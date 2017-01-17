@@ -12,6 +12,7 @@ const mapStateToProps = (state, ownProps) => {
     state.eventDetail.attendings, state.session.currentUser
   );
   const currentUserIsHost = checkHost(state.eventDetail.host, state.session.currentUser);
+  // debugger
   return {
     eventId,
     eventDetail,
