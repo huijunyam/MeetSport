@@ -9,7 +9,7 @@ class Search extends React.Component {
         {this.props.events.map((event, id) => (
           <li key={`event-${id}`} className="event-from-search">
             <Link to={`/event/${event.id}`}>
-              <div>
+              <div className="search-container-items">
                 <ul className="search-event-item">
                   <li className="search-event-header"><strong>{event.name}</strong></li>
                   <li className="search-event-detail"><strong>Date: </strong>{event.date}</li>
