@@ -1,6 +1,8 @@
 import React from 'react';
 import HeaderContainer from '../layout/header_container';
 import FooterContainer from '../layout/footer_container';
+import Dropzone from 'react-dropzone';
+import request from 'superagent';
 
 class UserEdit extends React.Component {
   constructor(props) {
@@ -9,7 +11,7 @@ class UserEdit extends React.Component {
       id: this.props.currentUserId,
       name: this.props.userDetail.name,
       email: this.props.userDetail.email,
-      about_me: this.props.about_me
+      about_me: this.props.about_me,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
@@ -38,7 +40,7 @@ class UserEdit extends React.Component {
   renderErrors() {
     if (this.props.errors) {
       return (
-        <ul className="user-form-error">
+        <ul className="edit-form-error">
           {
             this.props.errors.map((err, idx) => (
               <li key={`user-err-${idx}`}>{err}</li>
@@ -53,7 +55,7 @@ class UserEdit extends React.Component {
     return (
       <div>
         <HeaderContainer />
-        <div className="user-form-container">
+        <div className="edit-form-container">
           <h2>Edit Profile</h2>
           <form onSubmit={this.handleSubmit}>
             {this.renderErrors()}
@@ -62,16 +64,16 @@ class UserEdit extends React.Component {
                 <input type="text"
                   value={this.state.name}
                   onChange={this.update("name")}
-                  className="user-input" />
+                  className="edit-input" />
 
                 <label>Email</label>
                 <input type="text"
                   value={this.state.email}
                   onChange={this.update("email")}
-                  className="user-input" />
+                  className="edit-input" />
 
                 <label>About me</label>
-                  <textarea value={this.state.about_me} onChange={this.update('about_me')} />
+                  <textarea className="textarea-edit" value={this.state.about_me} onChange={this.update('about_me')} />
 
                 <input className="user-edit-button" type="submit" value="Update Profile"/>
             </div>

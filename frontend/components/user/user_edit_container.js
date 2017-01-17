@@ -12,6 +12,7 @@ const mapStateToProps = (state, ownProps) => {
   if (currentUser !== null){
     currentUserId = state.session.currentUser.id;
   }
+  // debugger
   return {
     userId,
     userDetail,
