@@ -132,3 +132,4 @@ if (this.state.rsvp === "Join Event") {
   endAccessor='endDate'
   onSelectEvent={event => this.redirect(event) }
 />
+              <source src="http://res.cloudinary.com/dirtnmtpc/video/upload/v1484050178/Sunset-Lapse_djfchs.mp4" type="video/mp4" />

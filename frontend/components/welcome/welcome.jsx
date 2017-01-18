@@ -70,7 +70,7 @@ class Welcome extends React.Component {
         <div className="video-signup">
           <div className="videoPlay">
             <video autoPlay loop className="videoInsert">
-              <source src="http://res.cloudinary.com/dirtnmtpc/video/upload/v1484050178/Sunset-Lapse_djfchs.mp4" type="video/mp4" />
+              <source src="http://res.cloudinary.com/dirtnmtpc/video/upload/c_scale,w_875/v1484567522/Sunset-Lapse_m8qjyg.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="welcome-title">
