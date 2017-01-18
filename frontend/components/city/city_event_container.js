@@ -8,13 +8,10 @@ const mapStateToProps = (state, ownProps) => {
   const cityId = parseInt(ownProps.params.cityId);
   const cityEvent = Object.keys(state.cityEvent).map(id => (state.cityEvent[id]));
   const currentUser = state.session.currentUser;
-  // const isMember = checkMember(state.cities[cityId].members, currentUser);
-  // let currentUserId = null;
-  // if (currentUser !== null){
-  //   currentUserId = state.session.currentUser.id;
-  // }
+  const cityDetail = state.cityDetail;
+  const isMember = checkMember(cityDetail.members, currentUser);
   return {
-    cityId, cityEvent, currentUser
+    cityId, cityEvent, currentUser, cityDetail, isMember
   };
 };
 

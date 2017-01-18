@@ -58,7 +58,7 @@ class Welcome extends React.Component {
       <div className="welcome-page">
         <div className="welcome-header">
           <div className="site-name-with-logo">
-            <Link to="/" className="logo"><img src={"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484092751/Logomakr_2rIReH_jz2ink.png"} alt="logomakr"/></Link>
+            <Link to="/" className="logo"><img src={"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484763747/Logomakr_1JnLLO_hemnyc.png"} alt="logomakr"/></Link>
             <Link to="/" className="site-name-head">meetSport</Link>
           </div>
           <ul className="welcome-page-nav">

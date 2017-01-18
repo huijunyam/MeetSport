@@ -8,7 +8,6 @@ class CityEvent extends React.Component {
   }
 
   render() {
-    // debugger
     return (
       <div>
         <h2 className="header-event">All Events</h2>

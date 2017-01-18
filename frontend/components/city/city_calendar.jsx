@@ -15,7 +15,7 @@ class CityCalendar extends React.Component {
       events: this.props.events,
       allDay: false,
       selectable: true,
-      eventClick: function(event) {
+      eventClick: (event) => {
         if (event.url) {
             this.props.router.push(`/event/${event.id}`);
             // return false;

@@ -55,7 +55,6 @@ export const updateEvent = event => dispatch => (
 );
 
 export const joinEvent = attendee => dispatch => {
-  // debugger;
   return EventApiUtil.joinEvent(attendee).then(event => dispatch(requestEvent(event)))
 };
 
