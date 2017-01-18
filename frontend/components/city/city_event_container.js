@@ -1,13 +1,18 @@
 import { connect } from 'react-redux';
 import CityEvent from './city_event';
 import { fetchEvents, joinEvent, unjoinEvent } from '../../actions/event_actions';
+import { checkMember } from '../../reducers/selector';
+import { joinCity } from '../../actions/city_actions';
 
 const mapStateToProps = (state, ownProps) => {
   const cityId = parseInt(ownProps.params.cityId);
   const cityEvent = Object.keys(state.cityEvent).map(id => (state.cityEvent[id]));
   const currentUser = state.session.currentUser;
-  const isMember = checkMember(state.cities[cityId].members)
-  debugger
+  // const isMember = checkMember(state.cities[cityId].members, currentUser);
+  // let currentUserId = null;
+  // if (currentUser !== null){
+  //   currentUserId = state.session.currentUser.id;
+  // }
   return {
     cityId, cityEvent, currentUser
   };
@@ -16,7 +21,8 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => ({
   fetchEvents: (cityId) => dispatch(fetchEvents(cityId)),
   joinEvent: (attendee) => dispatch(joinEvent(attendee)),
-  unjoinEvent: (id) => dispatch(unjoinEvent(id))
+  unjoinEvent: (id) => dispatch(unjoinEvent(id)),
+  joinCity: (membership) => dispatch(joinCity(membership))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CityEvent);

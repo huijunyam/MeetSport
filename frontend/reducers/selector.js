@@ -55,3 +55,43 @@ export const checkHost = (host, currentUser) => {
   }
   return currentUser.username === host.username;
 };
+
+export const checkMember = (members, currentUser) => {
+  if (currentUser === null) {
+    return false;
+  }
+
+  for (let i = 0; i < members.length; i++) {
+    if (currentUser.username === members[i].username) {
+      return true;
+    }
+  }
+  return false;
+};
+
+export const convertDateTime = (date, time) => {
+  let dateArr = date.split("/");
+  let year = dateArr.pop();
+  dateArr.unshift(year);
+
+  for (let i = 0; i < dateArr.length; i++) {
+    if (dateArr[i].length < 2) {
+      dateArr[i] = "0" + dateArr[i];
+    }
+  }
+
+  let dateStr = dateArr.join("-");
+  dateStr = dateStr + "T";
+  let timeArr = time.split(" ");
+  let hour = timeArr[0].split(":");
+  if (timeArr[1] === "PM") {
+    dateStr = dateStr + ((parseInt(hour[0]) + 12).toString()) + ":" + (hour[1]) + ":00.000Z";
+  } else {
+    if (hour[0].length === 1) {
+      dateStr = dateStr + "0" + hour[0] + ":" + hour[1] + ":00.000Z";
+    } else {
+      dateStr = dateStr + hour[0] + ":" + hour[1] + ":00.000Z";
+    }
+  }
+  return dateStr;
+};

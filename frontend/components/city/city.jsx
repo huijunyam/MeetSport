@@ -13,6 +13,10 @@ class City extends React.Component {
     this.props.fetchCity(this.props.cityId);
   }
 
+  redirect() {
+    this.props.router.push(`/city/${this.props.cityId}/event`);
+  }
+
   handleClick(e) {
     e.preventDefault();
     const membership = { member_id: this.props.currentUser.id,

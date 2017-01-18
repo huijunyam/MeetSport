@@ -48,6 +48,14 @@ class EventListItem extends React.Component {
     }
   }
 
+  // handleCity(e) {
+  //   e.preventDefault();
+  //   // debugger
+  //   const membership = { member_id: this.props.currentUserId,
+  //                        city_id: this.props.cityId };
+  //   this.props.joinCity(membership).then(() => this.props.fetchEvents(this.props.cityId));
+  // }
+
   render() {
     const {event} = this.props;
     let spot = "";
@@ -56,13 +64,15 @@ class EventListItem extends React.Component {
     } else {
       spot = "spot";
     }
-
+    // debugger
     let joinbutton = "";
     if (this.props.currentUser !== null) {
       if (this.props.currentUser.username === this.props.event.host.username) {
         joinbutton = "Host";
+      } else if (this.props.isMember === false) {
+        joinbutton = "Join the City";
       } else if (this.checkAttending() === false && this.props.event.attendees_num === (1 + this.props.event.attendings.length)){
-        joinbutton = "Closed";
+        joinbutton = "Full";
       } else {
         joinbutton = (<button onClick={this.handleClick}>{this.rsvp()}</button>);
       }

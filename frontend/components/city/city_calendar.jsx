@@ -1,64 +1,39 @@
 import React from 'react';
-import BigCalendar from 'react-big-calendar';
+import { withRouter } from 'react-router';
 import moment from 'moment';
-
-BigCalendar.setLocalizer(
-  BigCalendar.momentLocalizer(moment)
-);
+import $ from 'jquery';
+import fullCalendar from 'fullcalendar';
 
 class CityCalendar extends React.Component {
   constructor(props) {
     super(props);
-    this.eventArray = this.eventArray.bind(this);
-    // this.convertDay = this.convertDay.bind(this);
   }
 
-  redirect(event) {
-    this.props.router.push(`/event/${event.id}`);
+  componentDidMount() {
+    const { calendar } = this.refs;
+    $(calendar).fullCalendar({
+      events: this.props.events,
+      allDay: false,
+      selectable: true,
+      eventClick: function(event) {
+        if (event.url) {
+            this.props.router.push(`/event/${event.id}`);
+            return false;
+        }
+    }
+    });
   }
 
-  // convertDateTime(date, time) {
-  //   let date = date.split("/");
-  //   let year = date.pop();
-  //   date.unshift(year);
-  //   date = date.map(el => parseInt(el));
-  //   let time = time.split(" ");
-  //   let hour = time[0].split(".").map(el => parseInt(el));
-  //   if (time[1] === "PM") {
-  //     date.push(hour[0] + 12);
-  //     date.push(hour[1]);
-  //   } else {
-  //     date.push(hour[0]);
-  //     date.push(hour[1]);
-  //   }
-  //   return date;
-  // }
-
-  // convertDay(date) {
-  //   let dateArr = date.split("/");
-  //   let year = dateArr.pop();
-  //   dateArr.unshift(year);
-  //   dateArr = dateArr.map(el => parseInt(el));
-  //   return moment(dateArr).add(1, 'd');
-  // }
-
-  eventArray() {
-    return (this.props.events.map(event => ({
-      id: event.id,
-      name: event.name,
-      startDate: new Date(event.date),
-      endDate: new Date(event.date)
-    }))
-  );
+  componentWillUnmount() {
+    const { calendar } = this.refs;
+    $(calendar).fullCalendar('destroy');
   }
 
   render() {
-    const event = this.eventArray();
-    // debugger
-    // return (
-    // );
+    return (
+      <div ref="calendar"></div>
+    );
   }
 }
 
-
-export default CityCalendar;
+export default withRouter(CityCalendar);
