@@ -24,7 +24,10 @@ class Header extends React.Component{
         <Link to="/" className="site-name">meetSport</Link>
         <ul className="welcome-page-nav">
           <li className="welcome-page-list">
-            <a className="footer-button" onClick={this.handleSubmit}>Log Out</a>
+            <img src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1484767754/GitHub-Mark-120px-plus_g1wpq2.png"/>
+          </li>
+          <li className="welcome-page-list">
+            <img src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1484767656/In-2C-108px-R_xxju11.png"/>
           </li>
         </ul>
       </footer>
