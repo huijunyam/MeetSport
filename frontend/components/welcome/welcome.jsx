@@ -60,11 +60,11 @@ class Welcome extends React.Component {
           <div className="site-name-with-logo">
             <Link to="/" className="logo"><img src={"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484763747/Logomakr_1JnLLO_hemnyc.png"} alt="logomakr"/></Link>
           </div>
-          <ul className="welcome-page-nav">
-            <li className="welcome-page-list"><button onClick={this.guestLogin} className="guest-button">Guest Demo</button></li>
-            <li className="welcome-page-list"><button onClick={this.userLogin}>Log In</button></li>
-            <li className="welcome-page-list"><button onClick={this.userSignup}>Sign Up</button></li>
-          </ul>
+          <div className="welcome-page-nav">
+            <div className="welcome-page-list"><button onClick={this.guestLogin} className="guest-button">Guest Demo</button></div>
+            <div className="welcome-page-list"><button onClick={this.userLogin}>Log In</button></div>
+            <div className="welcome-page-list"><button onClick={this.userSignup}>Sign Up</button></div>
+          </div>
         </div>
         <div className="video-signup">
           <div className="videoPlay">

@@ -6,7 +6,7 @@ import CityListItem from './city_list_item';
 class CityList extends React.Component {
   constructor(props){
     super(props);
-    this.state = {search: "" };
+    this.state = { search: "" };
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.redirect = this.redirect.bind(this);
@@ -35,12 +35,12 @@ class CityList extends React.Component {
         <HeaderContainer />
         <div className="sub-header">
           <h2>Choose a City</h2>
-
+          
           <p>Explore all the sport events that happen in your city</p>
         </div>
         <form className="search-bar">
           <input type="text"
-            placeholder="Sport Category"
+            placeholder="Search by Sport Category"
             value={this.state.search}
             onChange={this.handleChange}
             className="search-input" />
@@ -51,7 +51,6 @@ class CityList extends React.Component {
           {this.props.children}
         </div>
         <div className="city-list-container">
-          <h3 className="city-list-header">List of Cities</h3>
           <ul className="citylist">
             {this.props.cities.map(city => (<CityListItem key={city.id} city={city} />))}
           </ul>

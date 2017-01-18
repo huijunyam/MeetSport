@@ -3,18 +3,22 @@
   text-align: center;
   padding: 30px;
   color: $white;
+  background: -webkit-linear-gradient(#0d65e0, #0cd1f1);
+  background: -o-linear-gradient(#0d65e0, #0cd1f1);
+  background: -moz-linear-gradient(#0d65e0, #0cd1f1);
+  background: linear-gradient(#0d65e0, #0cd1f1);
 }
 
 .sub-header h2{
-  font-size: 50px;
-  font-family: $lato;
+  font-size: 40px;
+  font-family: $sans-serif;
   font-weight: bolder;
   padding: 30px;
 }
 
 .sub-header p{
-  font-size: 30px;
-  font-family: $lato;
+  font-size: 25px;
+  font-family: $sans-serif;
   font-weight: bolder;
   padding-bottom: 30px;
   padding-top: 10px;
@@ -26,19 +30,20 @@
 }
 
 .search-input {
-  padding: 5px 10px;
+  padding: 10px 10px;
   background: $white;
-  // border:0px solid $dark-blue;
+  // border: 2px solid $dark-blue;
   width: 370px;
   font-size: 17px;
+  border-radius: 3px;
 }
 
 .search-button {
   position: relative;
-  padding: 7px 15px;
-  // left:-8px;
+  padding: 10px 15px;
   border:2px solid #207cca;
   background-color:#207cca;
+  border-radius: 2px;
   color:#fafafa;
   font-size: 16px;
 }
@@ -69,6 +74,7 @@
   flex-direction: column;
   text-align: center;
   margin: 50px auto 30px auto;
+  border-top: 1px solid $dark-blue;
 }
 
 .citylist {
@@ -95,8 +101,6 @@
 
 .search-event-item {
   border: 1px solid $dark-blue;
-  // background: $blue;
-  // height: 150px;
 }
 
 .search-event-header {
@@ -130,29 +134,29 @@
 .city-img {
   width: 100%;
   height: 100%;
-  // width: 300px;
-  // height: 200px;
   margin: 10px;
+  z-index: -1;
 }
 
-// .city-name {
-//   width: 240px;
-//   height: 200px;
-//   background: #FFF;
-//   opacity: 0;
-// }
+.city-list-div {
+  position: relative;
+}
 
-// .city-img:hover {
-//   opacity: 0.6;
-//   text-align:justify;
-//   color:black;
-//   font-size:20px;
-//
-// }
+.city-list-div p {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 20%;
+  font-size: 20px;
+  font-family: $sans-serif;
+  font-weight: bold;
+  color: $dark-blue;
+  width: 200px;
+}
 
 .city-img:hover {
   box-shadow: 0 0 10px #ccc;
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 .footer-button {
