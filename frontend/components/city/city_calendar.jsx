@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 import moment from 'moment';
-import $ from 'jquery';
+// import $ from 'jquery';
 import fullCalendar from 'fullcalendar';
 
 class CityCalendar extends React.Component {
