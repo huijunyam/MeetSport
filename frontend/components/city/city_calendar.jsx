@@ -55,17 +55,8 @@ class CityCalendar extends React.Component {
   render() {
     const event = this.eventArray();
     // debugger
-    return (
-      <BigCalendar
-        selectable
-        defaultView='month'
-        events={event}
-        titleAccessor='name'
-        startAccessor='startDate'
-        endAccessor='endDate'
-        onSelectEvent={event => this.redirect(event) }
-    />
-    );
+    // return (
+    // );
   }
 }
 

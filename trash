@@ -106,3 +106,29 @@ EventType.create(category_id: category20.id, event_id: event11.id);
 EventType.create(category_id: category22.id, event_id: event12.id);
 
 <Route path="/category/:categoryId" component={SearchContainer} onEnter={_ensureLoggedIn} />
+
+if (this.state.rsvp === "Join Event") {
+  this.setState({
+    rsvp: "Leave Event",
+    going: this.state.going + 1,
+    spot: this.state.spot - 1
+  });
+  this.props.joinEvent(attendee);
+} else {
+  this.setState({
+    rsvp: "Join Event",
+    going: this.state.going - 1,
+    spot: this.state.spot + 1
+  });
+  this.props.unjoinEvent(this.checkAttendeeId());
+}
+
+<BigCalendar
+  selectable
+  defaultView='month'
+  events={[]}
+  titleAccessor='name'
+  startAccessor='startDate'
+  endAccessor='endDate'
+  onSelectEvent={event => this.redirect(event) }
+/>

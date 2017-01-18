@@ -8,12 +8,19 @@ class CityEvent extends React.Component {
   }
 
   render() {
+    // debugger
     return (
       <div>
         <h2 className="header-event">All Events</h2>
         <ul className="city-event-list">
           {this.props.cityEvent.map(event => (
-            <EventListItem key={event.id} cityId={this.props.cityId} event={event} />
+            <li key={event.id}>
+              <EventListItem key={event.id}
+                currentUser={this.props.currentUser}
+                cityId={this.props.cityId} event={event}
+                fetchEvents={this.props.fetchEvents}
+                joinEvent={this.props.joinEvent} unjoinEvent={this.props.unjoinEvent}/>
+            </li>
           ))}
         </ul>
       </div>

@@ -54,10 +54,15 @@ export const updateEvent = event => dispatch => (
   EventApiUtil.updateEvent(event).then(event => dispatch(requestEvent(event)))
 );
 
-export const joinEvent = attendee => dispatch => (
-  EventApiUtil.joinEvent(attendee).then(event => dispatch(requestEvent(event)))
-);
+export const joinEvent = attendee => dispatch => {
+  // debugger;
+  return EventApiUtil.joinEvent(attendee).then(event => dispatch(requestEvent(event)))
+};
 
 export const unjoinEvent = id => dispatch => (
   EventApiUtil.unjoinEvent(id).then(event => dispatch(requestEvent(event)))
 );
+
+export const joiningEventFromCity = attendee => dispatch => {
+  return EventApiUtil.joiningEvent(attendee).then(events => dis)
+};

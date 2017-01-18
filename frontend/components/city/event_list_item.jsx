@@ -4,6 +4,48 @@ import { Link } from 'react-router';
 class EventListItem extends React.Component {
   constructor(props) {
     super(props);
+    this.handleClick = this.handleClick.bind(this);
+    this.checkAttending = this.checkAttending.bind(this);
+    this.rsvp = this.rsvp.bind(this);
+    this.checkAttendeeId = this.checkAttendeeId.bind(this);
+  }
+
+  checkAttending() {
+    for (let i = 0; i < this.props.event.attendings.length; i++){
+      if (this.props.currentUser.username === this.props.event.attendings[i].username){
+        return true;
+      }
+    }
+    return false;
+  }
+
+  rsvp() {
+    if (this.checkAttending() || this.props.currentUser.username === this.props.event.host.username) {
+      return "Leave Event";
+    } else {
+      return "Join Event";
+    }
+  }
+
+  checkAttendeeId() {
+    for (let i = 0; i < this.props.event.attendees.length; i++){
+      if (this.props.currentUser.id === this.props.event.attendees[i].attendee_id){
+        return this.props.event.attendees[i].id;
+      }
+    }
+  }
+
+  handleClick(e) {
+    e.preventDefault();
+    const attendee = {
+      event_id: this.props.event.id,
+      attendee_id: this.props.currentUser.id
+    };
+    if (this.checkAttending()) {
+      this.props.unjoinEvent(this.checkAttendeeId()).then(() => this.props.fetchEvents(this.props.cityId));
+    } else {
+      this.props.joinEvent(attendee).then(() => this.props.fetchEvents(this.props.cityId));
+    }
   }
 
   render() {
@@ -14,6 +56,20 @@ class EventListItem extends React.Component {
     } else {
       spot = "spot";
     }
+
+    let joinbutton = "";
+    if (this.props.currentUser !== null) {
+      if (this.props.currentUser.username === this.props.event.host.username) {
+        joinbutton = "Host";
+      } else if (this.checkAttending() === false && this.props.event.attendees_num === (1 + this.props.event.attendings.length)){
+        joinbutton = "Closed";
+      } else {
+        joinbutton = (<button onClick={this.handleClick}>{this.rsvp()}</button>);
+      }
+    } else{
+      joinbutton = "";
+    }
+    // debugger
     return (
       <div className="event-detail-container">
         <div className="city-event">
@@ -23,11 +79,12 @@ class EventListItem extends React.Component {
             <li className="event-date"><strong>Date:</strong> {event.date}</li>
             <li className="event-start_time"><strong>Start Time:</strong> {event.start_time}</li>
           </ul>
-          <div className="sub-event-detail">
-            <li className="num-attendance"><strong>{`${event.attendings.length + 1}`}</strong> going</li>
-            <li className="spot-left"><strong>{`${event.attendees_num - (event.attendings.length + 1)}`}</strong> {spot} left</li>
-            <li><button className="event-detail-button"><Link to={`/event/${event.id}`} className="link-button">Event Detail</Link></button></li>
-          </div>
+          <ul className="sub-event-detail">
+              <li className="num-attendance"><strong>{`${event.attendings.length + 1}`}</strong> going</li>
+              <li className="spot-left"><strong>{`${event.attendees_num - (event.attendings.length + 1)}`}</strong> {spot} left</li>
+              <li>{joinbutton}</li>
+              <li><button className="event-detail-button"><Link to={`/event/${event.id}`} className="link-button">Event Detail</Link></button></li>
+          </ul>
         </div>
         <ul className="city-event-detail-attendance">
           <li className="wording-event-attendance"><strong>Attending:</strong></li>
