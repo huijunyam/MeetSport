@@ -2,38 +2,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 10px;
-  margin: 10px 10px 35px 10px;
-
-}
-
-.signup-form {
-  margin-bottom: 0;
-  padding-bottom: 2px;
+  padding-bottom: 30px;
+  margin: 10px;
 }
 
 .auth-form-container {
+  background-color: $lighest-blue;
   border: 3px $dark-blue solid;
-  border-radius: 4px;
+  border-radius: 5px;
   padding: 20px;
   margin: auto;
-  width: 30%;
+  width: 18%;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 30px auto;
+  height: 100%;
 }
 
 .auth-form-container h2{
   font-family: $sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
   color: $blue;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .auth-form-container span, a {
   color: $blue;
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
   font-weight: bold;
 }
@@ -45,7 +41,7 @@
 .auth-form-container label{
   display: block;
   font-family: $sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   text-align: left;
   font-weight: bold;
   color: $blue;
@@ -53,35 +49,41 @@
 
 .auth-error {
   padding-top: 20px;
-  font-size: 18px;
+  font-size: 13px;
   font-family: $lato;
   color: red;
 }
 
 .auth-input {
     width: 100%;
-    padding: 12px 20px;
-    margin: 10px 0 25px 0;
+    padding: 10px 10px;
+    margin: 10px 0 20px 0;
     // display: inline-block;
     border: 1px solid $dark-blue;
-    border-radius: 2px;
+    border-radius: 3px;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .button {
-    width: 100%;
-    background-color: $light-blue;
-    padding: 12px 20px;
-    margin: 8px 0 20px 0;
+    width: 50%;
+    background-color: $hover-ul-color;
+    padding: 5px 20px;
+    margin: 0 0 20px 0;
     display: inline-block;
-    border: 1px solid $dark-blue;
-    border-radius: 2px;
+    // border: 1px solid $hover-ul-color;
+    border-radius: 5px;
     box-sizing: border-box;
     font-size: 20px;
+    color: $dark-blue;
+    font-family: $sans-serif;
+    -webkit-filter: brightness(100%);
 }
 
 .button:hover {
-  background-color: $dark-blue;
-  color: $white;
+  box-shadow: 0 0 10px #ccc;
+  // opacity: 0.8;
+  -webkit-filter: brightness(90%)
+  // background-color: $dark-blue;
+  // color: $white;
 }
