@@ -59,7 +59,6 @@ class Welcome extends React.Component {
         <div className="welcome-header">
           <div className="site-name-with-logo">
             <Link to="/" className="logo"><img src={"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484763747/Logomakr_1JnLLO_hemnyc.png"} alt="logomakr"/></Link>
-            <Link to="/" className="site-name-head">meetSport</Link>
           </div>
           <ul className="welcome-page-nav">
             <li className="welcome-page-list"><button onClick={this.guestLogin} className="guest-button">Guest Demo</button></li>
@@ -90,10 +89,10 @@ class Welcome extends React.Component {
           <Link to="/" className="site-name">meetSport</Link>
           <ul className="welcome-page-nav">
             <li className="welcome-page-list">
-              <Link to="/login">Log In</Link>
+              <img src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1484767754/GitHub-Mark-120px-plus_g1wpq2.png"/>
             </li>
             <li className="welcome-page-list">
-              <Link to="/signup">Sign Up</Link>
+              <img src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1484767656/In-2C-108px-R_xxju11.png"/>
             </li>
           </ul>
         </footer>
