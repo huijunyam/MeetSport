@@ -12,29 +12,42 @@
 
 .member-container {
   display: block;
+  margin: 20px;
+  background: $lighest-blue;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 0;
 }
 
 .member-list {
   display: flex;
   padding: 10px;
+  padding-bottom: 20px;
 }
 
 .member-image {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
+  padding-right: 20px;
 }
 
 .member-name {
   display: inline-block;
-  padding-left: 15px;
-  padding-top: 15px;
+  padding: 15px;
   font-size: 20px;
   font-weight: bold;
-  font-family: $lato;
-  color: $blue;
+  font-family: $molengo;
+  color: $nav-ul-color;
 }
 
 .member-name:hover {
-  color: $dark-blue;
+  color: $blue;
+}
+
+.member-join-date {
+  font-size: 15px;
+  font-family: $molengo;
+  color: $blue;
+  padding-left: 15px;
 }
