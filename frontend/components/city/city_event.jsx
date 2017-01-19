@@ -10,7 +10,6 @@ class CityEvent extends React.Component {
   render() {
     return (
       <div>
-        <h2 className="header-event">All Events</h2>
         <ul className="city-event-list">
           {this.props.cityEvent.map(event => (
             <li key={event.id}>

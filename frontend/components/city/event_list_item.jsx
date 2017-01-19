@@ -48,14 +48,6 @@ class EventListItem extends React.Component {
     }
   }
 
-  // handleCity(e) {
-  //   e.preventDefault();
-  //   // debugger
-  //   const membership = { member_id: this.props.currentUserId,
-  //                        city_id: this.props.cityId };
-  //   this.props.joinCity(membership).then(() => this.props.fetchEvents(this.props.cityId));
-  // }
-
   render() {
     const {event} = this.props;
     let spot = "";
@@ -64,22 +56,22 @@ class EventListItem extends React.Component {
     } else {
       spot = "spot";
     }
-    // debugger
+
     let joinbutton = "";
     if (this.props.currentUser !== null) {
       if (this.props.currentUser.username === this.props.event.host.username) {
-        joinbutton = "Host";
+        joinbutton = <div className="joinbutton-word">Event Host</div>;
       } else if (this.props.isMember === false) {
-        joinbutton = "";
+        joinbutton = <div></div>;
       } else if (this.checkAttending() === false && this.props.event.attendees_num === (1 + this.props.event.attendings.length)){
-        joinbutton = "Full";
+        joinbutton = <div className="joinbutton-word">Sorry, we are full</div>;
       } else {
-        joinbutton = (<button onClick={this.handleClick}>{this.rsvp()}</button>);
+        joinbutton = (<button className="joinbutton-option" onClick={this.handleClick}>{this.rsvp()}</button>);
       }
     } else{
       joinbutton = "";
     }
-    // debugger
+
     return (
       <div className="event-detail-container">
         <div className="city-event">
@@ -87,22 +79,22 @@ class EventListItem extends React.Component {
             <li><Link to={`/event/${event.id}`} className="event-name">{event.name}</Link></li>
             <li className="host-name"><strong>Hosted by:</strong> {event.host.name}</li>
             <li className="event-date"><strong>Date:</strong> {event.date}</li>
-            <li className="event-start_time"><strong>Start Time:</strong> {event.start_time}</li>
+            <li className="event-start-time"><strong>Start Time:</strong> {event.start_time}</li>
           </ul>
           <ul className="sub-event-detail">
-              <li className="num-attendance"><strong>{`${event.attendings.length + 1}`}</strong> going</li>
-              <li className="spot-left"><strong>{`${event.attendees_num - (event.attendings.length + 1)}`}</strong> {spot} left</li>
-              <li>{joinbutton}</li>
-              <li><button className="event-detail-button"><Link to={`/event/${event.id}`} className="link-button">Event Detail</Link></button></li>
+            <li><button className="event-detail-button"><Link to={`/event/${event.id}`} className="link-button">Event Detail</Link></button></li>
+            <li>{joinbutton}</li>
+            <li className="num-attendance"><strong>{`${event.attendings.length + 1}`}</strong> going</li>
+            <li className="spot-left"><strong>{`${event.attendees_num - (event.attendings.length + 1)}`}</strong> {spot} left</li>
           </ul>
         </div>
         <ul className="city-event-detail-attendance">
           <li className="wording-event-attendance"><strong>Attending:</strong></li>
           <li>
             <ul className="event-attendance">
-              <li key={event.host.id}><Link to={`/users/show/${event.host.id}`}><img src={event.host.profile_img} className="member-attending-img"/></Link></li>
+              <li key={event.host.id}><Link to={`/users/show/${event.host.id}`}><img src={event.host.profile_img} className="member-attending-img-city"/></Link></li>
               {event.attendings.map(member =>(
-                <li key={member.id}><Link to={`/users/show/${member.id}`}><img src={member.profile_img} className="member-attending-img"/></Link></li>
+                <li key={member.id}><Link to={`/users/show/${member.id}`}><img src={member.profile_img} className="member-attending-img-city"/></Link></li>
               ))}
             </ul>
           </li>

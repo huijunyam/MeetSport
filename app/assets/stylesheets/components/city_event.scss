@@ -1,13 +1,11 @@
-.header-event {
-  font-size: 30px;
-  font-weight: bold;
-  color: $darkest-blue;
-  font-family: $sans-serif;
-  margin: 10px;
-  padding-left: 10px;
+.event-detail-container {
+  background: $lighest-blue;
+  margin: 20px 0 20px 0;
+  border-radius: 5px;
 }
 
 .city-event {
+  padding-left: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -25,7 +23,7 @@ strong {
 
 .event-name {
   font-size: 25px;
-  font-family: $sans-serif;
+  font-family: $molengo;
   font-weight: bold;
   color: $dark-blue;
   margin-bottom: 30px;
@@ -35,52 +33,80 @@ strong {
   color: $blue;
 }
 
-.host-name, .event-date, .event-start_time,
-.wording-event-attendance, .event-description-header{
-  font-size: 15px;
-  font-family: $lato;
-  padding: 10px;
+.host-name, .event-date, .event-start-time,
+.wording-event-attendance, .event-description-header {
+  font-size: 20px;
+  font-family: $molengo;
+  padding: 5px;
+  color: $nav-ul-color;
   padding-left: 0;
 }
 
-.host-name {
+.event-description-header {
   margin-top: 10px;
 }
 
+.host-name {
+  margin-top: 25px;
+}
 
-.member-attending-img {
-  height: 30px;
-  width: 30px;
+.event-start-time {
+  margin-bottom: 25px;
+}
+
+.member-attending-img-city {
+  height: 35px;
+  width: 35px;
 }
 
 .sub-event-detail {
-  text-align: left;
-  margin: 10px;
+  padding-right: 20px;
+  text-align: center;
+  margin-right: 20px;
 }
 
-.num-attendance {
-  padding-top: 40px;
+.joinbutton-word {
   font-weight: bolder;
+  font-family: $molengo;
   margin: 10px;
+  color: $nav-ul-color;
 }
 
-.spot-left {
+.joinbutton-option {
+  margin: 10px 10px 0 10px;
+  border: none;
+  background: $blue;
+  border-radius: 3px;
+  color: $white;
+  font-size: 15px;
+  width: 150px;
+}
+
+.num-attendance, .spot-left {
   font-weight: bolder;
+  font-family: $molengo;
   margin: 10px;
+  color: $nav-ul-color;
 }
 
 .event-detail-button {
-  margin: 10px;
-  background-color: $blue;
+  margin: 30px 10px 0 10px;
+  border: none;
+  background: $blue;
+  border-radius: 3px;
+  color: $white;
+  width: 150px;
 }
 
 .link-button {
-  color: $white
+  color: $white;
+  font-size: 15px;
+  font-weight: normal;
 }
 
 .city-event-detail-attendance {
+  padding-left: 40px;
   margin-left: 10px;
-  padding: 10px;
   padding-top: 0;
   margin-right: 10px;
 }
@@ -91,9 +117,9 @@ strong {
 
 .event-description {
   margin-bottom: 10px;
-  padding-bottom: 10px;
-}
+  padding-bottom: 30px;
+  font-family: $molengo;
+  font-size: 15px;
+  color: $nav-ul-color;
 
-.city-event-detail-attendance:last-child {
-  border-bottom: 1px solid $darkest-blue;
 }

@@ -50,6 +50,7 @@
   text-align: center;
   margin-right: 20px;
   padding-right: 0;
+  margin-top: 15px;
 }
 
 .noColor {
@@ -59,7 +60,8 @@
   color: $nav-ul-color;
   padding: 10px;
   font-weight: normal;
-  border-bottom: 1px solid $dark-blue;
+  border-bottom: 1px solid rgba(0, 91, 154, 0.27);
+  border-radius: 3px;
 }
 
 .noColor:hover {
@@ -68,6 +70,7 @@
   color: $white;
   padding: 10px;
   font-weight: normal;
+  border-radius: 3px;
 }
 
 .hoverClass {
@@ -77,6 +80,8 @@
   padding: 10px;
   font-family: $sans-serif;
   color: $white;
+  border-radius: 3px;
+
 }
 
 .city-sublist-content {
