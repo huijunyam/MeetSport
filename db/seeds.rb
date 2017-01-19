@@ -7,30 +7,57 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # User data
-user1 = User.create("email":"guest@gmail.com","password":"password","username":"guest",name:"Guest Demo", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user2 = User.create("email":"plee0@pbs.org","password":"Cu6JV0yo","username":"plee0","name":"Pamela Lee", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user3 = User.create("email":"aryan1@miitbeian.gov.cn","password":"vuLN21","username":"aryan1","name":"Ann Ryan", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user4 = User.create("email":"slawson2@chronoengine.com","password":"K7k80DV","username":"slawson2","name":"Sara Lawson", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user5 = User.create("email":"vgarrett3@arizona.edu","password":"qBpaNbyNHgbV","username":"vgarrett3","name":"Virginia Garrett", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user6 = User.create("email":"bgilbert4@imgur.com","password":"vxJvPr1","username":"bgilbert4","name":"Benjamin Gilbert", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user7 = User.create("email":"kcooper5@soup.io","password":"X2LcTjHLlXuV","username":"kcooper5","name":"Karen Cooper", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user8 = User.create("email":"ehall6@cornell.edu","password":"JnG3jfHlA5nf","username":"ehall6","name":"Earl Hall", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user9 = User.create("email":"areed7@networksolutions.com","password":"3wua98N","username":"areed7","name":"Albert Reed", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user10 = User.create("email":"arose8@toplist.cz","password":"5WvYoKwifA","username":"arose8","name":"Annie Rose", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user11 = User.create("email":"nkelley9@home.pl","password":"YfvuKrHV","username":"nkelley9","name":"Nicole Kelley", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user12 = User.create("email":"hgreena@1und1.de","password":"1JixJeAl0m","username":"hgreena","name":"Harold Green", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user13 = User.create("email":"jhayesb@cdbaby.com","password":"ojsykUoIXM","username":"jhayesb","name":"Joyce Hayes", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user14 = User.create("email":"jbaileyc@purevolume.com","password":"J7GDHBSe0Bn","username":"jbaileyc","name":"Jerry Bailey", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user15 = User.create("email":"elarsond@ted.com","password":"ebxwh01lAb3","username":"elarsond","name":"Eric Larson", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user16 = User.create("email":"jperrye@cnet.com","password":"xPwtEDPtg","username":"jperrye","name":"Jimmy Perry", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user17 = User.create("email":"jfoxf@so-net.ne.jp","password":"XyZXAopio64","username":"jfoxf","name":"Jeffrey Fox", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user18 = User.create("email":"rburtong@homestead.com","password":"z7022p5gw5","username":"rburtong","name":"Richard Burton", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user19 = User.create("email":"aperkinsh@studiopress.com","password":"EONxtK","username":"aperkinsh","name":"Amanda Perkins", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user20 = User.create("email":"ariverai@bbb.org","password":"RCyMudKdf","username":"ariverai","name":"Ann Rivera", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user21 = User.create("email":"wbennettj@barnesandnoble.com","password":"WJuYEYKo","username":"wbennettj","name":"Wayne Bennett", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user22 = User.create("email":"hmedinak@deviantart.com","password":"xCxdcp","username":"hmedinak","name":"Harry Medina", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user23 = User.create("email":"awilliamsonl@biglobe.ne.jp","password":"1QkuOzZEnk1e","username":"awilliamsonl","name":"Amy Williamson", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
-user24 = User.create("email":"chendersonm@slashdot.org","password":"svXZxKz","username":"chendersonm","name":"Christopher Henderson", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
+user1 = User.create("email":"guest@gmail.com","password":"password","username":"guest",name:"Guest Demo", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
+user2 = User.create("email":"plee0@pbs.org","password":"Cu6JV0yo","username":"plee0","name":"Pamela Lee", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855393/94_q3fhei.jpg");
+user3 = User.create("email":"aryan1@miitbeian.gov.cn","password":"vuLN21","username":"aryan1","name":"Ann Ryan", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855393/81_fmkuq6.jpg");
+user4 = User.create("email":"slawson2@chronoengine.com","password":"K7k80DV","username":"slawson2","name":"Sara Lawson", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855393/75_l0nkyg.jpg");
+user5 = User.create("email":"vgarrett3@arizona.edu","password":"qBpaNbyNHgbV","username":"vgarrett3","name":"Virginia Garrett", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854771/1_sts306.jpg");
+user6 = User.create("email":"bgilbert4@imgur.com","password":"vxJvPr1","username":"bgilbert4","name":"Benjamin Gilbert", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854773/92_rtwddt.jpg");
+user7 = User.create("email":"kcooper5@soup.io","password":"X2LcTjHLlXuV","username":"kcooper5","name":"Karen Cooper", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855393/66_xsouvm.jpg");
+user8 = User.create("email":"ehall6@cornell.edu","password":"JnG3jfHlA5nf","username":"ehall6","name":"Earl Hall", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854773/90_imgg8t.jpg");
+user9 = User.create("email":"areed7@networksolutions.com","password":"3wua98N","username":"areed7","name":"Albert Reed", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854773/84_af9kna.jpg");
+user10 = User.create("email":"arose8@toplist.cz","password":"5WvYoKwifA","username":"arose8","name":"Annie Rose", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855393/60_db1yyb.jpg");
+user11 = User.create("email":"nkelley9@home.pl","password":"YfvuKrHV","username":"nkelley9","name":"Nicole Kelley", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855393/57_emcybh.jpg");
+user12 = User.create("email":"hgreena@1und1.de","password":"1JixJeAl0m","username":"hgreena","name":"Harold Green", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854773/68_ibhijv.jpg");
+user13 = User.create("email":"jhayesb@cdbaby.com","password":"ojsykUoIXM","username":"jhayesb","name":"Joyce Hayes", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855392/55_dq9ajc.jpg");
+user14 = User.create("email":"jbaileyc@purevolume.com","password":"J7GDHBSe0Bn","username":"jbaileyc","name":"Jerry Bailey", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854772/60_tcma8y.jpg");
+user15 = User.create("email":"elarsond@ted.com","password":"ebxwh01lAb3","username":"elarsond","name":"Eric Larson", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854772/57_v6nl2k.jpg");
+user16 = User.create("email":"jperrye@cnet.com","password":"xPwtEDPtg","username":"jperrye","name":"Jimmy Perry", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854773/52_rejom0.jpg");
+user17 = User.create("email":"jfoxf@so-net.ne.jp","password":"XyZXAopio64","username":"jfoxf","name":"Jeffrey Fox", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854772/48_qpd9hx.jpg");
+user18 = User.create("email":"rburtong@homestead.com","password":"z7022p5gw5","username":"rburtong","name":"Richard Burton", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854772/47_bcfkkw.jpg");
+user19 = User.create("email":"aperkinsh@studiopress.com","password":"EONxtK","username":"aperkinsh","name":"Amanda Perkins", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855392/54_vrma9s.jpg");
+user20 = User.create("email":"ariverai@bbb.org","password":"RCyMudKdf","username":"ariverai","name":"Ann Rivera", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855392/51_youluv.jpg");
+user21 = User.create("email":"wbennettj@barnesandnoble.com","password":"WJuYEYKo","username":"wbennettj","name":"Wayne Bennett", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854772/46_lkh28f.jpg");
+user22 = User.create("email":"hmedinak@deviantart.com","password":"xCxdcp","username":"hmedinak","name":"Harry Medina", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854772/45_lxx3eu.jpg");
+user23 = User.create("email":"awilliamsonl@biglobe.ne.jp","password":"1QkuOzZEnk1e","username":"awilliamsonl","name":"Amy Williamson", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855392/49_sqjmiy.jpg");
+user24 = User.create("email":"chendersonm@slashdot.org","password":"svXZxKz","username":"chendersonm","name":"Christopher Henderson", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854772/44_z5cy6g.jpg");
+user25 = User.create("email":"jmorrisonn@gov.uk","password":"0DkSxdIMHp","username":"jmorrisonn","name":"Joyce Morrison", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855392/46_s7bnps.jpg");
+user26 = User.create("email":"cboydo@rediff.com","password":"2oGx1rRZg","username":"cboydo","name":"Carol Boyd", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855392/43_ifcli6.jpg");
+user27 = User.create("email":"scarrollp@ibm.com","password":"HG9EG3kZ2","username":"scarrollp","name":"Steven Carroll",profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854772/43_i6ksqj.jpg");
+user28 = User.create("email":"nkelleyq@stumbleupon.com","password":"PuNM50","username":"nkelleyq","name":"Norma Kelley", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855392/40_sf3uat.jpg");
+user29 = User.create("email":"ksimsr@t.co","password":"lWhuOo7BhR","username":"ksimsr","name":"Kevin Sims", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854771/42_vihuhf.jpg");
+user30 = User.create("email":"gkelleys@ucoz.com","password":"gbHuv46","username":"gkelleys","name":"Gloria Kelley", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854771/36_rutsj5.jpg");
+user31 = User.create("email":"dwoodst@furl.net","password":"Ag8PrZr43GE2","username":"dwoodst","name":"Douglas Woods", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854772/33_dtpy4u.jpg");
+user32 = User.create("email":"nfordu@disqus.com","password":"6okGVxlMX","username":"nfordu","name":"Nancy Ford", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855392/36_kgxto3.jpg");
+user33 = User.create("email":"jramirezv@networkadvertising.org","password":"QeTyCQO26vZr","username":"jramirezv","name":"Jane Ramirez", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855392/32_dpab6n.jpg");
+user34 = User.create("email":"bthompsonw@jimdo.com","password":"garAFG","username":"bthompsonw","name":"Brenda Thompson", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854771/32_bkoacq.jpg");
+user35 = User.create("email":"dmcdonaldx@moonfruit.com","password":"v2XamSfcQZ9H","username":"dmcdonaldx","name":"Dennis Mcdonald", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854771/31_bmodky.jpg");
+user36 = User.create("email":"mharrisy@usgs.gov","password":"uWhnmJyA","username":"mharrisy","name":"Martin Harris", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854771/30_ag4kkv.jpg");
+user37 = User.create("email":"jdeanz@t.co","password":"xrKDmOw","username":"jdeanz","name":"Jane Dean", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855392/27_fkxtnp.jpg");
+user38 = User.create("email":"pstone10@yale.edu","password":"UaXNaJh79I","username":"pstone10","name":"Paula Stone", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854771/29_mvmqtu.jpg");
+user39 = User.create("email":"ehawkins11@ft.com","password":"NWXs093X8WBr","username":"ehawkins11","name":"Eugene Hawkins", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854771/17_fajycj.jpg");
+user40 = User.create("email":"cduncan12@census.gov","password":"39Go2rSnFA1","username":"cduncan12","name":"Carl Duncan", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854771/15_af9mp6.jpg");
+user41 = User.create("email":"ccampbell13@usgs.gov","password":"vIEHzEH","username":"ccampbell13","name":"Christine Campbell", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855392/23_t0wx25.jpg");
+user42 = User.create("email":"jferguson14@ibm.com","password":"oIXvlEctFl","username":"jferguson14","name":"Jessica Ferguson", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855392/20_heslvs.jpg");
+user43 = User.create("email":"tharper15@state.gov","password":"RpDldX7O","username":"tharper15","name":"Timothy Harper", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854771/8_aadtiv.jpg");
+user44 = User.create("email":"daustin16@xrea.com","password":"LO4JlZ","username":"daustin16","name":"Douglas Austin", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484854771/4_rxgzeb.jpg");
+user45 = User.create("email":"apowell17@woothemes.com","password":"q113GSnhx","username":"apowell17","name":"Amanda Powell", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855392/19_okrho1.jpg");
+user46 = User.create("email":"mrichards18@51.la","password":"IozWldg","username":"mrichards18","name":"Margaret Richards", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855391/16_kffxzc.jpg");
+user47 = User.create("email":"jwest19@reddit.com","password":"zG6SkyAF","username":"jwest19","name":"Jesse West", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855391/11_wvyvmb.jpg");
+user48 = User.create("email":"jstephens1a@icq.com","password":"IkdvZwDnUN","username":"jstephens1a","name":"Jean Stephens", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855391/9_nav3we.jpg");
+user49 = User.create("email":"jhanson1b@yahoo.co.jp","password":"0jq2LT5j","username":"jhanson1b","name":"Janice Hanson", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855391/3_uk68my.jpg");
+user50 = User.create("email":"scastillo1c@last.fm","password":"ioauDy6owt","username":"scastillo1c","name":"Sharon Castillo", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855391/1_lzko5f.jpg");
+user51 = User.create("email":"aspencer1d@uiuc.edu","password":"MRGcLAebv","username":"aspencer1d","name":"Angela Spencer", profile_img:"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484855391/0_dmemjz.jpg");
 
 #city data
 city1 = City.create(name: "San Francisco", background_image_url: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484150504/hith-golden-gate-144833144-E_z5gl2t.jpg", header_image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484831069/SF-Skyline-1500x500_tjjyen.jpg");
@@ -40,32 +67,7 @@ city4 = City.create(name: "New York", background_image_url: "https://res.cloudin
 city5 = City.create(name: "Boston", background_image_url: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484150504/boston-photo1_yhewmg.jpg", header_image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484831069/Boston_Panoramic_wcckog.jpg");
 city6 = City.create(name: "Chicago", background_image_url: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484150503/timelapse-video-of-chicago-cloud-gate-or-bean-project-file-chicago-cloud-gatemove-1920x1080_ekww2w4p__S0000_bi7gkb.jpg", header_image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484831068/Chicago_from_North_Avenue_Beach_June_2015_panorama_2_tjeduu.jpg");
 
-#memberships data
-Membership.create(member_id: user1.id, city_id: city1.id)
-Membership.create(member_id: user2.id, city_id: city2.id)
-Membership.create(member_id: user3.id, city_id: city3.id)
-Membership.create(member_id: user4.id, city_id: city4.id)
-Membership.create(member_id: user5.id, city_id: city5.id)
-Membership.create(member_id: user6.id, city_id: city6.id)
-Membership.create(member_id: user7.id, city_id: city1.id)
-Membership.create(member_id: user8.id, city_id: city2.id)
-Membership.create(member_id: user9.id, city_id: city3.id)
-Membership.create(member_id: user10.id, city_id: city4.id)
-Membership.create(member_id: user11.id, city_id: city5.id)
-Membership.create(member_id: user12.id, city_id: city6.id)
-Membership.create(member_id: user13.id, city_id: city1.id)
-Membership.create(member_id: user14.id, city_id: city2.id)
-Membership.create(member_id: user15.id, city_id: city3.id)
-Membership.create(member_id: user16.id, city_id: city4.id)
-Membership.create(member_id: user17.id, city_id: city5.id)
-Membership.create(member_id: user18.id, city_id: city6.id)
-Membership.create(member_id: user19.id, city_id: city1.id)
-Membership.create(member_id: user20.id, city_id: city2.id)
-Membership.create(member_id: user21.id, city_id: city3.id)
-Membership.create(member_id: user22.id, city_id: city4.id)
-Membership.create(member_id: user23.id, city_id: city5.id)
-Membership.create(member_id: user24.id, city_id: city6.id)
-
+#category data
 category1= Category.create(name: "air sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829723/Air-Sports-HD-Wallpaper_jcug6c.jpg")
 category2= Category.create(name: "archery", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829725/GTY_archery_target_goal_bullseye_sk_150415_brzlpz.jpg")
 category3= Category.create(name: "basketball", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829724/basketball-wallpaper-1280x768-1180x768_iho8jo.jpg")
@@ -93,8 +95,28 @@ category24= Category.create(name: "shooting sports", image: "https://res.cloudin
 category25= Category.create(name: "water sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829725/fitness-water-sports_yqkfui.jpg")
 category26= Category.create(name: "hiking", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829725/hiking-along-the-edge-near-tiniteqilaaq-visit-greenland_thynse.jpg")
 
-
 #events data
+event1 = Event.create(city_id: city1.id,name: "Basketball 5 v 5", location: "240 Turk St",
+start_time: "4:00 PM", end_time: "6:00 PM", date: "01/25/2017", level: "beginner", attendees_num: 10, host_id: user2.id,
+description: "Anyone and everyone who wants to come and play 5v5 basketball on a beautiful college sized basketball court, have access to bathrooms, a score clock, and organized waiting queue, come to The Kroc Center San Francisco!")
+event1 = Event.create(city_id: city1.id,name: "Leisure Basketball", location: "401 Berry St",
+start_time: "9:00 AM", end_time: "11:00 AM", date: "01/27/2017", level: "intermediate", attendees_num: 10, host_id: user2.id,
+description:
+start_time: "4:40 PM", end_time: "6:00 PM", date: "01/25/2017", level: "beginner", attendees_num: 10, host_id: user2.id,
+description: )
+event1 = Event.create(city_id: city3.id,name: "Leisure Basketball", location: "401 Berry St",
+start_time: "4:40 PM", end_time: "6:00 PM", date: "01/25/2017", level: "beginner", attendees_num: 10, host_id: user2.id,
+description: )
+event1 = Event.create(city_id: city4.id,name: "Leisure Basketball", location: "401 Berry St",
+start_time: "4:40 PM", end_time: "6:00 PM", date: "01/25/2017", level: "beginner", attendees_num: 10, host_id: user2.id,
+description: )
+event1 = Event.create(city_id: city5.id,name: "Leisure Basketball", location: "401 Berry St",
+start_time: "4:40 PM", end_time: "6:00 PM", date: "01/25/2017", level: "beginner", attendees_num: 10, host_id: user2.id,
+description: )
+event1 = Event.create(city_id: city6.id,name: "Leisure Basketball", location: "401 Berry St",
+start_time: "4:40 PM", end_time: "6:00 PM", date: "01/25/2017", level: "beginner", attendees_num: 10, host_id: user2.id,
+description: )
+
 event1 = Event.create(city_id: city1.id,name: "Leisure Basketball", location: "401 Berry St", description: "We are all just beginner",
 start_time: "4:40 PM", end_time: "6:00 PM", date: "01/25/2017", level: "beginner", attendees_num: 10, host_id: user2.id)
 event2 = Event.create(city_id: city2.id,name: "Table Tennis Double", location: "5870 W Olympic Blvd", description: "Come join us to have fun",
@@ -117,8 +139,106 @@ event10 =Event.create(city_id: city4.id,name: "Latenight Run", location: "Centra
 start_time: "10:00 PM", end_time: "11:40 PM", date: "02/20/2017", level: "all", attendees_num: 5, host_id: user22.id)
 event11 =Event.create(city_id: city5.id,name: "Early Bird Squash", location: "Boston Sports Clubs", description: "Morning swing",
 start_time: "8:00 AM", end_time: "10:00 AM", date: "02/02/2017", level: "beginner", attendees_num: 4, host_id: user14.id)
-event12 =Event.create(city_id: city1.id,name: "Evening Sailing", location: "Sailing San Francisco", description: "Fun in the sea",
+event12 =Event.create(city_id: city6.id,name: "Evening Sailing", location: "Sailing San Francisco", description: "Fun in the sea",
 start_time: "4:00 PM", end_time: "6:00 PM", date: "01/17/2017", level: "intermediate", attendees_num: 5, host_id: user15.id)
+
+#memberships data
+Membership.create(member_id: user1.id, city_id: city1.id)
+Membership.create(member_id: user1.id, city_id: city2.id)
+Membership.create(member_id: user1.id, city_id: city3.id)
+Membership.create(member_id: user1.id, city_id: city4.id)
+Membership.create(member_id: user1.id, city_id: city5.id)
+Membership.create(member_id: user1.id, city_id: city6.id)
+
+Membership.create(member_id: user2.id, city_id: city1.id)
+Membership.create(member_id: user2.id, city_id: city2.id)
+Membership.create(member_id: user2.id, city_id: city3.id)
+
+Membership.create(member_id: user3.id, city_id: city4.id)
+Membership.create(member_id: user3.id, city_id: city5.id)
+Membership.create(member_id: user3.id, city_id: city6.id)
+Membership.create(member_id: user4.id, city_id: city2.id)
+Membership.create(member_id: user4.id, city_id: city1.id)
+Membership.create(member_id: user4.id, city_id: city2.id)
+Membership.create(member_id: user4.id, city_id: city3.id)
+Membership.create(member_id: user4.id, city_id: city4.id)
+
+Membership.create(member_id: user5.id, city_id: city1.id)
+Membership.create(member_id: user5.id, city_id: city2.id)
+Membership.create(member_id: user5.id, city_id: city3.id)
+Membership.create(member_id: user5.id, city_id: city4.id)
+Membership.create(member_id: user5.id, city_id: city5.id)
+Membership.create(member_id: user5.id, city_id: city6.id)
+
+Membership.create(member_id: user6.id, city_id: city2.id)
+Membership.create(member_id: user6.id, city_id: city4.id)
+Membership.create(member_id: user6.id, city_id: city6.id)
+
+Membership.create(member_id: user7.id, city_id: city1.id)
+Membership.create(member_id: user7.id, city_id: city2.id)
+Membership.create(member_id: user7.id, city_id: city4.id)
+Membership.create(member_id: user7.id, city_id: city3.id)
+
+Membership.create(member_id: user8.id, city_id: city1.id)
+Membership.create(member_id: user8.id, city_id: city3.id)
+Membership.create(member_id: user8.id, city_id: city5.id)
+
+Membership.create(member_id: user9.id, city_id: city4.id)
+Membership.create(member_id: user10.id, city_id: city5.id)
+Membership.create(member_id: user11.id, city_id: city6.id)
+Membership.create(member_id: user12.id, city_id: city1.id)
+Membership.create(member_id: user13.id, city_id: city2.id)
+Membership.create(member_id: user14.id, city_id: city3.id)
+Membership.create(member_id: user15.id, city_id: city4.id)
+Membership.create(member_id: user16.id, city_id: city5.id)
+Membership.create(member_id: user17.id, city_id: city6.id)
+
+Membership.create(member_id: user18.id, city_id: city1.id)
+Membership.create(member_id: user18.id, city_id: city2.id)
+Membership.create(member_id: user18.id, city_id: city3.id)
+Membership.create(member_id: user18.id, city_id: city4.id)
+Membership.create(member_id: user18.id, city_id: city5.id)
+Membership.create(member_id: user18.id, city_id: city6.id)
+
+Membership.create(member_id: user19.id, city_id: city2.id)
+Membership.create(member_id: user19.id, city_id: city5.id)
+
+Membership.create(member_id: user20.id, city_id: city2.id)
+Membership.create(member_id: user20.id, city_id: city3.id)
+Membership.create(member_id: user20.id, city_id: city4.id)
+Membership.create(member_id: user20.id, city_id: city1.id)
+
+Membership.create(member_id: user21.id, city_id: city1.id)
+Membership.create(member_id: user21.id, city_id: city2.id)
+Membership.create(member_id: user21.id, city_id: city4.id)
+
+Membership.create(member_id: user22.id, city_id: city1.id)
+Membership.create(member_id: user22.id, city_id: city2.id)
+Membership.create(member_id: user22.id, city_id: city3.id)
+Membership.create(member_id: user22.id, city_id: city4.id)
+Membership.create(member_id: user22.id, city_id: city5.id)
+Membership.create(member_id: user22.id, city_id: city6.id)
+
+Membership.create(member_id: user23.id, city_id: city5.id)
+Membership.create(member_id: user23.id, city_id: city2.id)
+
+Membership.create(member_id: user24.id, city_id: city6.id)
+
+Membership.create(member_id: user25.id, city_id: city1.id)
+Membership.create(member_id: user25.id, city_id: city2.id)
+Membership.create(member_id: user25.id, city_id: city3.id)
+
+Membership.create(member_id: user26.id, city_id: city4.id)
+Membership.create(member_id: user26.id, city_id: city5.id)
+Membership.create(member_id: user26.id, city_id: city6.id)
+
+Membership.create(member_id: user27.id, city_id: city1.id)
+Membership.create(member_id: user27.id, city_id: city2.id)
+Membership.create(member_id: user27.id, city_id: city3.id)
+Membership.create(member_id: user27.id, city_id: city4.id)
+
+Membership.create(member_id: user28.id, city_id: city5.id)
+Membership.create(member_id: user28.id, city_id: city6.id)
 
 #attendees
 Attendee.create(attendee_id: user1.id, event_id: event1.id)
