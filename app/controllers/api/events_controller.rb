@@ -7,12 +7,10 @@ class Api::EventsController < ApplicationController
         @events = []
       else
         keyword = "#{params[:search]}%"
-        category = Category.where("name LIKE ?", keyword)
-        category_id = category.map{ |el| el.id }
-        event = EventType.where("category_id IN (?)", category_id)
-        event_id = event.map{ |el| el.event_id }
+        category_id = Category.where("name LIKE ?", keyword).map{ |el| el.id }
+        event_id = EventType.where("category_id IN (?)", category_id).map{ |el| el.event_id }
         @events = Event.where("id IN (?)", event_id)
-      end 
+      end
     else
       @event = Event.all
     end

@@ -25,7 +25,7 @@ class SearchListItem extends React.Component {
         <div className="search-list-div">
           <Link to={`/event/${event.id}`}>
           <img className="search-img" src={event.category["image"]}
-              onMouseOver={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}/>
+              onMouseEnter={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}/>
           <h3 className="search-event-header"><strong>{event.name}</strong></h3>
           <div className={this.state.hoverClass}>
             <ul className="search-event-item">
