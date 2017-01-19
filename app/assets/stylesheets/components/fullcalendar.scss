@@ -1406,3 +1406,16 @@ be a descendant of the grid when it is being dragged.
 .fc-event-time {
    display : none;
 }
+
+.fc-prev-button:hover {
+	background-color: none;
+}
+
+.fc-content {
+	background-color: $nav-ul-color;
+	font-family: $molengo;
+}
+
+.fc-content:hover {
+	background-color: $blue;
+}
