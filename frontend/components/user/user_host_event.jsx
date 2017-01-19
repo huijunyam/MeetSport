@@ -7,7 +7,6 @@ const UserHostEvent = ({event}) => {
       <ul>
         <li>Name: <Link to={`/event/${event.id}`}>{event.name}</Link></li>
         <li>Date: {event.date}</li>
-        <li>Location: {event.location}</li>
       </ul>
     </li>
   );

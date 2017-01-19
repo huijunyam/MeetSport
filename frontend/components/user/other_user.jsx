@@ -49,7 +49,7 @@ class OtherUser extends React.Component {
             <p className="about-me-description">{userDetail.about_me}</p>
             <h4>{userDetail.name} has joined {userDetail.cities.length} {city}</h4>
             <ul className="user-join-city">
-              {userDetail.cities.map((city, id) => (<li key={`city-${id}`}>{city.name}</li>))}
+              {userDetail.cities.map((city, id) => (<li key={`city-${id}`} className="user-city-list">{city.name}</li>))}
             </ul>
             <br />
             <h4>{userDetail.name} has hosted {userDetail.events.length} {event}</h4>
