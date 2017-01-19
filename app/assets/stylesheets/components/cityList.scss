@@ -170,6 +170,17 @@
   opacity: 0.3;
 }
 
+.city-list-footer h3, .city-list-footer p{
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+  color: $dark-blue;
+  font-family: $sans-serif;
+}
+.city-list-footer {
+  margin-bottom: 40px;
+}
+
 .footer-button {
   margin-right: 10px;
 }

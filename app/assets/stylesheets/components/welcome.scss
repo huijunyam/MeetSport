@@ -111,6 +111,7 @@ video {
 
 .welcome-footer {
   width: 100%;
+  background-color: $blue;
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -120,9 +121,14 @@ video {
 }
 
 .welcome-footer a {
+  padding-top: 5px;
   font-family: $sans-serif;
-  color: $nav-ul-color;
   font-size: 15px;
+  color: $darkest-blue;
+}
+
+.welcome-footer a:hover {
+  color: $white;
 }
 
 .welcome-footer img {

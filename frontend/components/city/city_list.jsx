@@ -55,6 +55,10 @@ class CityList extends React.Component {
             {this.props.cities.map(city => (<CityListItem key={city.id} city={city} />))}
           </ul>
         </div>
+        <div className="city-list-footer">
+          <h3>Don't see your city</h3>
+          <p>Hang in there! We will get there soon.</p>
+        </div>
         <FooterContainer />
       </div>
     );
