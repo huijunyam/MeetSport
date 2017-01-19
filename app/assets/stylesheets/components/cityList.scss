@@ -33,7 +33,6 @@
 .search-input {
   padding: 10px 10px;
   background: $white;
-  // border: 2px solid $dark-blue;
   width: 370px;
   font-size: 17px;
   border-radius: 3px;
@@ -54,37 +53,29 @@
   cursor: pointer;
 }
 
-.search-result {
+.search-result, .city-list-container {
   width: 80%;
   display: flex;
   flex-direction: column;
   margin: 50px auto 30px auto;
 }
 
-.search-list {
+.search-list, .citylist{
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   text-align: center;
   font-size: 20px;
-}
-
-.city-list-container {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: 50px auto 30px auto;
-  border-top: 1px solid $dark-blue;
 }
 
 .citylist {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  text-align: center;
-  font-size: 20px;
   justify-content: space-between;
+}
+
+.city-list-container {
+  text-align: center;
+  margin-top: 0;
+  border-top: 1px solid rgba(0, 91, 154, 0.31);
 }
 
 .city-list-item, .event-from-search {
@@ -94,14 +85,15 @@
   padding: 20px;
 }
 
-.city-list-div, .search-event-item {
+.city-list-div, .search-list-div {
   width: 300px;
   height: 200px;
   margin: 10px;
+  position: relative;
 }
 
 .search-event-item {
-  border: 1px solid $dark-blue;
+  border-radius: 5px;
 }
 
 .search-event-header {
@@ -110,6 +102,11 @@
   color: $dark-blue;
   font-size: 20px;
   font-family: $lato;
+  position: absolute;
+  z-index: 10;
+  top: 5%;
+  width: 300px;
+  left: 3%;
 }
 
 .search-event-detail {
@@ -132,15 +129,28 @@
   font-weight: bold;
 }
 
-.city-img {
+.city-img, .search-img {
   width: 100%;
   height: 100%;
   margin: 10px;
   z-index: -1;
+  border-radius: 5px;
 }
 
-.city-list-div {
-  position: relative;
+.search-img {
+  opacity: 0.5;
+}
+
+.showDetail {
+  position: absolute;
+  z-index: 10;
+  top: 25%;
+  left: 10%;
+  padding: 10px;
+  width: 80%;
+  background-color: $lighest-blue;
+  opacity: 0.8;
+  border-radius: 5px;
 }
 
 .city-list-div p {
@@ -155,7 +165,7 @@
   width: 200px;
 }
 
-.city-img:hover {
+.city-img:hover, .search-img:hover {
   box-shadow: 0 0 10px #ccc;
   opacity: 0.3;
 }

@@ -33,12 +33,12 @@ user23 = User.create("email":"awilliamsonl@biglobe.ne.jp","password":"1QkuOzZEnk
 user24 = User.create("email":"chendersonm@slashdot.org","password":"svXZxKz","username":"chendersonm","name":"Christopher Henderson", profile_img:"http://res.cloudinary.com/dirtnmtpc/image/upload/v1484251027/Logomakr_1Oyf7s_oelcql.png");
 
 #city data
-city1 = City.create(name: "San Francisco", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150504/hith-golden-gate-144833144-E_z5gl2t.jpg");
-city2 = City.create(name: "Los Angeles", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150503/56-3636244-los-angeles-skyline-telephoto_kpcjc8.jpg");
-city3 = City.create(name: "Seattle", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150504/609_view1_fwaaxo.jpg");
-city4 = City.create(name: "New York", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150506/New-York-City-Skyline_j0xhgh.jpg");
-city5 = City.create(name: "Boston", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150504/boston-photo1_yhewmg.jpg");
-city6 = City.create(name: "Chicago", background_image_url: "http://res.cloudinary.com/dirtnmtpc/image/upload/v1484150503/timelapse-video-of-chicago-cloud-gate-or-bean-project-file-chicago-cloud-gatemove-1920x1080_ekww2w4p__S0000_bi7gkb.jpg");
+city1 = City.create(name: "San Francisco", background_image_url: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484150504/hith-golden-gate-144833144-E_z5gl2t.jpg", header_image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484831069/SF-Skyline-1500x500_tjjyen.jpg");
+city2 = City.create(name: "Los Angeles", background_image_url: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484150503/56-3636244-los-angeles-skyline-telephoto_kpcjc8.jpg", header_image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484831069/bg-pkw_mlpbrg.jpg");
+city3 = City.create(name: "Seattle", background_image_url: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484150504/609_view1_fwaaxo.jpg", header_image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484831068/1024px-Seattle_3_hkywjf.jpg");
+city4 = City.create(name: "New York", background_image_url: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484150506/New-York-City-Skyline_j0xhgh.jpg", header_image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484831069/newyork-night-hero_a9wkue.jpg");
+city5 = City.create(name: "Boston", background_image_url: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484150504/boston-photo1_yhewmg.jpg", header_image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484831069/Boston_Panoramic_wcckog.jpg");
+city6 = City.create(name: "Chicago", background_image_url: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484150503/timelapse-video-of-chicago-cloud-gate-or-bean-project-file-chicago-cloud-gatemove-1920x1080_ekww2w4p__S0000_bi7gkb.jpg", header_image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484831068/Chicago_from_North_Avenue_Beach_June_2015_panorama_2_tjeduu.jpg");
 
 #memberships data
 Membership.create(member_id: user1.id, city_id: city1.id)
@@ -66,32 +66,32 @@ Membership.create(member_id: user22.id, city_id: city4.id)
 Membership.create(member_id: user23.id, city_id: city5.id)
 Membership.create(member_id: user24.id, city_id: city6.id)
 
-category1= Category.create(name: "air sports")
-category2= Category.create(name: "archery")
-category3= Category.create(name: "basketball")
-category4= Category.create(name: "bat and ball")
-category5= Category.create(name: "board sports")
-category6= Category.create(name: "climbing")
-category7= Category.create(name: "cycling")
-category8= Category.create(name: "combat sports")
-category9= Category.create(name: "cue sports")
-category10= Category.create(name: "equine sports")
-category11= Category.create(name: "fishing")
-category12= Category.create(name: "football")
-category13= Category.create(name: "flying disc sports")
-category14= Category.create(name: "golf")
-category15= Category.create(name: "gymnastics")
-category16= Category.create(name: "handball")
-category17= Category.create(name: "ice sports")
-category18= Category.create(name: "kite sports")
-category19= Category.create(name: "mixed discipline")
-category20= Category.create(name: "racquet sports")
-category21= Category.create(name: "running")
-category22= Category.create(name: "sailing")
-category23= Category.create(name: "snow sports")
-category24= Category.create(name: "shooting sports")
-category25= Category.create(name: "water sports")
-category26= Category.create(name: "hiking")
+category1= Category.create(name: "air sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829723/Air-Sports-HD-Wallpaper_jcug6c.jpg")
+category2= Category.create(name: "archery", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829725/GTY_archery_target_goal_bullseye_sk_150415_brzlpz.jpg")
+category3= Category.create(name: "basketball", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829724/basketball-wallpaper-1280x768-1180x768_iho8jo.jpg")
+category4= Category.create(name: "bat and ball", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829721/9699207_G_hywzag.jpg")
+category5= Category.create(name: "board sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829722/2009_Year_In_Focus_Sport_DAaJ9QuErPZl_bzadw8.jpg")
+category6= Category.create(name: "climbing", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829735/Rock-Climbing-Wallpaper-HD_xnsbr0.jpg")
+category7= Category.create(name: "cycling", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829737/yourpreridechecklist_lwgstf.jpg")
+category8= Category.create(name: "combat sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829723/eadfb795c4352f237ed74d580ef44faf_yxw3y6.jpg")
+category9= Category.create(name: "cue sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829728/slider-1_g1uvcd.jpg")
+category10= Category.create(name: "equine sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829722/907a61b9645899f292de7753251cc12f_kk28ju.jpg")
+category11= Category.create(name: "fishing", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829741/Man-Fishing-in-the-Sunset_zh0etl.jpg")
+category12= Category.create(name: "football", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829725/Football_lmqlxu.jpg")
+category13= Category.create(name: "flying disc sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829722/0803frisbee_dvciim.jpg")
+category14= Category.create(name: "golf", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829736/e156e7bf-d268-4e0a-81b4-e2fc04ea626d_zodtwc.jpg")
+category15= Category.create(name: "gymnastics", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829722/9212134_n7okaa.jpg");
+category16= Category.create(name: "handball", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829722/317d3930192789.5605735460464_l6vycj.jpg")
+category17= Category.create(name: "ice sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829723/c700x420_ikogdp.jpg")
+category18= Category.create(name: "kite sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829723/Brookite_Jetstream_gbebqe.jpg")
+category19= Category.create(name: "mixed discipline", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829723/eadfb795c4352f237ed74d580ef44faf_yxw3y6.jpg")
+category20= Category.create(name: "racquet sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829726/Navarino-Racquet-Academy-1_qbuhfu.jpg")
+category21= Category.create(name: "running", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829723/hydration-belt-for-runners_k4sxvy.jpg")
+category22= Category.create(name: "sailing", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829732/new-caledonia-sailing_lodshc.jpg")
+category23= Category.create(name: "snow sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829727/snow-sports_pckxwn.jpg")
+category24= Category.create(name: "shooting sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829726/shot_aiming_k9avlg.jpg")
+category25= Category.create(name: "water sports", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829725/fitness-water-sports_yqkfui.jpg")
+category26= Category.create(name: "hiking", image: "https://res.cloudinary.com/dirtnmtpc/image/upload/v1484829725/hiking-along-the-edge-near-tiniteqilaaq-visit-greenland_thynse.jpg")
 
 
 #events data

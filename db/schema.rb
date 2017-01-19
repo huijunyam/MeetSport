@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170116183623) do
+ActiveRecord::Schema.define(version: 20170119124227) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20170116183623) do
     t.string   "name",       null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "image"
     t.index ["name"], name: "index_categories_on_name", using: :btree
   end
 
@@ -35,6 +36,7 @@ ActiveRecord::Schema.define(version: 20170116183623) do
     t.string   "background_image_url", null: false
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+    t.string   "header_image"
     t.index ["name"], name: "index_cities_on_name", unique: true, using: :btree
   end
 

@@ -80,7 +80,7 @@ class City extends React.Component {
       <div>
         <HeaderContainer />
         <div className="sub-city-header">
-          <img src={this.props.cityDetail.background_image_url} />
+          <img src={this.props.cityDetail.header_image} />
           <h2>{this.props.cityDetail.name}</h2>
           <button onClick={this.handleClick} className="sub-city-header-button">{buttonType}</button>
         </div>

@@ -28,9 +28,9 @@ class EventForm extends React.Component {
                 "Bat and Ball", "Board Sports", "Climbing", "Cycling",
                 "Combat Sports", "Cue Sports", "Equine Sports", "Fishing",
                 "Football", "Flying Disc Sports", "Golf", "Gymnastics",
-                "Handball", "Ice Sports", "Kite Sports", "Mixed Discipline",
+                "Handball", "Hiking", "Ice Sports", "Kite Sports", "Mixed Discipline",
                 "Racquet Sports", "Running", "Sailing", "Snow Sports",
-                "Shooting Sports", "Water Sports", "Hiking"];
+                "Shooting Sports", "Water Sports"];
   }
 
   skillLevel() {

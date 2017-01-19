@@ -10,19 +10,19 @@
 .sub-city-header img {
   width: 70%;
   height: 100%;
-  opacity: 0.5;
+  opacity: 0.8;
   border-radius: 5px;
 }
 
 .sub-city-header h2 {
   position: absolute;
-  top: 40%;
+  top: 35%;
   width: 300px;
-  font-size: 30px;
+  font-size: 40px;
   font-family: $sans-serif;
   font-weight: bold;
-  left: 42%;
-  color: $darkest-blue;
+  left: 40%;
+  color: $white;
 }
 
 .sub-city-header-button {
