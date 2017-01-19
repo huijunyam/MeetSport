@@ -22,7 +22,7 @@ class CityListItem extends React.Component {
     return (
       <li className="city-list-item">
         <div className="city-list-div">
-          <Link to={`/city/${city.id}`} >
+          <Link to={`/city/${city.id}/event`} >
             <img className="city-img" src={city["background_image_url"]}
               onMouseOver={this.handleMouseEnter} onMouseLeave={this.handleMouseLeave}/>
             <p className={this.state.hoverClass}>{city["name"]}</p>

@@ -24,13 +24,13 @@ class EventForm extends React.Component {
   }
 
   sportCategory() {
-    return ["air sports", "archery", "basketball",
-                "bat and ball", "board sports", "climbing", "cycling",
-                "combat sports", "cue sports", "equine sports", "fishing",
-                "football", "flying disc sports", "golf", "gymnastics",
-                "handball", "ice sports", "kite sports", "mixed discipline",
-                "racquet sports", "running", "sailing", "snow sports",
-                "shooting sports", "water sports", "hiking"];
+    return ["Air Sports", "Archery", "Basketball",
+                "Bat and Ball", "Board Sports", "Climbing", "Cycling",
+                "Combat Sports", "Cue Sports", "Equine Sports", "Fishing",
+                "Football", "Flying Disc Sports", "Golf", "Gymnastics",
+                "Handball", "Ice Sports", "Kite Sports", "Mixed Discipline",
+                "Racquet Sports", "Running", "Sailing", "Snow Sports",
+                "Shooting Sports", "Water Sports", "Hiking"];
   }
 
   skillLevel() {
@@ -98,7 +98,7 @@ class EventForm extends React.Component {
       city_id: this.props.cityId,
       name: this.state.name,
       location: this.state.location,
-      category: this.state.category,
+      category: this.state.category.toLowerCase(),
       description: this.state.description,
       start_time: this.handleDateTime("time", this.state.start_time),
       end_time: this.handleDateTime("time", this.state.end_time),

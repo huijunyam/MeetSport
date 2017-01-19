@@ -35,7 +35,7 @@ class CityList extends React.Component {
         <HeaderContainer />
         <div className="sub-header">
           <h2>Choose a City</h2>
-          
+
           <p>Explore all the sport events that happen in your city</p>
         </div>
         <form className="search-bar">

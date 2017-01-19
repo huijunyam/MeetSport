@@ -58,7 +58,6 @@
     width: 100%;
     padding: 10px 10px;
     margin: 10px 0 20px 0;
-    // display: inline-block;
     border: 1px solid $dark-blue;
     border-radius: 3px;
     box-sizing: border-box;
@@ -71,7 +70,6 @@
     padding: 5px 20px;
     margin: 0 0 20px 0;
     display: inline-block;
-    // border: 1px solid $hover-ul-color;
     border-radius: 5px;
     box-sizing: border-box;
     font-size: 20px;
@@ -82,8 +80,5 @@
 
 .button:hover {
   box-shadow: 0 0 10px #ccc;
-  // opacity: 0.8;
   -webkit-filter: brightness(90%)
-  // background-color: $dark-blue;
-  // color: $white;
 }
