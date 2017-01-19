@@ -7,7 +7,7 @@
 }
 
 .sub-city-header img {
-  width: 80%;
+  width: 70%;
   height: 100%;
   opacity: 0.5;
 }
@@ -15,25 +15,27 @@
 .sub-city-header h2 {
   position: absolute;
   top: 40%;
-  font-size: 50px;
+  width: 300px;
+  font-size: 30px;
   font-family: $sans-serif;
   font-weight: bold;
-  left: 40%;
+  left: 42%;
   color: $darkest-blue;
 }
 
 .sub-city-header-button {
   position: absolute;
   top: 75%;
-  left: 78%;
-  width: 150px;
-  background: $darkest-blue;
+  left: 74%;
+  width: 140px;
+  background: $blue;
+  border-radius: 3px;
   color: $white;
 }
 
 .sub-city-header-button:hover {
   box-shadow: 0 0 10px #ccc;
-  opacity: 0.8;
+  // opacity: 0.8;
   // background: $white;
 }
 
@@ -41,33 +43,42 @@
   margin: 10px auto;
   display: flex;
   padding: 10px;
-  width: 80%;
+  width: 70%;
 }
 
 .city-sublist {
-  margin: 5px;
   text-align: center;
   margin-right: 20px;
   padding-right: 0;
 }
 
-.city-sub-home-list {
+.noColor {
   font-size: 20px;
-  font-weight: bold;
-  padding: 20px;
-  font-family: $sans-serif;
-  border: 5px $dark-blue solid;
-  background-color: $lighest-blue;
-  color: $dark-blue;
-  border-radius: 3px;
+  padding: 10px 0;
+  font-family: $karla;
+  color: $nav-ul-color;
+  padding: 10px;
+  font-weight: normal;
+  border-bottom: 1px solid $dark-blue;
 }
 
-.city-sub-home-list:hover {
-  background-color: $blue;
-  box-shadow: -3px -6px 55px -1px rgba(255,255,255,1);
+.noColor:hover {
+  background-color: $hover-ul-color;
+  border-radius: 3px;
+  color: $white;
+  padding: 10px;
+  font-weight: normal;
+}
+
+.hoverClass {
+  font-weight: normal;
+  background-color: $hover-ul-color;
+  font-size: 20px;
+  padding: 10px;
+  font-family: $sans-serif;
   color: $white;
 }
 
-div .city-sub-home-list:focus {
-  background-color: $dark-blue;
+.city-sublist-content {
+  border: none;
 }
