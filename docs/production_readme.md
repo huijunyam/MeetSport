@@ -41,8 +41,6 @@ In the database, the information of the users are stored in single table which c
 
 ![image of currentuser's profile](wireframes/currentuser_profile.png)
 
-![image of otheruser's profile](wireframes/otheruser_profile.png)
-
 ## Future Directions for the Project
 In addition to the features already implemented, I plan to continue to add more features and polish my application. The next steps for MeetSports are outlined below.
 
