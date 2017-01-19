@@ -17,9 +17,9 @@ class Event extends React.Component {
 
   handleButton() {
     if (this.props.currentUserIsHost) {
-      return (<div></div>);
+      return (<div className="event-host-button">Event Host</div>);
     } else if (this.props.hasAttendance === false && this.props.eventDetail.attendees_num === (1 + this.props.eventDetail.attendings.length)){
-      return (<button disabled className="sub-event-header-button-disabled">{this.rsvp()}</button>);
+      return (<div className="event-full-button">Event Full</div>);
     } else {
       return (<button onClick={this.handleClick} className="sub-event-header-button">{this.rsvp()}</button>);
     }
@@ -47,7 +47,6 @@ class Event extends React.Component {
   }
 
   render() {
-    // debuggesr
     const { eventDetail } = this.props;
     return (
       <div>
