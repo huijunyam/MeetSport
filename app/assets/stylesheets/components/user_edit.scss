@@ -1,26 +1,27 @@
 .edit-form-container {
-  // border: 3px $dark-blue solid;
-  border-radius: 4px;
+  background-color: $lighest-blue;
+  border-radius: 5px;
   padding: 20px;
   margin: auto;
-  width: 30%;
+  width: 25%;
   text-align: center;
-  margin-bottom: 20px;
+  margin: 30px auto;
+  height: 100%;
 }
 
 .edit-form-container h2{
   font-family: $sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
   color: $blue;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .edit-form-container label{
   display: block;
   font-family: $sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   text-align: left;
   font-weight: bold;
   color: $blue;
@@ -28,40 +29,47 @@
 
 .edit-form-error {
   padding-top: 20px;
-  font-size: 18px;
+  font-size: 13px;
   font-family: $lato;
   color: red;
 }
 
 .edit-input {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 10px 0 25px 0;
-    // display: inline-block;
-    // border: 1px solid $dark-blue;
-    border-radius: 2px;
-    box-sizing: border-box;
-    font-size: 20px;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 10px 0 20px 0;
+  border: 1px solid $dark-blue;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 15px;
 }
 
 .user-edit-button {
-    width: 100%;
-    background-color: $light-blue;
-    padding: 12px 20px;
-    margin: 8px 0 20px 0;
-    display: inline-block;
-    // border: 1px solid $dark-blue;
-    border-radius: 2px;
-    box-sizing: border-box;
-    font-size: 20px;
+  width: 50%;
+  background-color: $hover-ul-color;
+  padding: 5px 20px;
+  margin: 0 0 20px 0;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: $dark-blue;
+  font-family: $sans-serif;
+  -webkit-filter: brightness(100%);
 }
 
 .user-edit-button:hover {
-  background-color: $dark-blue;
-  color: $white;
+  box-shadow: 0 0 10px #ccc;
+  -webkit-filter: brightness(90%)
 }
 
 .textarea-edit {
-  width: 410px;
-  height: 150px;
+  width: 88%;
+	height: 120px;
+  margin: 10px 50px 25px 0;
+	border: 1px solid $dark-blue;
+  border-radius: 5px;
+	padding: 8px 20px;
+  font-size: 15px;
+	font-family: $sans-serif;
 }
