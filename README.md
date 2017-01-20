@@ -1,6 +1,6 @@
 # MeetSport
 
-[Meet Sport](http://meetsport.herokuapp.com)
+[Meet Sport](http://www.meetsport.io)
 
 MeetSport is a full stack web application inspired by Meetup. It utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend. MeetSport allows users to search and explore for sporting events in the city. Users are able to join the city and events.
 
