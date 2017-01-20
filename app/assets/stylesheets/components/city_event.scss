@@ -59,6 +59,29 @@ strong {
   width: 35px;
 }
 
+.tooltip-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 125px;
+    background-color: $nav-ul-color;
+    color: $white;
+    font-family: $molengo;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.tooltip-image-container:hover .tooltiptext {
+    visibility: visible;
+}
+
 .sub-event-detail {
   padding-right: 20px;
   text-align: center;

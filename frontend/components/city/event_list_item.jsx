@@ -92,9 +92,19 @@ class EventListItem extends React.Component {
           <li className="wording-event-attendance"><strong>Attending:</strong></li>
           <li>
             <ul className="event-attendance">
-              <li key={event.host.id}><Link to={`/users/show/${event.host.id}`}><img src={event.host.profile_img} className="member-attending-img-city"/></Link></li>
+              <li key={event.host.id}>
+                  <div className="tooltip-image-container">
+                    <Link to={`/users/show/${event.host.id}`}><img src={event.host.profile_img} className="member-attending-img-city"/></Link>
+                    <p className="tooltiptext">{event.host.name}</p>
+                  </div>
+              </li>
               {event.attendings.map(member =>(
-                <li key={member.id}><Link to={`/users/show/${member.id}`}><img src={member.profile_img} className="member-attending-img-city"/></Link></li>
+                <li key={member.id}>
+                  <div className="tooltip-image-container">
+                    <Link to={`/users/show/${member.id}`}><img src={member.profile_img} className="member-attending-img-city"/></Link>
+                    <p className="tooltiptext">{member.name}</p>
+                  </div>
+                </li>
               ))}
             </ul>
           </li>
