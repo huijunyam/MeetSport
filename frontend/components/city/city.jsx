@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import HeaderContainer from '../layout/header_container';
 import FooterContainer from '../layout/footer_container';
+import Forecast from 'react-forecast';
 
 class City extends React.Component {
   constructor(props) {
@@ -21,6 +22,16 @@ class City extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+  locationArr() {
+    return {
+      1: {latitude: 37.77, longitude: -122.42},
+      2: {latitude: 34.05, longitude: -123.41},
+      3: {latitude: 47.61, longitude: -122.33},
+      4: {latitude: 40.71, longitude: -74.01},
+      5: {latitude: 42.36, longitude: -71.06},
+      6: {latitude: 41.88, longitude: -87.63}
+    };
+  }
   componentDidMount() {
     this.props.fetchCity(this.props.cityId);
   }
@@ -95,6 +106,11 @@ class City extends React.Component {
             <img src={this.props.cityDetail.header_image} />
             <h2>{this.props.cityDetail.name}</h2>
             <button onClick={this.handleClick} className="sub-city-header-button">{buttonType}</button>
+          </div>
+          <div className="weather-forecast">
+            <Forecast latitude={this.locationArr()[this.props.cityId]["latitude"]}
+              longitude={this.locationArr()[this.props.cityId]["longitude"]}
+              name={this.props.cityDetail.name} color="blue" />
           </div>
           <div className="city-home-list">
             <section className="city-sublist col-first">
