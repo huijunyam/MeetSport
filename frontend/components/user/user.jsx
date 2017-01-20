@@ -50,35 +50,37 @@ class User extends React.Component {
       city = "cities";
     }
     return (
-      <div>
-        <HeaderContainer />
-        <div className="user-container">
-          <div className="user-bio">
-            <h3 className="user-name">{userDetail.name}</h3>
-            <h4 className="user-member"><strong>Member since:</strong> {this.convertTimefromX()}</h4>
-            <h4 className="user-member-about-me"><strong>About me:</strong></h4>
-            <p className="about-me-description">{userDetail.about_me}</p>
-            <h4>{userDetail.name} has joined {userDetail.cities.length} {city}</h4>
-            <ul className="user-join-city">
-              {userDetail.cities.map((city, id) => (<li className="user-city-list" key={`city-${id}`}><Link to={`/city/${city.id}/event`}>{city.name}</Link></li>))}
-            </ul>
-            <br />
-            <h4>{userDetail.name} has hosted {userDetail.events.length} {event}</h4>
-            <ul className="user-host-event">
-              {userDetail.events.map((event, id) => (
-                <UserHostEvent key={`host-${id}`} event={event} />
-              ))}
-            </ul>
-            <h4>{userDetail.name} has joined {userDetail.event_attendees.length} {event}</h4>
-            <ul className="user-join-event">
-              {userDetail.event_attendees.map(event => (
-                <UserJoinEvent key={`event-${event.id}`} event={event} />
-              ))}
-            </ul>
-            <button className="edit-button" onClick={this.handleClick}>Edit Profile</button>
-          </div>
-          <div className="profile-pic-container">
-            <img src={userDetail.profile_img}/>
+      <div className="align-footer">
+        <div>
+          <HeaderContainer />
+          <div className="user-container">
+            <div className="user-bio">
+              <h3 className="user-name">{userDetail.name}</h3>
+              <h4 className="user-member"><strong>Member since:</strong> {this.convertTimefromX()}</h4>
+              <h4 className="user-member-about-me"><strong>About me:</strong></h4>
+              <p className="about-me-description">{userDetail.about_me}</p>
+              <h4>{userDetail.name} has joined {userDetail.cities.length} {city}</h4>
+              <ul className="user-join-city">
+                {userDetail.cities.map((city, id) => (<li className="user-city-list" key={`city-${id}`}><Link to={`/city/${city.id}/event`}>{city.name}</Link></li>))}
+              </ul>
+              <br />
+              <h4>{userDetail.name} has hosted {userDetail.events.length} {event}</h4>
+              <ul className="user-host-event">
+                {userDetail.events.map((event, id) => (
+                  <UserHostEvent key={`host-${id}`} event={event} />
+                ))}
+              </ul>
+              <h4>{userDetail.name} has joined {userDetail.event_attendees.length} {event}</h4>
+              <ul className="user-join-event">
+                {userDetail.event_attendees.map(event => (
+                  <UserJoinEvent key={`event-${event.id}`} event={event} />
+                ))}
+              </ul>
+              <button className="edit-button" onClick={this.handleClick}>Edit Profile</button>
+            </div>
+            <div className="profile-pic-container">
+              <img src={userDetail.profile_img}/>
+            </div>
           </div>
         </div>
         <FooterContainer />

@@ -88,31 +88,33 @@ class City extends React.Component {
   render() {
     let buttonType = (this.props.hasMember) ? "Leave the City" : "Join Us";
     return (
-      <div>
-        <HeaderContainer />
-        <div className="sub-city-header">
-          <img src={this.props.cityDetail.header_image} />
-          <h2>{this.props.cityDetail.name}</h2>
-          <button onClick={this.handleClick} className="sub-city-header-button">{buttonType}</button>
-        </div>
-        <div className="city-home-list">
-          <section className="city-sublist col-first">
-            <Link to={`/city/${this.props.cityId}/event`} onClick={this.handleEventHover}><div className={this.state.eventHover}>All Events</div></Link>
-            <Link to={`/city/${this.props.cityId}/member`} onClick={this.handleMemberHover}><div className={this.state.memberHover}>All Members</div></Link>
-            <Link to={`/city/${this.props.cityId}/calendar`} onClick={this.handleCalendarHover}><div className={this.state.calendarHover}>Calendar</div></Link>
-            <Link to={`/city/${this.props.cityId}/create`} onClick={this.handleCreateHover}><div className={this.state.createHover}>Create Event</div></Link>
-            <div className="city-search-bar">
-              <label className="city-search-label">Advanced Search</label>
-              <input type="text"
-                placeholder="Search by Sport Category"
-                value={this.state.search}
-                onChange={this.handleChange}
-                className="city-search-input" />
-            </div>
-          </section>
-          <section className="city-sublist-content col-lastest">
-              <div>{this.props.children}</div>
-          </section>
+      <div className="align-footer">
+        <div>
+          <HeaderContainer />
+          <div className="sub-city-header">
+            <img src={this.props.cityDetail.header_image} />
+            <h2>{this.props.cityDetail.name}</h2>
+            <button onClick={this.handleClick} className="sub-city-header-button">{buttonType}</button>
+          </div>
+          <div className="city-home-list">
+            <section className="city-sublist col-first">
+              <Link to={`/city/${this.props.cityId}/event`} onClick={this.handleEventHover}><div className={this.state.eventHover}>All Events</div></Link>
+              <Link to={`/city/${this.props.cityId}/member`} onClick={this.handleMemberHover}><div className={this.state.memberHover}>All Members</div></Link>
+              <Link to={`/city/${this.props.cityId}/calendar`} onClick={this.handleCalendarHover}><div className={this.state.calendarHover}>Calendar</div></Link>
+              <Link to={`/city/${this.props.cityId}/create`} onClick={this.handleCreateHover}><div className={this.state.createHover}>Create Event</div></Link>
+              <div className="city-search-bar">
+                <label className="city-search-label">Advanced Search</label>
+                <input type="text"
+                  placeholder="Search by Sport Category"
+                  value={this.state.search}
+                  onChange={this.handleChange}
+                  className="city-search-input" />
+              </div>
+            </section>
+            <section className="city-sublist-content col-lastest">
+                <div>{this.props.children}</div>
+            </section>
+          </div>
         </div>
         <FooterContainer />
       </div>

@@ -55,7 +55,7 @@ class Welcome extends React.Component {
 
   render() {
     return (
-      <div className="welcome-page">
+      <div className="welcome-page align-footer">
         <div className="welcome-header">
           <div className="site-name-with-logo">
             <Link to="/" className="logo"><img src={"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484763747/Logomakr_1JnLLO_hemnyc.png"} alt="logomakr"/></Link>
@@ -73,18 +73,18 @@ class Welcome extends React.Component {
             </video>
           </div>
           <div className="welcome-title">
-            <h2>Together we explore and connect through sports</h2>
+            <h2>Meet and make new friends everywhere</h2>
             <br />
-            <p>Meet and make friends with people that shares similar interest</p>
+            <p>Together we explore and connect through sports</p>
             <br />
             <br />
             <br />
             <br />
             <button className="signup-button" onClick={this.userSignup}>Sign Up</button>
           </div>
+          {this.description()}
         </div>
 
-        {this.description()}
         <footer className="welcome-footer">
           <Link to="/" className="site-name">meetSport</Link>
           <ul className="welcome-page-nav">

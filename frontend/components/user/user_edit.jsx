@@ -53,31 +53,33 @@ class UserEdit extends React.Component {
 
   render() {
     return (
-      <div>
-        <HeaderContainer />
-        <div className="edit-form-container">
-          <h2>Edit Profile</h2>
-          <form onSubmit={this.handleSubmit}>
-            {this.renderErrors()}
-            <div className="user-edit-form">
-              <label>Name</label>
-                <input type="text"
-                  value={this.state.name}
-                  onChange={this.update("name")}
-                  className="edit-input" />
+      <div className="align-footer">
+        <div>
+          <HeaderContainer />
+          <div className="edit-form-container">
+            <h2>Edit Profile</h2>
+            <form onSubmit={this.handleSubmit}>
+              {this.renderErrors()}
+              <div className="user-edit-form">
+                <label>Name</label>
+                  <input type="text"
+                    value={this.state.name}
+                    onChange={this.update("name")}
+                    className="edit-input" />
 
-                <label>Email</label>
-                <input type="text"
-                  value={this.state.email}
-                  onChange={this.update("email")}
-                  className="edit-input" />
+                  <label>Email</label>
+                  <input type="text"
+                    value={this.state.email}
+                    onChange={this.update("email")}
+                    className="edit-input" />
 
-                <label>About me</label>
-                  <textarea className="textarea-edit" value={this.state.about_me} onChange={this.update('about_me')} />
+                  <label>About me</label>
+                    <textarea className="textarea-edit" value={this.state.about_me} onChange={this.update('about_me')} />
 
-                <input className="user-edit-button" type="submit" value="Update Profile"/>
-            </div>
-          </form>
+                  <input className="user-edit-button" type="submit" value="Update Profile"/>
+              </div>
+            </form>
+          </div>
         </div>
         <FooterContainer />
       </div>

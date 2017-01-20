@@ -31,33 +31,35 @@ class CityList extends React.Component {
 
   render() {
     return (
-      <div>
-        <HeaderContainer />
-        <div className="sub-header">
-          <h2>Choose a City</h2>
+      <div className="align-footer">
+        <div>
+          <HeaderContainer />
+          <div className="sub-header">
+            <h2>Choose a City</h2>
 
-          <p>Explore all the sport events that happen in your city</p>
-        </div>
-        <form className="search-bar">
-          <input type="text"
-            placeholder="Search by Sport Category"
-            value={this.state.search}
-            onChange={this.handleChange}
-            className="search-input" />
+            <p>Explore all the sport events that happen in your city</p>
+          </div>
+          <form className="search-bar">
+            <input type="text"
+              placeholder="Search by Sport Category"
+              value={this.state.search}
+              onChange={this.handleChange}
+              className="search-input" />
 
-          <input className="search-button" onClick={this.handleClick} type="button" value="Search"/>
-        </form>
-        <div className="search-result">
-          {this.props.children}
-        </div>
-        <div className="city-list-container">
-          <ul className="citylist">
-            {this.props.cities.map(city => (<CityListItem key={city.id} city={city} />))}
-          </ul>
-        </div>
-        <div className="city-list-footer">
-          <h3>Don't see your city</h3>
-          <p>Hang in there! We will get there soon.</p>
+            <input className="search-button" onClick={this.handleClick} type="button" value="Search"/>
+          </form>
+          <div className="search-result">
+            {this.props.children}
+          </div>
+          <div className="city-list-container">
+            <ul className="citylist">
+              {this.props.cities.map(city => (<CityListItem key={city.id} city={city} />))}
+            </ul>
+          </div>
+          <div className="city-list-footer">
+            <h3>Don't see your city?</h3>
+            <p>Hang in there! We will get there soon.</p>
+          </div>
         </div>
         <FooterContainer />
       </div>

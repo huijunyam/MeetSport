@@ -49,13 +49,15 @@ class Event extends React.Component {
   render() {
     const { eventDetail } = this.props;
     return (
-      <div>
-        <HeaderContainer />
-        <div className="sub-event-header">
-          <h2>{eventDetail.name}</h2>
-          {this.handleButton()}
+      <div className="align-footer">
+        <div>
+          <HeaderContainer />
+          <div className="sub-event-header">
+            <h2>{eventDetail.name}</h2>
+            {this.handleButton()}
+          </div>
+          <EventDetail eventDetail={eventDetail} />
         </div>
-        <EventDetail eventDetail={eventDetail} />
         <FooterContainer />
       </div>
     );

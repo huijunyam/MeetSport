@@ -10,16 +10,16 @@
 }
 
 .sub-header h2{
-  font-size: 40px;
-  font-family: $sans-serif;
+  font-size: 45px;
+  font-family: $hindi;
   font-weight: bolder;
   padding: 30px;
   color: $white;
 }
 
 .sub-header p{
-  font-size: 25px;
-  font-family: $sans-serif;
+  font-size: 30px;
+  font-family: $architect;
   font-weight: bolder;
   padding-bottom: 30px;
   padding-top: 10px;
@@ -118,10 +118,10 @@
   margin-left: 20px;
 }
 
-.search-event-item:hover {
-  box-shadow: 0 0 10px #ccc;
-  opacity: 0.8;
-}
+// .search-event-item:hover {
+//   box-shadow: 0 0 10px #ccc;
+//   opacity: 0.8;
+// }
 
 .city-list-header {
   font-size: 30px;
@@ -138,7 +138,7 @@
 }
 
 .search-img {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .showDetail {
@@ -148,9 +148,11 @@
   left: 10%;
   padding: 10px;
   width: 80%;
+  margin-top: 10px;
   background-color: $lighest-blue;
   opacity: 0.8;
   border-radius: 5px;
+  color: $dark-blue;
 }
 
 .city-list-div p {
@@ -165,9 +167,14 @@
   width: 200px;
 }
 
-.city-img:hover, .search-img:hover {
+.city-img:hover {
   box-shadow: 0 0 10px #ccc;
   opacity: 0.3;
+}
+
+.search-list-div:hover {
+  box-shadow: 0 0 10px #ccc;
+  opacity: 0.7;
 }
 
 .city-list-footer h3, .city-list-footer p{
@@ -177,6 +184,7 @@
   color: $dark-blue;
   font-family: $sans-serif;
 }
+
 .city-list-footer {
   margin-bottom: 40px;
 }
