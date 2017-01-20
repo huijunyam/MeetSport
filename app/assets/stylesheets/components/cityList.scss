@@ -118,11 +118,6 @@
   margin-left: 20px;
 }
 
-// .search-event-item:hover {
-//   box-shadow: 0 0 10px #ccc;
-//   opacity: 0.8;
-// }
-
 .city-list-header {
   font-size: 30px;
   font-family: $lato;
@@ -138,21 +133,37 @@
 }
 
 .search-img {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .showDetail {
   position: absolute;
   z-index: 10;
-  top: 25%;
+  top: 20%;
   left: 10%;
   padding: 10px;
   width: 80%;
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: $lighest-blue;
   opacity: 0.8;
   border-radius: 5px;
   color: $dark-blue;
+}
+
+.city-list-div {
+  -webkit-filter: brightness(85%);
+}
+
+.city-list-div p{
+  visibility: hidden;
+}
+
+.city-list-div:hover p {
+  visibility: visible;
+}
+
+.city-list-div:hover {
+  -webkit-filter: brightness(100%);
 }
 
 .city-list-div p {
@@ -160,21 +171,23 @@
   z-index: 10;
   top: 50%;
   left: 20%;
-  font-size: 20px;
+  font-size: 30px;
   font-family: $sans-serif;
   font-weight: bold;
-  color: $dark-blue;
+  color: $white;
   width: 200px;
 }
 
-.city-img:hover {
-  box-shadow: 0 0 10px #ccc;
-  opacity: 0.3;
+.search-list-div {
+  -webkit-filter: brightness(70%);
 }
 
 .search-list-div:hover {
-  box-shadow: 0 0 10px #ccc;
-  opacity: 0.7;
+  -webkit-filter: brightness(100%);
+}
+
+.search-list-div:hover .search-event-header{
+  color: $darkest-blue;
 }
 
 .city-list-footer h3, .city-list-footer p{
