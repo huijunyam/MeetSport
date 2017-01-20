@@ -24,8 +24,8 @@ export const getUser = id => dispatch => (
       err => dispatch(receiveUserError(err.responseJSON)))
 );
 
-export const updateUser = id => dispatch => (
-  UserApiUtil.updateUser(id).then(userDetail => dispatch(receiveUser(userDetail)))
+export const updateUser = user => dispatch => (
+  UserApiUtil.updateUser(user).then(userDetail => dispatch(receiveUser(userDetail)))
 );
 
 export const deleteEvent = id => dispatch => (

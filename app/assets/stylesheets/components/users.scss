@@ -62,19 +62,26 @@
 
 .profile-pic-container {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.edit-button {
+.edit-button, .image-upload-button {
   background-color: $nav-ul-color;
   color: $white;
   font-size: 15px;
   border-radius: 5px;
 }
 
-.edit-button:hover {
+.edit-button:hover, .image-upload-button:hover {
   background-color: $blue;
   color: $dark-blue;
   border-radius: 5px;
+}
+
+.image-upload-button {
+  margin: 20px;
+  margin-left: 0;
 }
 
 .profile-pic-container img {

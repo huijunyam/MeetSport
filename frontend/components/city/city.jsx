@@ -98,10 +98,18 @@ class City extends React.Component {
           </div>
           <div className="city-home-list">
             <section className="city-sublist col-first">
-              <Link to={`/city/${this.props.cityId}/event`} onClick={this.handleEventHover}><div className={this.state.eventHover}>All Events</div></Link>
-              <Link to={`/city/${this.props.cityId}/member`} onClick={this.handleMemberHover}><div className={this.state.memberHover}>All Members</div></Link>
-              <Link to={`/city/${this.props.cityId}/calendar`} onClick={this.handleCalendarHover}><div className={this.state.calendarHover}>Calendar</div></Link>
-              <Link to={`/city/${this.props.cityId}/create`} onClick={this.handleCreateHover}><div className={this.state.createHover}>Create Event</div></Link>
+              <Link to={`/city/${this.props.cityId}/event`} onClick={this.handleEventHover}>
+                <div className={this.state.eventHover}>All Events</div>
+              </Link>
+              <Link to={`/city/${this.props.cityId}/member`} onClick={this.handleMemberHover}>
+                <div className={this.state.memberHover}>All Members</div>
+              </Link>
+              <Link to={`/city/${this.props.cityId}/calendar`} onClick={this.handleCalendarHover}>
+                <div className={this.state.calendarHover}>Calendar</div>
+              </Link>
+              <Link to={`/city/${this.props.cityId}/create`} onClick={this.handleCreateHover}>
+                <div className={this.state.createHover}>Create Event</div>
+              </Link>
               <div className="city-search-bar">
                 <label className="city-search-label">Advanced Search</label>
                 <input type="text"

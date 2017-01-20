@@ -11,6 +11,7 @@ class User extends React.Component {
     this.convertTimefromX = this.convertTimefromX.bind(this);
     this.handleClick = this.handleClick.bind(this);
     this.redirect = this.redirect.bind(this);
+    this.upload = this.upload.bind(this);
   }
 
   componentDidMount() {
@@ -32,6 +33,17 @@ class User extends React.Component {
     let dateArr = date.slice(0, dateIdx).split("-");
     dateArr.push(dateArr.shift());
     return dateArr.join("/");
+  }
+
+  upload(e) {
+    e.preventDefault();
+    cloudinary.openUploadWidget(window.CLOUDINARY_OPTIONS, (error, results) => {
+      if (!error) {
+        let image = results[0];
+        const user = {id: this.props.userId, profile_img: image.url};
+        this.props.updateUser(user);
+      }
+    });
   }
 
   render() {
@@ -80,6 +92,7 @@ class User extends React.Component {
             </div>
             <div className="profile-pic-container">
               <img src={userDetail.profile_img}/>
+              <button className="image-upload-button" onClick={this.upload}>Upload Profile Image</button>
             </div>
           </div>
         </div>
