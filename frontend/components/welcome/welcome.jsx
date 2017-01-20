@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import WelcomeContainer from './welcome_container';
+import $ from 'jquery';
 
 class Welcome extends React.Component {
   constructor(props) {
@@ -98,8 +99,8 @@ class Welcome extends React.Component {
         </footer>
       </div>
     );
-
   }
+
 }
 
 export default Welcome;
