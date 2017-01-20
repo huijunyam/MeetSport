@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import EventListItem from './event_list_item';
+import union from 'lodash/union';
 
 class CityEvent extends React.Component {
   componentDidMount() {
@@ -8,10 +9,11 @@ class CityEvent extends React.Component {
   }
 
   render() {
+    const events = union([], this.props.cityEvent);
     return (
       <div>
         <ul className="city-event-list">
-          {this.props.cityEvent.map(event => (
+          {events.reverse().map(event => (
             <li key={event.id}>
               <EventListItem key={event.id}
                 isMember={this.props.isMember}

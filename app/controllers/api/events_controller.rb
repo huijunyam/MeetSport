@@ -7,6 +7,7 @@ class Api::EventsController < ApplicationController
       @events = Event.where("city_id = ? AND id IN (?)", params[:city_id], event_id)
     elsif params[:city_id]
       @events = Event.where("city_id = ?", params[:city_id])
+      # debug /ger
     elsif params[:search]
       if params[:search] == ""
         @events = []
@@ -17,7 +18,7 @@ class Api::EventsController < ApplicationController
         @events = Event.where("id IN (?)", event_id)
       end
     else
-      @event = Event.all
+      @events = Event.all
     end
     render :index
   end
