@@ -4,6 +4,8 @@
   width: 70%;
   margin-bottom: 20px;
   margin-left: 100px;
+  background: $lighest-blue;
+  border-radius: 5px;
 }
 
 .event-form-container h2{
@@ -36,7 +38,7 @@
 }
 
 .event-input {
-    width: 100%;
+    width: 98%;
     padding: 8px 10px;
     margin: 10px 0 25px 0;
     border: 1px solid $dark-blue;
@@ -66,7 +68,7 @@ select {
 }
 
 textarea {
-  width: 100%;
+  width: 95%;
 	height: 120px;
   margin: 10px 0 25px 0;
 	border: 1px solid $dark-blue;

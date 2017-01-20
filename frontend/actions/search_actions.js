@@ -26,3 +26,7 @@ export const fetchCategory = id => dispatch => (
 export const fetchSearch = search => dispatch => (
   SearchApiUtil.fetchSearch(search).then(events => dispatch(requestSearchEvents(events)))
 );
+
+export const fetchCitySearch = (search, cityId) => dispatch => (
+  SearchApiUtil.fetchCitySearch(search, cityId).then(events => dispatch(requestSearchEvents(events)))
+);

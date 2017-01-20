@@ -89,3 +89,27 @@
 .city-sublist-content {
   border: none;
 }
+
+.city-search-bar {
+  margin: 20px;
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 0;
+}
+
+.city-search-label {
+  font-weight: normal;
+  font-size: 18px;
+  padding-left: 28px;
+  color: $nav-ul-color;
+  font-family: $molengo;
+}
+
+.city-search-input {
+  padding: 5px 5px;
+  font-family: $molengo;
+  font-size: 15px;
+  width: 100%;
+  margin: 10px 0 10px 0;
+  border-radius: 5px;
+}

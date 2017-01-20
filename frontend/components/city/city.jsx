@@ -10,13 +10,15 @@ class City extends React.Component {
       eventHover: "noColor",
       memberHover: "noColor",
       calendarHover: "noColor",
-      createHover: "noColor"
+      createHover: "noColor",
+      search: ""
      };
     this.handleClick = this.handleClick.bind(this);
     this.handleEventHover = this.handleEventHover.bind(this);
     this.handleMemberHover = this.handleMemberHover.bind(this);
     this.handleCalendarHover = this.handleCalendarHover.bind(this);
     this.handleCreateHover = this.handleCreateHover.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
@@ -74,6 +76,15 @@ class City extends React.Component {
     });
   }
 
+  search_redirect() {
+    this.props.router.push(`/city/${this.props.cityId}/search`);
+  }
+
+  handleChange(e) {
+    this.setState({ search: e.target.value });
+    this.props.fetchCitySearch((e.target.value).toLowerCase(), this.props.cityId).then(() => this.search_redirect());
+  }
+
   render() {
     let buttonType = (this.props.hasMember) ? "Leave the City" : "Join Us";
     return (
@@ -90,6 +101,14 @@ class City extends React.Component {
             <Link to={`/city/${this.props.cityId}/member`} onClick={this.handleMemberHover}><div className={this.state.memberHover}>All Members</div></Link>
             <Link to={`/city/${this.props.cityId}/calendar`} onClick={this.handleCalendarHover}><div className={this.state.calendarHover}>Calendar</div></Link>
             <Link to={`/city/${this.props.cityId}/create`} onClick={this.handleCreateHover}><div className={this.state.createHover}>Create Event</div></Link>
+            <div className="city-search-bar">
+              <label className="city-search-label">Advanced Search</label>
+              <input type="text"
+                placeholder="Search by Sport Category"
+                value={this.state.search}
+                onChange={this.handleChange}
+                className="city-search-input" />
+            </div>
           </section>
           <section className="city-sublist-content col-lastest">
               <div>{this.props.children}</div>

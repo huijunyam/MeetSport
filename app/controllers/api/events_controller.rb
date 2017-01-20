@@ -1,6 +1,11 @@
 class Api::EventsController < ApplicationController
   def index
-    if params[:city_id]
+    if params[:search] && params[:city_id]
+      keyword = "#{params[:search]}%"
+      category_id = Category.where("name LIKE ?", keyword).map{ |el| el.id }
+      event_id = EventType.where("category_id IN (?)", category_id).map{ |el| el.event_id }
+      @events = Event.where("city_id = ? AND id IN (?)", params[:city_id], event_id)
+    elsif params[:city_id]
       @events = Event.where("city_id = ?", params[:city_id])
     elsif params[:search]
       if params[:search] == ""

@@ -133,3 +133,11 @@ if (this.state.rsvp === "Join Event") {
   onSelectEvent={event => this.redirect(event) }
 />
               <source src="http://res.cloudinary.com/dirtnmtpc/video/upload/v1484050178/Sunset-Lapse_djfchs.mp4" type="video/mp4" />
+
+              <div>
+                <input type="text"
+                  placeholder="Search by Sport Category"
+                  value={this.state.search}
+                  onChange={this.handleChange}
+                  className="city-search-input" />
+              </div>
