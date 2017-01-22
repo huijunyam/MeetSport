@@ -110,7 +110,7 @@ class City extends React.Component {
           <div className="weather-forecast">
             <Forecast latitude={this.locationArr()[this.props.cityId]["latitude"]}
               longitude={this.locationArr()[this.props.cityId]["longitude"]}
-              name={this.props.cityDetail.name} color="blue" />
+              name={this.props.cityDetail.name} />
           </div>
           <div className="city-home-list">
             <section className="city-sublist col-first">
