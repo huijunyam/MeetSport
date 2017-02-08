@@ -18,7 +18,8 @@ On the database side, the information of the events are stored in single table w
 ### Search by category
 On the database side, all the sport categories are stored in single table which contains columns for `name` and `image`. The `event_types` table joined the category table and the events table. The search result are held in `search` slice of the redux store. The search bar on the application page will detect the onChange event and send api request to the backend. In the event controller, the Category table will get the result based on the search params that passed in. The Event table will search for all the events based on the result passed in by category.
 
-```ruby
+```
+#ruby
 if params[:search] == ""
   @events = []
 else
@@ -33,7 +34,8 @@ render: index
 
 ### Calendar on city page
 The event details of the city are held in the `cityDetail` slice of the redux store. The events calendar is rendered in `CityCalendar` component. `CityCalendar` uses the jQuery plugin `FullCalendar` to deploy the events details into the calendar view.
-```jQuery
+```
+//jQuery
 const { calendar } = this.refs;
     $(calendar).fullCalendar({
       events: this.props.events,
