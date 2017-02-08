@@ -34,6 +34,17 @@ class LoginForm extends React.Component{
     this.props.router.push('/cities');
   }
 
+  guestLogin(e) {
+    e.preventDefault();
+    const guestUser = {
+      username: "guest",
+      password: "password"
+    };
+    const user = Object.assign({}, guestUser);
+    // debugger
+    this.props.login(user).then(() => this.redirect());
+  }
+
   renderErrors() {
     if (this.props.errors){
       return(
@@ -64,7 +75,10 @@ class LoginForm extends React.Component{
           <div className="site-name-with-logo">
             <Link to="/" className="logo"><img src={"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484763747/Logomakr_1JnLLO_hemnyc.png"} alt="logomakr"/></Link>
           </div>
-          <button onClick={this.handleClick}>Sign Up</button>
+          <div>
+            <button onClick={this.guestLogin}>Guest Demo</button>
+            <button onClick={this.handleClick}>Sign Up</button>
+          </div>
         </section>
 
         <div className="auth-form-container">

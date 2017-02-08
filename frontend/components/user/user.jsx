@@ -64,7 +64,9 @@ class User extends React.Component {
     return (
       <div className="align-footer">
         <div>
-          <HeaderContainer />
+          <div className="user-profile-nav">
+            <HeaderContainer />
+          </div>
           <div className="user-container">
             <div className="user-bio">
               <h3 className="user-name">{userDetail.name}</h3>
@@ -96,7 +98,9 @@ class User extends React.Component {
             </div>
           </div>
         </div>
-        <FooterContainer />
+        <div className="user-footer">
+          <FooterContainer />
+        </div>
       </div>
     );
   }

@@ -41,7 +41,9 @@ class OtherUser extends React.Component {
     return (
       <div className="align-footer">
         <div>
-          <HeaderContainer />
+          <div className="user-profile-nav">
+            <HeaderContainer />
+          </div>
           <div className="user-container">
             <div className="user-bio">
               <h3 className="user-name">{userDetail.name}</h3>
@@ -50,19 +52,19 @@ class OtherUser extends React.Component {
               <p className="about-me-description">{userDetail.about_me}</p>
               <h4>{userDetail.name} has joined {userDetail.cities.length} {city}</h4>
               <ul className="user-join-city">
-                {userDetail.cities.map((city, id) => (<li key={`city-${id}`} className="user-city-list">{city.name}</li>))}
+                {userDetail.cities.map((city, id) => (<li key={`city-event-${id}`} className="user-city-list">{city.name}</li>))}
               </ul>
               <br />
               <h4>{userDetail.name} has hosted {userDetail.events.length} {event}</h4>
               <ul className="user-host-event">
                 {userDetail.events.map((event, id) => (
-                  <OtherUserHostEvent key={`host-${id}`} event={event} />
+                  <OtherUserHostEvent key={`host-event-${id}`} event={event} />
                 ))}
               </ul>
               <h4>{userDetail.name} has joined {userDetail.event_attendees.length} {event}</h4>
               <ul className="user-join-event">
                 {userDetail.event_attendees.map(event => (
-                  <UserJoinEvent key={`event-${event.id}`} event={event} />
+                  <UserJoinEvent key={`event-join-${event.id}`} event={event} />
                 ))}
               </ul>
             </div>
@@ -71,7 +73,9 @@ class OtherUser extends React.Component {
             </div>
           </div>
         </div>
-        <FooterContainer />
+        <div className="user-footer">
+          <FooterContainer />
+        </div>
       </div>
     );
   }
