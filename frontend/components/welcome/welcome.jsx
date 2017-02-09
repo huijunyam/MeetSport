@@ -74,6 +74,9 @@ class Welcome extends React.Component {
             <li><span>Image 01</span><div><h3>Go Explore</h3></div></li>
             <li><span>Image 02</span><div><h3>Meet Up</h3></div></li>
             <li><span>Image 03</span><div><h3>Discover Happiness</h3></div></li>
+            <li><span>Image 04</span><div><h3>Discover Happiness</h3></div></li>
+            <li><span>Image 05</span><div><h3>Discover Happiness</h3></div></li>
+            <li><span>Image 06</span><div><h3>Discover Happiness</h3></div></li>
           </ul>
         </div>
         <br />
