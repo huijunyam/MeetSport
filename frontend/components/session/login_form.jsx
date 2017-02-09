@@ -37,11 +37,10 @@ class LoginForm extends React.Component{
 
   guestLogin(e) {
     e.preventDefault();
-    const guestUser = {
+    const user = {
       username: "guest",
       password: "password"
     };
-    const user = Object.assign({}, guestUser);
     this.props.login(user).then(() => this.redirect());
   }
 
