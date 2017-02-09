@@ -16,6 +16,7 @@ class SignUpForm extends React.Component {
     this.redirect = this.redirect.bind(this);
     this.renderErrors = this.renderErrors.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.guestLogin = this.guestLogin.bind(this);
   }
 
   componentDidMount() {
@@ -34,6 +35,15 @@ class SignUpForm extends React.Component {
 
   redirect() {
     this.props.router.push("/cities");
+  }
+
+  guestLogin(e) {
+    e.preventDefault();
+    const user = {
+      username: "guest",
+      password: "password"
+    };
+    this.props.login(user).then(() => this.redirect());
   }
 
   renderErrors() {
@@ -59,15 +69,6 @@ class SignUpForm extends React.Component {
     return <Link to="/login">Log In Here</Link>;
   }
 
-  // guestLogin(e) {
-  //   e.preventDefault();
-  //   const user = {
-  //     username: "guest",
-  //     password: "password"
-  //   };
-  //   this.props.login(user).then(() => this.redirect());
-  // }
-
   render() {
     return (
       <div>
@@ -76,6 +77,7 @@ class SignUpForm extends React.Component {
             <Link to="/" className="logo"><img src={"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484763747/Logomakr_1JnLLO_hemnyc.png"} alt="logomakr"/></Link>
           </div>
           <div>
+            <button onClick={this.guestLogin}>Guest Demo</button>
             <button onClick={this.handleClick}>Log In</button>
           </div>
         </section>
