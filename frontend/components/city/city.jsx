@@ -37,7 +37,7 @@ class City extends React.Component {
   }
 
   redirect() {
-    this.props.router.push(`/city/${this.props.cityId}/event`);
+    this.props.router.push(`/city/${this.props.cityId}`);
   }
 
   handleClick(e) {
@@ -127,7 +127,6 @@ class City extends React.Component {
                 <div className={this.state.createHover}>Create Event</div>
               </Link>
               <div className="city-search-bar">
-                <label className="city-search-label">Advanced Search</label>
                 <input type="text"
                   placeholder="Search by Sport Category"
                   value={this.state.search}

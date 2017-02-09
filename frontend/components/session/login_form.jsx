@@ -14,6 +14,7 @@ class LoginForm extends React.Component{
     this.redirect = this.redirect.bind(this);
     this.renderErrors = this.renderErrors.bind(this);
     this.handleClick = this.handleClick.bind(this);
+    this.guestLogin = this.guestLogin.bind(this);
   }
 
   componentDidMount() {
@@ -41,7 +42,6 @@ class LoginForm extends React.Component{
       password: "password"
     };
     const user = Object.assign({}, guestUser);
-    // debugger
     this.props.login(user).then(() => this.redirect());
   }
 

@@ -12,6 +12,7 @@ class User extends React.Component {
     this.handleClick = this.handleClick.bind(this);
     this.redirect = this.redirect.bind(this);
     this.upload = this.upload.bind(this);
+    this.aboutMe = this.aboutMe.bind(this);
   }
 
   componentDidMount() {
@@ -25,6 +26,15 @@ class User extends React.Component {
   handleClick(e) {
     e.preventDefault();
     this.redirect();
+  }
+
+  aboutMe() {
+    debugger
+    if (this.props.userDetail.about_me === "") {
+      return "No description yet";
+    } else {
+      return this.props.userDetail.about_me;
+    }
   }
 
   convertTimefromX() {
@@ -72,22 +82,22 @@ class User extends React.Component {
               <h3 className="user-name">{userDetail.name}</h3>
               <h4 className="user-member"><strong>Member since:</strong> {this.convertTimefromX()}</h4>
               <h4 className="user-member-about-me"><strong>About me:</strong></h4>
-              <p className="about-me-description">{userDetail.about_me}</p>
+              <p className="about-me-description">{this.aboutMe}</p>
               <h4>{userDetail.name} has joined {userDetail.cities.length} {city}</h4>
               <ul className="user-join-city">
-                {userDetail.cities.map((city, id) => (<li className="user-city-list" key={`city-${id}`}><Link to={`/city/${city.id}/event`}>{city.name}</Link></li>))}
+                {userDetail.cities.map((city, id) => (<li className="user-city-list" key={`user-city-${id}`}><Link to={`/city/${city.id}/event`}>{city.name}</Link></li>))}
               </ul>
               <br />
               <h4>{userDetail.name} has hosted {userDetail.events.length} {event}</h4>
               <ul className="user-host-event">
                 {userDetail.events.map((event, id) => (
-                  <UserHostEvent key={`host-${id}`} event={event} />
+                  <UserHostEvent key={`user-host-${id}`} event={event} />
                 ))}
               </ul>
               <h4>{userDetail.name} has joined {userDetail.event_attendees.length} {event}</h4>
               <ul className="user-join-event">
                 {userDetail.event_attendees.map(event => (
-                  <UserJoinEvent key={`event-${event.id}`} event={event} />
+                  <UserJoinEvent key={`users-event-${event.id}`} event={event} />
                 ))}
               </ul>
               <button className="edit-button" onClick={this.handleClick}>Edit Profile</button>

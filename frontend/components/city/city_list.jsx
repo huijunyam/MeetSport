@@ -46,7 +46,6 @@ class CityList extends React.Component {
               onChange={this.handleChange}
               className="search-input" />
 
-            <input className="search-button" onClick={this.handleClick} type="button" value="Search"/>
           </form>
           <div className="search-result">
             {this.props.children}

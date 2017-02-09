@@ -64,7 +64,7 @@ class OtherUser extends React.Component {
               <h4>{userDetail.name} has joined {userDetail.event_attendees.length} {event}</h4>
               <ul className="user-join-event">
                 {userDetail.event_attendees.map(event => (
-                  <UserJoinEvent key={`event-join-${event.id}`} event={event} />
+                  <UserJoinEvent key={`other-event-join-${event.id}`} event={event} />
                 ))}
               </ul>
             </div>

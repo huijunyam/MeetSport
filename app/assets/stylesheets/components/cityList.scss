@@ -26,7 +26,7 @@
 }
 
 .search-bar {
-  width: 500px;
+  width: 400px;
   margin: 50px auto;
 }
 
@@ -38,15 +38,15 @@
   border-radius: 3px;
 }
 
-.search-button {
-  position: relative;
-  padding: 10px 15px;
-  border:2px solid #207cca;
-  background-color:#207cca;
-  border-radius: 2px;
-  color:#fafafa;
-  font-size: 16px;
-}
+// .search-button {
+//   position: relative;
+//   padding: 10px 15px;
+//   border:2px solid #207cca;
+//   background-color:#207cca;
+//   border-radius: 2px;
+//   color:#fafafa;
+//   font-size: 16px;
+// }
 
 .search-button:hover  {
   color: $white;
