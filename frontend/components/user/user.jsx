@@ -12,7 +12,6 @@ class User extends React.Component {
     this.handleClick = this.handleClick.bind(this);
     this.redirect = this.redirect.bind(this);
     this.upload = this.upload.bind(this);
-    this.aboutMe = this.aboutMe.bind(this);
   }
 
   componentDidMount() {
@@ -26,15 +25,6 @@ class User extends React.Component {
   handleClick(e) {
     e.preventDefault();
     this.redirect();
-  }
-
-  aboutMe() {
-    debugger
-    if (this.props.userDetail.about_me === "") {
-      return "No description yet";
-    } else {
-      return this.props.userDetail.about_me;
-    }
   }
 
   convertTimefromX() {
@@ -82,7 +72,7 @@ class User extends React.Component {
               <h3 className="user-name">{userDetail.name}</h3>
               <h4 className="user-member"><strong>Member since:</strong> {this.convertTimefromX()}</h4>
               <h4 className="user-member-about-me"><strong>About me:</strong></h4>
-              <p className="about-me-description">{this.aboutMe}</p>
+              <p className="about-me-description">{userDetail.about_me}</p>
               <h4>{userDetail.name} has joined {userDetail.cities.length} {city}</h4>
               <ul className="user-join-city">
                 {userDetail.cities.map((city, id) => (<li className="user-city-list" key={`user-city-${id}`}><Link to={`/city/${city.id}/event`}>{city.name}</Link></li>))}
