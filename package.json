@@ -27,12 +27,15 @@
     "react-dropzone": "^3.9.0",
     "react-event-calendar": "^0.3.0",
     "react-forecast": "0.0.7",
+    "react-image-slideshow": "^1.5.2",
+    "react-portal": "^3.0.0",
     "react-redux": "^5.0.1",
     "react-router": "^3.0.0",
     "react-widgets": "^3.4.5",
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
     "superagent": "^3.3.2",
+    "tween.js": "^16.6.0",
     "webpack": "^1.14.0"
   },
   "engines": {

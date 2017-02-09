@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import WelcomeContainer from './welcome_container';
 import $ from 'jquery';
+import SlideShow from 'react-image-slideshow';
 
 class Welcome extends React.Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class Welcome extends React.Component {
     this.guestLogin = this.guestLogin.bind(this);
     this.userLogin = this.userLogin.bind(this);
     this.userSignup = this.userSignup.bind(this);
+    this.slideIndex = 0;
   }
 
   redirect() {
@@ -68,32 +70,21 @@ class Welcome extends React.Component {
           </div>
         </div>
         <div className="video-signup">
-          <div className="videoPlay">
-            <video autoPlay loop className="videoInsert">
-              <source src="https://res.cloudinary.com/dirtnmtpc/video/upload/v1484567522/Sunset-Lapse_m8qjyg.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <div className="welcome-title">
-            <h2>Meet and make new friends everywhere</h2>
-            <br />
-            <p>Together we explore and connect through sports</p>
-            <br />
-            <br />
-            <br />
-            <br />
-            <button className="signup-button" onClick={this.userSignup}>Sign Up</button>
-          </div>
-          {this.description()}
+          <ul className="cb-slideshow">
+            <li><span>Image 01</span><div><h3>Go Explore</h3></div></li>
+            <li><span>Image 02</span><div><h3>Meet Up</h3></div></li>
+            <li><span>Image 03</span><div><h3>Discover Happiness</h3></div></li>
+          </ul>
         </div>
-
+        <br />
         <footer className="welcome-footer">
-          <Link to="/" className="site-name">meetSport</Link>
+          <p className="footer-note">Designed and Developed by <a className="link-to-portfolio" href="http://www.huijunyam.com">Hui Jun Yam</a></p>
           <ul className="welcome-page-nav">
             <li className="welcome-page-list">
-              <img src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1484767754/GitHub-Mark-120px-plus_g1wpq2.png"/>
+              <a href="https://github.com/huijunyam"><img src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1484767754/GitHub-Mark-120px-plus_g1wpq2.png"/></a>
             </li>
             <li className="welcome-page-list">
-              <img src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1484767656/In-2C-108px-R_xxju11.png"/>
+              <a href="https://www.linkedin.com/in/huijunyam"><img src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1484767656/In-2C-108px-R_xxju11.png"/></a>
             </li>
           </ul>
         </footer>

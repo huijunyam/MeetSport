@@ -207,3 +207,22 @@ if (this.state.rsvp === "Join Event") {
                 );
 
               }
+
+              // <div className="video-signup">
+              //   <div className="videoPlay">
+              //     <video autoPlay loop className="videoInsert">
+              //       <source src="https://res.cloudinary.com/dirtnmtpc/video/upload/v1484567522/Sunset-Lapse_m8qjyg.mp4" type="video/mp4" />
+              //     </video>
+              //   </div>
+              //   <div className="welcome-title">
+              //     <h2>Meet and make new friends everywhere</h2>
+              //     <br />
+              //     <p>Together we explore and connect through sports</p>
+              //     <br />
+              //     <br />
+              //     <br />
+              //     <br />
+              //     <button className="signup-button" onClick={this.userSignup}>Sign Up</button>
+              //   </div>
+              //   {this.description()}
+              // </div>
