@@ -41,7 +41,7 @@ class CityList extends React.Component {
           </div>
           <form className="search-bar">
             <input type="text"
-              placeholder="Search by Sport Category"
+              placeholder="Search by Sport Category (ex: racquet sport, basketball...)"
               value={this.state.search}
               onChange={this.handleChange}
               className="search-input" />
