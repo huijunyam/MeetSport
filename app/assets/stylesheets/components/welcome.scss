@@ -5,6 +5,7 @@
 }
 
 .welcome-header {
+  z-index: 10; //test
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,6 +34,7 @@ ul .welcome-page-nav {
 }
 
 .welcome-page-nav {
+  z-index: 10;
   margin-top: 10px;
 }
 .welcome-page-list {
@@ -43,7 +45,7 @@ ul .welcome-page-nav {
 
 .video-signup {
   width: 100%;
-  height: 580px;
+  height: 600px;
   position: relative;
 }
 
@@ -120,6 +122,7 @@ video {
 }
 
 .welcome-footer {
+  z-index: 10;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -128,6 +131,19 @@ video {
   text-align: center;
   font-size: 20px;
   border-top: 1px solid rgba(16, 101, 206, 0.61);
+  padding-bottom: 0px;
+}
+
+.welcome-footer-exception {
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  border-top: 0;
   padding-bottom: 0px;
 }
 
@@ -142,14 +158,14 @@ video {
   padding-top: 10px
 }
 
-.welcome-footer a {
+.welcome-footer a, .welcome-footer-exception a {
   padding-top: 5px;
   font-family: $sans-serif;
   font-size: 13px;
   color: $blue;
 }
 
-.welcome-footer a:hover {
+.welcome-footer a:hover, .welcome-footer-exception a:hover {
   color: $dark-blue;
 }
 
@@ -158,7 +174,7 @@ video {
 //   font-size: 13px;
 // }
 
-.welcome-footer img {
+.welcome-footer img, .welcome-footer-exception img {
   padding-right: 30px;
   width: 20px;
   height: 20px;

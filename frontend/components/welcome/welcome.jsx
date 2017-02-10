@@ -59,29 +59,30 @@ class Welcome extends React.Component {
   render() {
     return (
       <div className="welcome-page align-footer">
-        <div className="welcome-header">
-          <div className="site-name-with-logo">
-            <Link to="/" className="logo"><img src={"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484763747/Logomakr_1JnLLO_hemnyc.png"} alt="logomakr"/></Link>
+        <div>
+          <div className="welcome-header">
+            <div className="site-name-with-logo">
+              <Link to="/" className="logo"><img src={"https://res.cloudinary.com/dirtnmtpc/image/upload/v1484763747/Logomakr_1JnLLO_hemnyc.png"} alt="logomakr"/></Link>
+            </div>
+            <div className="welcome-page-nav">
+              <div className="welcome-page-list"><button onClick={this.guestLogin} className="guest-button">Guest Demo</button></div>
+              <div className="welcome-page-list"><button onClick={this.userLogin}>Log In</button></div>
+              <div className="welcome-page-list"><button onClick={this.userSignup}>Sign Up</button></div>
+            </div>
           </div>
-          <div className="welcome-page-nav">
-            <div className="welcome-page-list"><button onClick={this.guestLogin} className="guest-button">Guest Demo</button></div>
-            <div className="welcome-page-list"><button onClick={this.userLogin}>Log In</button></div>
-            <div className="welcome-page-list"><button onClick={this.userSignup}>Sign Up</button></div>
+          <div className="video-signup">
+            <ul className="cb-slideshow">
+              <li><span>Image 01</span><div><h3>Explore Your Sport Interest</h3></div></li>
+              <li><span>Image 02</span><div><h3>Meet Up And Connect</h3></div></li>
+              <li><span>Image 03</span><div><h3>Make New Friends</h3></div></li>
+              <li><span>Image 04</span><div><h3>Discover Your Sport Talent</h3></div></li>
+              <li><span>Image 05</span><div><h3>Discover Happiness</h3></div></li>
+              <li><span>Image 06</span><div><h3>Lead A Healthy Lifestyle</h3></div></li>
+            </ul>
+            <button className="signup-button" onClick={this.userSignup}>Sign Up</button>
           </div>
         </div>
-        <div className="video-signup">
-          <ul className="cb-slideshow">
-            <li><span>Image 01</span><div><h3>Explore Your Sport Interest</h3></div></li>
-            <li><span>Image 02</span><div><h3>Meet Up And Connect</h3></div></li>
-            <li><span>Image 03</span><div><h3>Make New Friends</h3></div></li>
-            <li><span>Image 04</span><div><h3>Discover Your Sport Talent</h3></div></li>
-            <li><span>Image 05</span><div><h3>Discover Happiness</h3></div></li>
-            <li><span>Image 06</span><div><h3>Lead A Healthy Lifestyle</h3></div></li>
-          </ul>
-              <button className="signup-button" onClick={this.userSignup}>Sign Up</button>
-        </div>
-        <br />
-        <footer className="welcome-footer">
+        <footer className="welcome-footer-exception">
           <p className="footer-note">Designed and Developed by <a className="link-to-portfolio" href="http://www.huijunyam.com">Hui Jun Yam</a></p>
           <ul className="welcome-page-nav">
             <li className="welcome-page-list">
