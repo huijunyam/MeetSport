@@ -73,7 +73,7 @@ class Welcome extends React.Component {
           <div className="video-signup">
             <ul className="cb-slideshow">
               <li><span>Image 01</span><div><h3>Explore Your Sport Interest</h3></div></li>
-              <li><span>Image 02</span><div><h3>Meet Up And Connect</h3></div></li>
+              <li><span>Image 02</span><div><h3>Meet And Connect</h3></div></li>
               <li><span>Image 03</span><div><h3>Make New Friends</h3></div></li>
               <li><span>Image 04</span><div><h3>Discover Your Sport Talent</h3></div></li>
               <li><span>Image 05</span><div><h3>Discover Happiness</h3></div></li>
