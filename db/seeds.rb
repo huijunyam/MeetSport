@@ -98,230 +98,230 @@ category26= Category.create(name: "hiking", image: "https://res.cloudinary.com/d
 #events data
 #basketball
 event1 = Event.create(city_id: city1.id,name: "Basketball 5 v 5", location: "240 Turk St",
-start_time: "4:00 PM", end_time: "6:00 PM", date: "01/25/2017", level: "beginner", attendees_num: 10, host_id: user1.id,
+start_time: "4:00 PM", end_time: "6:00 PM", date: "02/25/2017", level: "beginner", attendees_num: 10, host_id: user1.id,
 description: "Anyone and everyone who wants to come and play 5v5 basketball on a beautiful college sized basketball court, have access to bathrooms, a score clock, and organized waiting queue, come to The Kroc Center San Francisco!")
 event2 = Event.create(city_id: city1.id,name: "Leisure Basketball", location: "401 Berry St",
-start_time: "9:00 AM", end_time: "11:00 AM", date: "01/27/2017", level: "intermediate", attendees_num: 6, host_id: user2.id,
+start_time: "9:00 AM", end_time: "11:00 AM", date: "02/27/2017", level: "intermediate", attendees_num: 6, host_id: user2.id,
 description: "We are a group of people United to root for our Golden State Warriors in the Bay Area or on the road. Meet other Warriors fans in a social setting to build friendship and have fun. ")
 event3 = Event.create(city_id: city2.id, name: "Evening Hoops", location: "Memorial Park",
-start_time: "4:00 PM", end_time: "6:00 PM", date: "01/23/2017", level: "advance", attendees_num: 12, host_id: user3.id,
+start_time: "4:00 PM", end_time: "6:00 PM", date: "02/23/2017", level: "advance", attendees_num: 12, host_id: user3.id,
 description: "Bringing people together through pick up basketball in Los Angeles.")
 event4 = Event.create(city_id: city3.id,name: "Lunch Time Hoops", location: "Pacific Court",
-start_time: "11:00 AM", end_time: "12:00 PM", date: "01/24/2017", level: "all", attendees_num: 20, host_id: user4.id,
+start_time: "11:00 AM", end_time: "12:00 PM", date: "02/24/2017", level: "all", attendees_num: 20, host_id: user4.id,
 description: "LUNCH TIME HOOPS is a great opportunity for players who have been out of the game to get back into shape, or for those who merely want some good exercise in the middle of the day. You will get a complete workout in just 55 minutes.")
 event5 = Event.create(city_id: city4.id,name: "New York Urban Professional", location: "W 4th Street Courts",
-start_time: "1.00 PM", end_time: "4:00 PM", date: "01/20/2017", level: "advance", attendees_num: 30, host_id: user5.id,
+start_time: "1.00 PM", end_time: "4:00 PM", date: "02/20/2017", level: "advance", attendees_num: 30, host_id: user5.id,
 description: "Come on out, get some exercise and meet some great people. 21 and over please. The A / B breakdown is purely a self rating device to try and split things up in an enjoyable manner. Think of it as if you were going to the park to play. If you are average or above go to the A court. If you are average or below go to B.  It is not exact. There is always going to be some crossover.   ")
 event6 = Event.create(city_id: city5.id,name: "Show Up and Play Basketball", location: "Magazine Beach",
-start_time: "8:00 AM", end_time: "11:00 AM", date: "01/26/2017", level: "beginner", attendees_num: 10, host_id: user6.id,
+start_time: "8:00 AM", end_time: "11:00 AM", date: "02/26/2017", level: "beginner", attendees_num: 10, host_id: user6.id,
 description: "Come play for fun, for the love of the game, and more importantly to make good friends for life, exercise and stay sharp and healthy.")
 event7 = Event.create(city_id: city6.id,name: "Grab a Basketball Game", location: "Jones College Prep",
-start_time: "7:30 PM", end_time: "9:30 PM", date: "01/29/2017", level: "all", attendees_num: 15, host_id: user7.id,
+start_time: "7:30 PM", end_time: "9:30 PM", date: "03/29/2017", level: "all", attendees_num: 15, host_id: user7.id,
 description: "Join us for some of the best pickup basketball in Chicago. This location features TWO beautiful wood courts. You'll get a ton of playing time in a well-organized event and rotate through the competition. ")
 
 #air sports
 event8 = Event.create(city_id: city1.id,name: "Bay Area Glider Rides", location: "Hollister Soaring Center",
-start_time: "1:00 PM", end_time: "4:00 PM", date: "01/23/2017", level: "expert", attendees_num: 10, host_id: user8.id,
+start_time: "1:00 PM", end_time: "4:00 PM", date: "02/23/2017", level: "expert", attendees_num: 10, host_id: user8.id,
 description: "Experience the wonder of silent flight while soaring 4500 feet over the famous San Andreas Fault Line  or The Three Sisters Mountain Range.")
 event9 = Event.create(city_id: city1.id,name: "San Francisco Skydivers", location: "18 Bartol St",
-start_time: "9:00 AM", end_time: "11:00 AM", date: "01/30/2017", level: "intermediate", attendees_num: 20, host_id: user9.id,
+start_time: "9:00 AM", end_time: "11:00 AM", date: "02/24/2017", level: "intermediate", attendees_num: 20, host_id: user9.id,
 description: "Want to challenge your limits, push the boundaries and experience the ultimate all-natural high? Whether you're an experienced skydiver, a novice or a complete newbie, our network of skydive training centers has the perfect San Francisco, California skydiving package for you.")
 event10 = Event.create(city_id: city2.id, name: "Go Hang Gliding", location: "Windsports Hand Gliding",
-start_time: "8:00 AM", end_time: "6:00 PM", date: "01/28/2017", level: "all", attendees_num: 18, host_id: user10.id,
+start_time: "8:00 AM", end_time: "6:00 PM", date: "02/28/2017", level: "all", attendees_num: 18, host_id: user10.id,
 description: "It's time you enjoyed one of the simplest forms of flight by making a reservation with Hang Gliding in Los Angeles. Whether beginner or experienced you will have an unparalleled and hassle-free hang gliding experience in Los Angeles. ")
 event11 = Event.create(city_id: city3.id,name: "Tandem Skydiving", location: "Skydiving Snohomish",
-start_time: "11:00 AM", end_time: "3:00 PM", date: "02/01/2017", level: "all", attendees_num: 11, host_id: user11.id,
+start_time: "11:00 AM", end_time: "3:00 PM", date: "03/01/2017", level: "all", attendees_num: 11, host_id: user11.id,
 description: "Want to challenge your limits, push the boundaries and experience the ultimate all-natural high? Whether you're an experienced skydiver, a novice or a complete newbie, our network of skydive training centers has the perfect San Francisco, California skydiving package for you.")
 event12 = Event.create(city_id: city4.id,name: "New York Skydiving", location: "133 Dawn Dr",
-start_time: "1.00 PM", end_time: "4:00 PM", date: "01/20/2017", level: "advance", attendees_num: 5, host_id: user12.id,
+start_time: "1.00 PM", end_time: "4:00 PM", date: "03/20/2017", level: "advance", attendees_num: 5, host_id: user12.id,
 description: "Want to challenge your limits, push the boundaries and experience the ultimate all-natural high? Whether you're an experienced skydiver, a novice or a complete newbie, our network of skydive training centers has the perfect San Francisco, California skydiving package for you.")
 event13 = Event.create(city_id: city5.id,name: "Tandem Skydiving", location: "Boston Skydive Center",
-start_time: "8:00 AM", end_time: "11:00 AM", date: "01/23/2017", level: "beginner", attendees_num: 10, host_id: user13.id,
+start_time: "8:00 AM", end_time: "11:00 AM", date: "03/23/2017", level: "beginner", attendees_num: 10, host_id: user13.id,
 description: "Want to challenge your limits, push the boundaries and experience the ultimate all-natural high? Whether you're an experienced skydiver, a novice or a complete newbie, our network of skydive training centers has the perfect San Francisco, California skydiving package for you.")
 event14 = Event.create(city_id: city6.id,name: "Soar High", location: "Chicago Glider Club II59",
-start_time: "1:30 PM", end_time: "5:30 PM", date: "02/05/2017", level: "beginner", attendees_num: 18, host_id: user10.id,
+start_time: "1:30 PM", end_time: "5:30 PM", date: "03/05/2017", level: "beginner", attendees_num: 18, host_id: user10.id,
 description: "It's time you enjoyed one of the simplest forms of flight by making a reservation with Hang Gliding in Chicago. Whether beginner or experienced you will have an unparalleled and hassle-free hang gliding experience in Chicago. ")
 
 #archery
 event15 = Event.create(city_id: city1.id,name: "Shoot the target", location: "Golden Gate Park Archery Range",
-start_time: "9:00 AM", end_time: "11:00 AM", date: "01/23/2017", level: "beginner", attendees_num: 9, host_id: user15.id,
+start_time: "9:00 AM", end_time: "11:00 AM", date: "02/23/2017", level: "beginner", attendees_num: 9, host_id: user15.id,
 description: "Hay bales are supplied but bring your own targets, bows and arrows.")
 event16 = Event.create(city_id: city1.id,name: "Leisure Archery", location: "San Francisco Archers",
-start_time: "1:00 PM", end_time: "4:00 PM", date: "01/24/2017", level: "intermediate", attendees_num: 5, host_id: user16.id,
+start_time: "1:00 PM", end_time: "4:00 PM", date: "02/24/2017", level: "intermediate", attendees_num: 5, host_id: user16.id,
 description: "We promotes archery at all levels of ability and age. We welcome you to join us!")
 event17 = Event.create(city_id: city2.id, name: "Fire in the hole", location: "Archery Building",
-start_time: "4:00 PM", end_time: "6:00 PM", date: "01/25/2017", level: "advance", attendees_num: 6, host_id: user17.id,
+start_time: "4:00 PM", end_time: "6:00 PM", date: "02/25/2017", level: "advance", attendees_num: 6, host_id: user17.id,
 description: "Hay bales are supplied but bring your own targets, bows and arrows.")
 event18 = Event.create(city_id: city3.id,name: "Aim and Shoot", location: "Rancho Park Archery Range",
-start_time: "5:00 PM", end_time: "8:00 PM", date: "01/26/2017", level: "all", attendees_num: 10, host_id: user18.id,
+start_time: "5:00 PM", end_time: "8:00 PM", date: "02/26/2017", level: "all", attendees_num: 10, host_id: user18.id,
 description: "Hay bales are supplied but bring your own targets, bows and arrows.")
 event19 = Event.create(city_id: city4.id,name: "New York Archery", location: "Cedar Creek Park",
-start_time: "8.00 AM", end_time: "10:00 AM", date: "01/27/2017", level: "all", attendees_num: 8, host_id: user19.id,
+start_time: "8.00 AM", end_time: "10:00 AM", date: "02/27/2017", level: "all", attendees_num: 8, host_id: user19.id,
 description: "We have all sorts of shooters--Olympic recurve, compound, traditional, primitive--whether you've been shooting your entire life or you've never held a bow before, all are welcome!")
 event20 = Event.create(city_id: city5.id,name: "Olympic Target Archery", location: "Bay State Archery",
-start_time: "7:30 PM", end_time: "9:30 PM", date: "01/28/2017", level: "beginner", attendees_num: 5, host_id: user20.id,
+start_time: "7:30 PM", end_time: "9:30 PM", date: "02/28/2017", level: "beginner", attendees_num: 5, host_id: user20.id,
 description: "Come play for fun, for the love of the game, and more importantly to make good friends for life, exercise and stay sharp and healthy.")
 event21 = Event.create(city_id: city6.id,name: "Archery Competition", location: "Chicago Archery",
-start_time: "8:30 AM", end_time: "10:30 AM", date: "01/29/2017", level: "expert", attendees_num: 3, host_id: user9.id,
+start_time: "8:30 AM", end_time: "10:30 AM", date: "03/29/2017", level: "expert", attendees_num: 3, host_id: user9.id,
 description: "Compete with the best")
 
 #bat and ball
 event22 = Event.create(city_id: city1.id,name: "Baseball Meetup", location: "Golden Gate Park",
-start_time: "9:00 AM", end_time: "11:00 AM", date: "02/06/2017", level: "advance", attendees_num: 20, host_id: user22.id,
+start_time: "9:00 AM", end_time: "11:00 AM", date: "03/06/2017", level: "advance", attendees_num: 20, host_id: user22.id,
 description: " if you played high school baseball, college baseball, or even just informally your whole life, feel free to join. This might just start with some pick-up games and then, depending on interest, the hope would be to expand to a league of some sort in the near future.")
 event23 = Event.create(city_id: city1.id,name: "Leisure Baseball", location: "Portsmouth Square",
-start_time: "1:00 PM", end_time: "4:00 PM", date: "02/03/2017", level: "intermediate", attendees_num: 6, host_id: user23.id,
+start_time: "1:00 PM", end_time: "4:00 PM", date: "03/03/2017", level: "intermediate", attendees_num: 6, host_id: user23.id,
 description: "All are welcomed, experienced or not. We will teach beginners from the start and bring gears for you, so mark your calendars to pick up baseball ! -")
 event24 = Event.create(city_id: city2.id, name: "Bat the Ball", location: "LA Park",
-start_time: "11:00 AM", end_time: "2:00 PM", date: "01/30/2017", level: "beginner", attendees_num: 12, host_id: user24.id,
+start_time: "11:00 AM", end_time: "2:00 PM", date: "03/30/2017", level: "beginner", attendees_num: 12, host_id: user24.id,
 description: "All are welcomed, experienced or not. We will teach beginners from the start and bring gears for you, so mark your calendars to pick up baseball ! -")
 event25 = Event.create(city_id: city3.id,name: "Baseball for Fun", location: "Seattle Park",
-start_time: "2:00 PM", end_time: "6:00 PM", date: "01/29/2017", level: "all", attendees_num: 8, host_id: user25.id,
+start_time: "2:00 PM", end_time: "6:00 PM", date: "03/29/2017", level: "all", attendees_num: 8, host_id: user25.id,
 description: "All are welcomed, experienced or not. We will teach beginners from the start and bring gears for you, so mark your calendars to pick up baseball ! -")
 event26 = Event.create(city_id: city4.id,name: "Beginner baseball", location: "Central Park",
-start_time: "8.30 AM", end_time: "10:30 PM", date: "01/24/2017", level: "beginner", attendees_num: 10, host_id: user26.id,
+start_time: "8.30 AM", end_time: "10:30 PM", date: "02/24/2017", level: "beginner", attendees_num: 10, host_id: user26.id,
 description: "All are welcomed, experienced or not. We will teach beginners from the start and bring gears for you, so mark your calendars to pick up baseball ! -")
 event27 = Event.create(city_id: city5.id,name: "Baseball Competition", location: "Monan Park",
-start_time: "1:00 PM", end_time: "5:30 AM", date: "01/31/2017", level: "intermediate", attendees_num: 30, host_id: user7.id,
+start_time: "1:00 PM", end_time: "5:30 AM", date: "03/31/2017", level: "intermediate", attendees_num: 30, host_id: user7.id,
 description: "All are welcomed, experienced or not. We will teach beginners from the start and bring gears for you, so mark your calendars to pick up baseball ! -")
 event28 = Event.create(city_id: city6.id,name: "Late Baseball Game", location: "Les Miller Field",
-start_time: "7:30 PM", end_time: "9:30 PM", date: "01/29/2017", level: "all", attendees_num: 15, host_id: user8.id,
+start_time: "7:30 PM", end_time: "9:30 PM", date: "03/29/2017", level: "all", attendees_num: 15, host_id: user8.id,
 description: "All are welcomed, experienced or not. We will teach beginners from the start and bring gears for you, so mark your calendars to pick up baseball ! -")
 
 #board sports
 event29 = Event.create(city_id: city1.id,name: "Leisure Skate", location: "SoMa West Skate Park",
-start_time: "9:30 AM", end_time: "11:30 AM", date: "02/02/2017", level: "all", attendees_num: 10, host_id: user29.id,
+start_time: "9:30 AM", end_time: "11:30 AM", date: "03/02/2017", level: "all", attendees_num: 10, host_id: user29.id,
 description: "All abilities welcome, starting in the skate park San Pedro close to bus station and Boulevard. Then onto the Stroll is for the intermediate-advanced skaters we will go for a stroll which will be planned in advance. You should be able to stop confidently on your skates as we will cross roads.")
 event30 = Event.create(city_id: city1.id,name: "Night Skate", location: "Hilltop Skate Park",
-start_time: "7:00 PM", end_time: "10:00 PM", date: "01/28/2017", level: "advance", attendees_num: 6, host_id: user30.id,
+start_time: "7:00 PM", end_time: "10:00 PM", date: "02/28/2017", level: "advance", attendees_num: 6, host_id: user30.id,
 description: "Intended for those who enjoy flow, carving, and cruising more than technical prowess. We will meet up to skate concrete and asphalt waves, push ourselves to the limit, and have fun exploring the city through skateboarding")
 event31 = Event.create(city_id: city2.id, name: "Go Skateboarding", location: "Belvedere Skate Park",
-start_time: "8:00 PM", end_time: "10:00 PM", date: "01/23/2017", level: "intermediate", attendees_num: 12, host_id: user31.id,
+start_time: "8:00 PM", end_time: "10:00 PM", date: "02/23/2017", level: "intermediate", attendees_num: 12, host_id: user31.id,
 description: "Bringing people together through pick up skateboarding in Los Angeles.")
 event32 = Event.create(city_id: city3.id,name: "Skate Long Boards", location: "All Together Skate Park",
-start_time: "3:30 PM", end_time: "5:30 PM", date: "01/25/2017", level: "beginner", attendees_num: 5, host_id: user32.id,
+start_time: "3:30 PM", end_time: "5:30 PM", date: "02/25/2017", level: "beginner", attendees_num: 5, host_id: user32.id,
 description: "Bringing people together through pick up skateboarding in Seattle.")
 event33 = Event.create(city_id: city4.id,name: "New York Urban Skate", location: "Pier 62 Skate Park",
-start_time: "10.00 AM", end_time: "12:00 PM", date: "01/22/2017", level: "expert", attendees_num: 8, host_id: user30.id,
+start_time: "10.00 AM", end_time: "12:00 PM", date: "02/22/2017", level: "expert", attendees_num: 8, host_id: user30.id,
 description: "Intended for those who enjoy flow, carving, and cruising more than technical prowess. We will meet up to skate concrete and asphalt waves, push ourselves to the limit, and have fun exploring the city through skateboarding")
 event34 = Event.create(city_id: city5.id,name: "Skate Your Way Up", location: "The Lynch Family Skate Park",
-start_time: "2:45 PM", end_time: "6:45 PM", date: "01/21/2017", level: "intermediate", attendees_num: 12, host_id: user4.id,
+start_time: "2:45 PM", end_time: "6:45 PM", date: "02/21/2017", level: "intermediate", attendees_num: 12, host_id: user4.id,
 description: "Come play for fun, for the love of the game, and more importantly to make good friends for life, exercise and stay sharp and healthy.")
 event35 = Event.create(city_id: city6.id,name: "Free and Easy", location: "Grant Skate Park",
-start_time: "7:45 PM", end_time: "10:30 PM", date: "01/29/2017", level: "all", attendees_num: 8, host_id: user7.id,
+start_time: "7:45 PM", end_time: "10:30 PM", date: "03/27/2017", level: "all", attendees_num: 8, host_id: user7.id,
 description: "Come play for fun, for the love of the game, and more importantly to make good friends for life, exercise and stay sharp and healthy.")
 
 #climbing
 event36 = Event.create(city_id: city1.id,name: "Leisure Climb", location: "Mission Cliff",
-start_time: "1:30 PM", end_time: "5:00 PM", date: "01/28/2017", level: "all", attendees_num: 15, host_id: user36.id,
+start_time: "1:30 PM", end_time: "5:00 PM", date: "02/28/2017", level: "all", attendees_num: 15, host_id: user36.id,
 description: "So, you're looking for a new active hobby to get involved in and you're not sure where to start. Or perhaps you're already an avid rock climber, dancing across the walls with grace and are simply looking for others with whom to share the experience. Come join us")
 event37 = Event.create(city_id: city1.id,name: "Climbing For The Pro", location: "Planet Granite SF",
-start_time: "10:00 AM", end_time: "12:00 PM", date: "02/07/2017", level: "expert", attendees_num: 10, host_id: user37.id,
+start_time: "10:00 AM", end_time: "12:00 PM", date: "03/07/2017", level: "expert", attendees_num: 10, host_id: user37.id,
 description: "Open to experienced climbers who want to improve their climbing skills and techniques, learn basic moves, and meet new people by climbing with others in a small group")
 event38 = Event.create(city_id: city2.id, name: "Climb For Fun", location: "LA Boulders",
-start_time: "9:00 AM", end_time: "11:00 AM", date: "01/25/2017", level: "all", attendees_num: 20, host_id: user38.id,
+start_time: "9:00 AM", end_time: "11:00 AM", date: "02/25/2017", level: "all", attendees_num: 20, host_id: user38.id,
 description: "So, you're looking for a new active hobby to get involved in and you're not sure where to start. Or perhaps you're already an avid rock climber, dancing across the walls with grace and are simply looking for others with whom to share the experience. Come join us")
 event39 = Event.create(city_id: city3.id,name: "Healthy Climb", location: "Stone Garden",
-start_time: "2:00 PM", end_time: "5:30 PM", date: "01/27/2017", level: "intermediate", attendees_num: 12, host_id: user39.id,
+start_time: "2:00 PM", end_time: "5:30 PM", date: "02/27/2017", level: "intermediate", attendees_num: 12, host_id: user39.id,
 description: "So, you're looking for a new active hobby to get involved in and you're not sure where to start. Or perhaps you're already an avid rock climber, dancing across the walls with grace and are simply looking for others with whom to share the experience. Come join us")
 event40 = Event.create(city_id: city4.id,name: "Climb The Hill", location: "Steep Rock Bouldering",
-start_time: "8.00 AM", end_time: "10:30 AM", date: "01/23/2017", level: "beginner", attendees_num: 8, host_id: user20.id,
+start_time: "8.00 AM", end_time: "10:30 AM", date: "03/23/2017", level: "beginner", attendees_num: 8, host_id: user20.id,
 description: "So, you're looking for a new active hobby to get involved in and you're not sure where to start. Or perhaps you're already an avid rock climber, dancing across the walls with grace and are simply looking for others with whom to share the experience. Come join us")
 event41 = Event.create(city_id: city5.id,name: "The Climb", location: "Rock Sport Climbing",
-start_time: "8:00 PM", end_time: "11:00 PM", date: "01/22/2017", level: "all", attendees_num: 20, host_id: user2.id,
+start_time: "8:00 PM", end_time: "11:00 PM", date: "02/22/2017", level: "all", attendees_num: 20, host_id: user2.id,
 description: "So, you're looking for a new active hobby to get involved in and you're not sure where to start. Or perhaps you're already an avid rock climber, dancing across the walls with grace and are simply looking for others with whom to share the experience. Come join us")
 event42 = Event.create(city_id: city6.id,name: "Climb The Wall", location: "The Climbing Wall",
-start_time: "7:30 PM", end_time: "9:30 PM", date: "01/30/2017", level: "intermediate", attendees_num: 13, host_id: user6.id,
+start_time: "7:30 PM", end_time: "9:30 PM", date: "03/30/2017", level: "intermediate", attendees_num: 13, host_id: user6.id,
 description: "So, you're looking for a new active hobby to get involved in and you're not sure where to start. Or perhaps you're already an avid rock climber, dancing across the walls with grace and are simply looking for others with whom to share the experience. Come join us")
 
 #cycling
 event43 = Event.create(city_id: city1.id,name: "Easy Riders", location: "Golden Gate Park",
-start_time: "8:00 AM", end_time: "11:00 AM", date: "02/04/2017", level: "intermediate", attendees_num: 15, host_id: user43.id,
+start_time: "8:00 AM", end_time: "11:00 AM", date: "03/04/2017", level: "intermediate", attendees_num: 15, host_id: user43.id,
 description: "Be responsible for yourself; carry identification, your own medical insurance, follow safe road rules, cell phone, bring water bottles, tubes, food, cash and a fun attitude. ");
 event44 = Event.create(city_id: city1.id,name: "Cycle For Health", location: "Ferry Building",
-start_time: "1:00 PM", end_time: "3:00 PM", date: "01/24/2017", level: "all", attendees_num: 14, host_id: user44.id,
+start_time: "1:00 PM", end_time: "3:00 PM", date: "02/24/2017", level: "all", attendees_num: 14, host_id: user44.id,
 description: "I would like to invite other cyclists to join us for some great Cycling Adventures. We really enjoy the outdoors and the adventure of riding on the open road and exploring new areas and enjoying the changing scenery while getting some good cardio, and meeting all the nice people that ride.")
 event45 = Event.create(city_id: city2.id, name: "Cycling Adventures", location: "Griffith Observatory",
-start_time: "9:30 AM", end_time: "11:00 AM", date: "01/26/2017", level: "advance", attendees_num: 12, host_id: user45.id,
+start_time: "9:30 AM", end_time: "11:00 AM", date: "02/26/2017", level: "advance", attendees_num: 12, host_id: user45.id,
 description: "I would like to invite other cyclists to join us for some great Cycling Adventures. We really enjoy the outdoors and the adventure of riding on the open road and exploring new areas and enjoying the changing scenery while getting some good cardio, and meeting all the nice people that ride.")
 event46 = Event.create(city_id: city3.id,name: "Road Bike Cycling", location: "Space Needle",
-start_time: "7:00 AM", end_time: "11:00 PM", date: "02/03/2017", level: "beginner", attendees_num: 20, host_id: user16.id,
+start_time: "7:00 AM", end_time: "11:00 PM", date: "03/03/2017", level: "beginner", attendees_num: 20, host_id: user16.id,
 description: "I would like to invite other cyclists to join us for some great Cycling Adventures. We really enjoy the outdoors and the adventure of riding on the open road and exploring new areas and enjoying the changing scenery while getting some good cardio, and meeting all the nice people that ride.")
 event47 = Event.create(city_id: city4.id,name: "New York Cycling Meetup", location: "Central Park",
-start_time: "6.00 PM", end_time: "8:00 PM", date: "02/06/2017", level: "intermediate", attendees_num: 8, host_id: user17.id,
+start_time: "6.00 PM", end_time: "8:00 PM", date: "03/06/2017", level: "intermediate", attendees_num: 8, host_id: user17.id,
 description: "I would like to invite other cyclists to join us for some great Cycling Adventures. We really enjoy the outdoors and the adventure of riding on the open road and exploring new areas and enjoying the changing scenery while getting some good cardio, and meeting all the nice people that ride.")
 event48 = Event.create(city_id: city5.id,name: "Cycling Foodies", location: "Charles River",
-start_time: "1:45 PM", end_time: "3:45 PM", date: "02/02/2017", level: "advance", attendees_num: 10, host_id: user8.id,
+start_time: "1:45 PM", end_time: "3:45 PM", date: "03/02/2017", level: "advance", attendees_num: 10, host_id: user8.id,
 description: "I would like to invite other cyclists to join us for some great Cycling Adventures. We really enjoy the outdoors and the adventure of riding on the open road and exploring new areas and enjoying the changing scenery while getting some good cardio, and meeting all the nice people that ride.")
 event49 = Event.create(city_id: city6.id,name: "Endurance Cycling", location: "Millennium Park",
-start_time: "7:30 AM", end_time: "3:30 PM", date: "02/04/2017", level: "expert", attendees_num: 20, host_id: user5.id,
+start_time: "7:30 AM", end_time: "3:30 PM", date: "03/04/2017", level: "expert", attendees_num: 20, host_id: user5.id,
 description: "We are a serious, but fun group of women who enjoy cycling & exploring new places together. We try to encourage and motivate each other while supporting each of our athlete’s individual training goals.
 All of our rides begin at Serious Cycling & will cover 25+ miles, and we ride both in the hills & the flats.")
 
 #combat sport
 event50 = Event.create(city_id: city1.id,name: "Combat Boxing", location: "FitFight Training Center",
-start_time: "8:30 AM", end_time: "10:15 AM", date: "02/01/2017", level: "beginner", attendees_num: 10, host_id: user50.id,
+start_time: "8:30 AM", end_time: "10:15 AM", date: "03/01/2017", level: "beginner", attendees_num: 10, host_id: user50.id,
 description: "A combat science that blends WESTERN BOXING with different styles of KICKBOXING from all over the world (Muay Thai, European kickboxing, Sanda, exc) together into a functional package of combat sport and self defense.")
 event51 = Event.create(city_id: city1.id,name: "Self Defense Combat", location: "Bay Area Combat Sambo",
-start_time: "9:00 AM", end_time: "11:00 AM", date: "01/27/2017", level: "intermediate", attendees_num: 6, host_id: user51.id,
+start_time: "9:00 AM", end_time: "11:00 AM", date: "02/27/2017", level: "intermediate", attendees_num: 6, host_id: user51.id,
 description: "For women, men and teens looking to improve your health and awaken your inner warrior through boxing, combat sports and fitness. From the recreational puncher to the hardrockin' professional, all skill levels are welcome.")
 event52 = Event.create(city_id: city2.id, name: "Fitness Boxing", location: "Combat Sports Center",
-start_time: "4:00 PM", end_time: "6:00 PM", date: "01/23/2017", level: "advance", attendees_num: 12, host_id: user1.id,
+start_time: "4:00 PM", end_time: "6:00 PM", date: "02/23/2017", level: "advance", attendees_num: 12, host_id: user1.id,
 description: "For women, men and teens looking to improve your health and awaken your inner warrior through boxing, combat sports and fitness. From the recreational puncher to the hardrockin' professional, all skill levels are welcome.")
 event53 = Event.create(city_id: city3.id,name: "Fight Club", location: "Combat Sport Fitness",
-start_time: "11:00 AM", end_time: "12:00 PM", date: "01/24/2017", level: "all", attendees_num: 20, host_id: user2.id,
+start_time: "11:00 AM", end_time: "12:00 PM", date: "02/24/2017", level: "all", attendees_num: 20, host_id: user2.id,
 description: "For women, men and teens looking to improve your health and awaken your inner warrior through boxing, combat sports and fitness. From the recreational puncher to the hardrockin' professional, all skill levels are welcome.")
 event54 = Event.create(city_id: city4.id,name: "Combat Training", location: "Combat Sports Sambo",
-start_time: "1.00 PM", end_time: "4:00 PM", date: "01/20/2017", level: "advance", attendees_num: 30, host_id: user3.id,
+start_time: "1.00 PM", end_time: "4:00 PM", date: "02/20/2017", level: "advance", attendees_num: 30, host_id: user3.id,
 description: "For women, men and teens looking to improve your health and awaken your inner warrior through boxing, combat sports and fitness. From the recreational puncher to the hardrockin' professional, all skill levels are welcome.")
 event55 = Event.create(city_id: city5.id,name: "Medieval Combat Sports", location: "MMA Boston",
-start_time: "8:00 AM", end_time: "11:00 AM", date: "01/26/2017", level: "beginner", attendees_num: 10, host_id: user6.id,
+start_time: "8:00 AM", end_time: "11:00 AM", date: "02/26/2017", level: "beginner", attendees_num: 10, host_id: user6.id,
 description: "For women, men and teens looking to improve your health and awaken your inner warrior through boxing, combat sports and fitness. From the recreational puncher to the hardrockin' professional, all skill levels are welcome.")
 event56 = Event.create(city_id: city6.id,name: "Kickboxing", location: "Combat-Do",
-start_time: "7:30 PM", end_time: "9:30 PM", date: "01/29/2017", level: "all", attendees_num: 15, host_id: user4.id,
+start_time: "7:30 PM", end_time: "9:30 PM", date: "03/29/2017", level: "all", attendees_num: 15, host_id: user4.id,
 description: "For women, men and teens looking to improve your health and awaken your inner warrior through boxing, combat sports and fitness. From the recreational puncher to the hardrockin' professional, all skill levels are welcome.")
 
 #cue sports
 event57 = Event.create(city_id: city1.id,name: "Snooker Club", location: "Legend Billiards SF",
-start_time: "1:00 PM", end_time: "3:00 PM", date: "01/27/2017", level: "beginner", attendees_num: 5, host_id: user6.id,
+start_time: "1:00 PM", end_time: "3:00 PM", date: "02/27/2017", level: "beginner", attendees_num: 5, host_id: user6.id,
 description: "For people who would like to play Pool/Billiards and socialize on a casual basis in the daytime or evening for a few hours. All skill levels are welcome.")
 event58 = Event.create(city_id: city1.id,name: "Pool Leagues", location: "1948 Ocean Avenue",
-start_time: "7:00 PM", end_time: "10:00 PM", date: "02/03/2017", level: "intermediate", attendees_num: 6, host_id: user7.id,
+start_time: "7:00 PM", end_time: "10:00 PM", date: "03/03/2017", level: "intermediate", attendees_num: 6, host_id: user7.id,
 description: "Make friends to play pool/snooker, at your own time and convenience.")
 event59 = Event.create(city_id: city2.id, name: "Casual Pool", location: "House of Billiards",
-start_time: "3:30 PM", end_time: "6:30 PM", date: "02/22/2017", level: "advance", attendees_num: 12, host_id: user8.id,
+start_time: "3:30 PM", end_time: "6:30 PM", date: "03/22/2017", level: "advance", attendees_num: 12, host_id: user8.id,
 description: "For people who would like to play Pool/Billiards and socialize on a casual basis in the daytime or evening for a few hours. All skill levels are welcome.")
 event60 = Event.create(city_id: city3.id,name: "Leisure Pool", location: "Empire Billiard Snooker",
-start_time: "11:00 AM", end_time: "12:00 PM", date: "02/23/2017", level: "all", attendees_num: 8, host_id: user9.id,
+start_time: "11:00 AM", end_time: "12:00 PM", date: "03/23/2017", level: "all", attendees_num: 8, host_id: user9.id,
 description: "For people who would like to play Pool/Billiards and socialize on a casual basis in the daytime or evening for a few hours. All skill levels are welcome.")
 event61 = Event.create(city_id: city4.id,name: "Snooker Competition", location: "Prince Snooker Club",
-start_time: "1.00 PM", end_time: "4:00 PM", date: "02/02/2017", level: "advance", attendees_num: 10, host_id: user10.id,
+start_time: "1.00 PM", end_time: "4:00 PM", date: "03/02/2017", level: "advance", attendees_num: 10, host_id: user10.id,
 description: "For people who would like to play Pool/Billiards and socialize on a casual basis in the daytime or evening for a few hours. All skill levels are welcome.")
 event62 = Event.create(city_id: city5.id,name: "Cue Club", location: "Boston Snooker Centre",
-start_time: "8:00 PM", end_time: "11:00 PM", date: "02/17/2017", level: "beginner", attendees_num: 10, host_id: user1.id,
+start_time: "8:00 PM", end_time: "11:00 PM", date: "03/17/2017", level: "beginner", attendees_num: 10, host_id: user1.id,
 description: "For people who would like to play Pool/Billiards and socialize on a casual basis in the daytime or evening for a few hours. All skill levels are welcome.")
 event63 = Event.create(city_id: city6.id,name: "Leisure Pool", location: "Chris's Billiard",
-start_time: "7:30 PM", end_time: "9:30 PM", date: "02/10/2017", level: "all", attendees_num: 6, host_id: user3.id,
+start_time: "7:30 PM", end_time: "9:30 PM", date: "03/10/2017", level: "all", attendees_num: 6, host_id: user3.id,
 description: "For people who would like to play Pool/Billiards and socialize on a casual basis in the daytime or evening for a few hours. All skill levels are welcome.")
 
 #equine sports
 event64 = Event.create(city_id: city1.id,name: "Happy Trails House Club", location: "SF Equine Inc",
-start_time: "8:00 AM", end_time: "10:30 AM", date: "01/28/2017", level: "intermediate", attendees_num: 6, host_id: user13.id,
+start_time: "8:00 AM", end_time: "10:30 AM", date: "02/28/2017", level: "intermediate", attendees_num: 6, host_id: user13.id,
 description: "Learn how to live a life that rocks through equine-assisted coaching and learning activities. Build community with fellow horse-lovers and experience how a horse can be your most powerful teacher of the year! ")
 event65 = Event.create(city_id: city1.id,name: "Equine for Begineer", location: "Bay Area Equestrian Network",
-start_time: "1:30 PM", end_time: "3:30 PM", date: "01/30/2017", level: "beginner", attendees_num: 4, host_id: user14.id,
+start_time: "1:30 PM", end_time: "3:30 PM", date: "03/30/2017", level: "beginner", attendees_num: 4, host_id: user14.id,
 description: "For riders and owners of all disciplines who want to learn and have a better understanding of how their horse works. Our meetings are presented by respected professionals and will cover a variety of topics including: saddle fit and construction, feet and farrier work, biomechanics, anatomy, etc., and of course time for open discussion. Come further yourself in an open, fun environment with other like minded horse people.")
 event66 = Event.create(city_id: city2.id, name: "Equine Competition", location: "LA Equestrian Center",
 start_time: "9:15 PM", end_time: "11:30 PM", date: "02/12/2017", level: "advance", attendees_num: 12, host_id: user15.id,
 description: "Learn how to live a life that rocks through equine-assisted coaching and learning activities. Build community with fellow horse-lovers and experience how a horse can be your most powerful teacher of the year! ")
 event67 = Event.create(city_id: city3.id,name: "Wisdom Horse", location: "Equine Escapes",
-start_time: "10:00 AM", end_time: "12:00 PM", date: "02/04/2017", level: "all", attendees_num: 10, host_id: user16.id,
+start_time: "10:00 AM", end_time: "12:00 PM", date: "03/04/2017", level: "all", attendees_num: 10, host_id: user16.id,
 description: "Learn how to live a life that rocks through equine-assisted coaching and learning activities. Build community with fellow horse-lovers and experience how a horse can be your most powerful teacher of the year! ")
 event68 = Event.create(city_id: city4.id,name: "Equine Club", location: "NY Equestrian Center",
 start_time: "1.00 PM", end_time: "4:00 PM", date: "02/20/2017", level: "advance", attendees_num: 3, host_id: user17.id,
 description: "Learn how to live a life that rocks through equine-assisted coaching and learning activities. Build community with fellow horse-lovers and experience how a horse can be your most powerful teacher of the year! ")
 event69 = Event.create(city_id: city5.id,name: "Sports with Nature", location: "Boston Equine Association",
-start_time: "2:00 PM", end_time: "4:30 PM", date: "02/16/2017", level: "beginner", attendees_num: 5, host_id: user9.id,
+start_time: "2:00 PM", end_time: "4:30 PM", date: "03/16/2017", level: "beginner", attendees_num: 5, host_id: user9.id,
 description: "Learn how to live a life that rocks through equine-assisted coaching and learning activities. Build community with fellow horse-lovers and experience how a horse can be your most powerful teacher of the year! ")
 event70 = Event.create(city_id: city6.id,name: "Horse Lovers", location: "Chicago Equestrian",
 start_time: "7:30 AM", end_time: "9:30 AM", date: "02/19/2017", level: "all", attendees_num: 15, host_id: user2.id,
@@ -341,13 +341,13 @@ event74 = Event.create(city_id: city3.id,name: "Outdoor Fishing", location: "Sea
 start_time: "11:00 AM", end_time: "2:00 PM", date: "02/14/2017", level: "all", attendees_num: 20, host_id: user23.id,
 description: "To meet those that love to fish, network, and simply enjoy a good time. Fishing is so enjoyable and relaxing. Imagine fishing with others that seek the same and more")
 event75 = Event.create(city_id: city4.id,name: "Fishing Buddy", location: "Riverdale Park",
-start_time: "7.00 AM", end_time: "3:00 PM", date: "01/20/2017", level: "advance", attendees_num: 6, host_id: user24.id,
+start_time: "7.00 AM", end_time: "3:00 PM", date: "03/20/2017", level: "advance", attendees_num: 6, host_id: user24.id,
 description: "To meet those that love to fish, network, and simply enjoy a good time. Fishing is so enjoyable and relaxing. Imagine fishing with others that seek the same and more");
 event76 = Event.create(city_id: city5.id,name: "Fishing and Camping", location: "Boston Sportfishing",
-start_time: "8:00 PM", end_time: "11:00 PM", date: "01/26/2017", level: "expert", attendees_num: 4, host_id: user5.id,
+start_time: "8:00 PM", end_time: "11:00 PM", date: "03/26/2017", level: "expert", attendees_num: 4, host_id: user5.id,
 description: "To meet those that love to fish, network, and simply enjoy a good time. Fishing is so enjoyable and relaxing. Imagine fishing with others that seek the same and more")
 event77 = Event.create(city_id: city6.id,name: "Fishing Meetup", location: "Lake Michigan",
-start_time: "7:30 AM", end_time: "9:30 PM", date: "01/29/2017", level: "all", attendees_num: 15, host_id: user1.id,
+start_time: "7:30 AM", end_time: "9:30 PM", date: "03/29/2017", level: "all", attendees_num: 15, host_id: user1.id,
 description: "To meet those that love to fish, network, and simply enjoy a good time. Fishing is so enjoyable and relaxing. Imagine fishing with others that seek the same and more")
 
 #football
@@ -375,25 +375,25 @@ description: "Our goal is to create a fun, social environment for football enthu
 
 #flying disc sports
 event85 = Event.create(city_id: city1.id,name: "Ultimate Frisbee", location: "Golden Gate Park",
-start_time: "4:00 PM", end_time: "6:00 PM", date: "01/25/2017", level: "beginner", attendees_num: 10, host_id: user34.id,
+start_time: "4:00 PM", end_time: "6:00 PM", date: "03/25/2017", level: "beginner", attendees_num: 10, host_id: user34.id,
 description: "Ultimate frisbee is a relatively new sport that is played with a frisbee disk. Join us. You'll get a lot of fun and make a lot of exercise")
 event86 = Event.create(city_id: city1.id,name: "Frisbee Meetup", location: "North Beach",
-start_time: "9:00 AM", end_time: "11:00 AM", date: "01/27/2017", level: "intermediate", attendees_num: 6, host_id: user35.id,
+start_time: "9:00 AM", end_time: "11:00 AM", date: "03/27/2017", level: "intermediate", attendees_num: 6, host_id: user35.id,
 description: "Do you love the sun, sand and surf? Do you love tossing the frisbee? Do you love combining those things together, diving in the sand or the water to catch that flying disc? Come out on summer weekends to enjoy life, toss the frisbee, practice some of your trick throws and catches if you like (free style), take a break on the towel or cool off in the water, get up and run around after that frisbee again.")
 event87 = Event.create(city_id: city2.id, name: "Frisbee 101", location: "Memorial Park",
-start_time: "4:00 PM", end_time: "6:00 PM", date: "01/23/2017", level: "advance", attendees_num: 12, host_id: user36.id,
+start_time: "4:00 PM", end_time: "6:00 PM", date: "03/23/2017", level: "advance", attendees_num: 12, host_id: user36.id,
 description: "Ultimate frisbee is a relatively new sport that is played with a frisbee disk. Join us. You'll get a lot of fun and make a lot of exercise")
 event88 = Event.create(city_id: city3.id,name: "Leisure Frisbee", location: "Century Link Field",
-start_time: "11:00 AM", end_time: "12:00 PM", date: "01/24/2017", level: "all", attendees_num: 20, host_id: user37.id,
+start_time: "11:00 AM", end_time: "12:00 PM", date: "03/24/2017", level: "all", attendees_num: 20, host_id: user37.id,
 description: "Ultimate frisbee is a relatively new sport that is played with a frisbee disk. Join us. You'll get a lot of fun and make a lot of exercise")
 event89 = Event.create(city_id: city4.id,name: "Frisbee for Pro", location: "Central Park",
-start_time: "1.00 PM", end_time: "4:00 PM", date: "01/20/2017", level: "advance", attendees_num: 30, host_id: user28.id,
+start_time: "1.00 PM", end_time: "4:00 PM", date: "03/20/2017", level: "advance", attendees_num: 30, host_id: user28.id,
 description: "Ultimate frisbee is a relatively new sport that is played with a frisbee disk. Join us. You'll get a lot of fun and make a lot of exercise")
 event90 = Event.create(city_id: city5.id,name: "Ultimate Frisbee Boston", location: "Charles Field",
-start_time: "8:00 AM", end_time: "11:00 AM", date: "01/26/2017", level: "beginner", attendees_num: 10, host_id: user9.id,
+start_time: "8:00 AM", end_time: "11:00 AM", date: "03/26/2017", level: "beginner", attendees_num: 10, host_id: user9.id,
 description: "Ultimate frisbee is a relatively new sport that is played with a frisbee disk. Join us. You'll get a lot of fun and make a lot of exercise")
 event91 = Event.create(city_id: city6.id,name: "Frisbee Bean", location: "Millennium Park",
-start_time: "7:30 PM", end_time: "9:30 PM", date: "01/29/2017", level: "all", attendees_num: 15, host_id: user4.id,
+start_time: "7:30 PM", end_time: "9:30 PM", date: "03/29/2017", level: "all", attendees_num: 15, host_id: user4.id,
 description: "Ultimate frisbee is a relatively new sport that is played with a frisbee disk. Join us. You'll get a lot of fun and make a lot of exercise")
 
 #golf
@@ -404,7 +404,7 @@ event93 = Event.create(city_id: city1.id,name: "Leisure Golf", location: "Presid
 start_time: "1:00 PM", end_time: "5:30 AM", date: "02/07/2017", level: "intermediate", attendees_num: 6, host_id: user42.id,
 description: "We provide an atmosphere that is inviting to all levels of golfers. Our motto is connecting people and creating fun, so sign up today!")
 event94 = Event.create(city_id: city2.id, name: "Golf Buddy", location: "Roosevelt Golf Course",
-start_time: "4:00 PM", end_time: "6:00 PM", date: "01/23/2017", level: "advance", attendees_num: 3, host_id: user43.id,
+start_time: "4:00 PM", end_time: "6:00 PM", date: "03/23/2017", level: "advance", attendees_num: 3, host_id: user43.id,
 description: "We provide an atmosphere that is inviting to all levels of golfers. Our motto is connecting people and creating fun, so sign up today!")
 event95 = Event.create(city_id: city3.id,name: "Golf Pro", location: "Pacific Court",
 start_time: "11:00 AM", end_time: "4:00 PM", date: "02/22/2017", level: "expert", attendees_num: 4, host_id: user5.id,
@@ -420,21 +420,21 @@ description: "Anyone and everyone who wants to come and join us" );
 
 #handball
 event98 = Event.create(city_id: city1.id,name: "HandBall Club", location: "Golden Gate Park",
-start_time: "4:00 PM", end_time: "6:00 PM", date: "01/25/2017", level: "beginner", attendees_num: 15, host_id: user47.id,
+start_time: "4:00 PM", end_time: "6:00 PM", date: "03/25/2017", level: "beginner", attendees_num: 15, host_id: user47.id,
 description: "For anyone who loves the sport of 1-wall handball. Whether you have no idea what Handball is, a novice trying to learn or an expert at hitting killers, come join us")
 event99 = Event.create(city_id: city4.id,name: "NY Street HandBall", location: "Olympic Club",
-start_time: "1.30 PM", end_time: "4:30 PM", date: "01/20/2017", level: "advance", attendees_num: 10, host_id: user18.id,
+start_time: "1.30 PM", end_time: "4:30 PM", date: "03/20/2017", level: "advance", attendees_num: 10, host_id: user18.id,
 description: "For anyone who loves the sport of 1-wall handball. Whether you have no idea what Handball is, a novice trying to learn or an expert at hitting killers, come join us")
 event100 = Event.create(city_id: city5.id,name: "College HandBall", location: "MIT Indoor Sports Center",
-start_time: "9:00 AM", end_time: "11:00 AM", date: "01/26/2017", level: "advance", attendees_num: 12, host_id: user4.id,
+start_time: "9:00 AM", end_time: "11:00 AM", date: "03/26/2017", level: "advance", attendees_num: 12, host_id: user4.id,
 description: "For anyone who loves the sport of 1-wall handball. Whether you have no idea what Handball is, a novice trying to learn or an expert at hitting killers, come join us")
 event101 = Event.create(city_id: city6.id,name: "Handball for All", location: "Illinois Handball",
-start_time: "7:30 PM", end_time: "9:30 PM", date: "01/29/2017", level: "all", attendees_num: 20, host_id: user5.id,
+start_time: "7:30 PM", end_time: "9:30 PM", date: "03/29/2017", level: "all", attendees_num: 20, host_id: user5.id,
 description: "For anyone who loves the sport of 1-wall handball. Whether you have no idea what Handball is, a novice trying to learn or an expert at hitting killers, come join us")
 
 #hiking
 event102 = Event.create(city_id: city1.id,name: "SF Hikers", location: "Glen Canyon Park",
-start_time: "7:00 AM", end_time: "10:00 AM", date: "01/22/2017", level: "intermediate", attendees_num: 10, host_id: user51.id,
+start_time: "7:00 AM", end_time: "10:00 AM", date: "03/22/2017", level: "intermediate", attendees_num: 10, host_id: user51.id,
 description: "We promote hiking as a tool to improve physical and mental fitness because hiking is a process of overcoming challenges. To hike up a mountain is to conquer one's physical and mental limitation. We believe hiking could be a process to discover ourselves and to push the boundaries of our potential.
 Our goal is to educate and train a new generation of hikers who are physically fit, mentally strong, and confident to face life's challenges.")
 event103 = Event.create(city_id: city2.id,name: "Pro Hikers", location: "Yosemite National Park",
@@ -448,16 +448,16 @@ Our goal is to educate and train a new generation of hikers who are physically f
 
 #ice sports
 event105 = Event.create(city_id: city1.id,name: "Ice Skating", location: "Yerba Buena Ice Skating",
-start_time: "10:30 AM", end_time: "4:30 PM", date: "01/30/2017", level: "all", attendees_num: 20, host_id: user3.id,
+start_time: "10:30 AM", end_time: "4:30 PM", date: "03/30/2017", level: "all", attendees_num: 20, host_id: user3.id,
 description: "Ice skating is considered a winter sport, but can actually be done year-round since there are indoor ice rinks, this event is open and welcome people from all ages and gender no matter beginner or experts. Let's get on Ice together....")
 event106 = Event.create(city_id: city4.id,name: "Ice Hockey", location: "Holiday Ice Rink",
-start_time: "1.00 PM", end_time: "4:00 PM", date: "01/20/2017", level: "intermediate", attendees_num: 10, host_id: user4.id,
+start_time: "1.00 PM", end_time: "4:00 PM", date: "03/20/2017", level: "intermediate", attendees_num: 10, host_id: user4.id,
 description: "For anyone interested in playing ice hockey")
 event107 = Event.create(city_id: city5.id,name: "Ice Skating", location: "Steriti Rink",
-start_time: "8:30 AM", end_time: "11:30 AM", date: "01/26/2017", level: "intermediate", attendees_num: 10, host_id: user7.id,
+start_time: "8:30 AM", end_time: "11:30 AM", date: "03/26/2017", level: "intermediate", attendees_num: 10, host_id: user7.id,
 description: "Ice skating is considered a winter sport, but can actually be done year-round since there are indoor ice rinks, this event is open and welcome people from all ages and gender no matter beginner or experts. Let's get on Ice together....")
 event108 = Event.create(city_id: city6.id,name: "BroomBall", location: "Johnny's IceHouse",
-start_time: "7:30 PM", end_time: "9:30 PM", date: "01/28/2017", level: "all", attendees_num: 8, host_id: user6.id,
+start_time: "7:30 PM", end_time: "9:30 PM", date: "03/28/2017", level: "all", attendees_num: 8, host_id: user6.id,
 description: "If you are interested in playing Broomball, this is open to all skill levels, from no experience with broomball to a veteran player.")
 
 #kite sports
@@ -467,16 +467,16 @@ description: "If you are interested in flying kites with us. Kites are provided.
 
 #racquet sports
 event110 = Event.create(city_id: city1.id,name: "Leisure Squash", location: "240 Turk St",
-start_time: "9:00 AM", end_time: "11:30 AM", date: "01/22/2017", level: "intermediate", attendees_num: 4, host_id: user8.id,
+start_time: "9:00 AM", end_time: "11:30 AM", date: "03/22/2017", level: "intermediate", attendees_num: 4, host_id: user8.id,
 description: "If you are interested in playing squash with us.")
 event111 = Event.create(city_id: city1.id,name: "RacquetBall for Pro", location: "401 Berry St",
 start_time: "7:00 PM", end_time: "11:00 PM", date: "02/07/2017", level: "expert", attendees_num: 6, host_id: user9.id,
 description: "Let share our skills in squash")
 event112 = Event.create(city_id: city2.id, name: "Tennis For Fun", location: "Memorial Park",
-start_time: "4:00 PM", end_time: "6:00 PM", date: "01/23/2017", level: "intermediate", attendees_num: 4, host_id: user10.id,
+start_time: "4:00 PM", end_time: "6:00 PM", date: "03/23/2017", level: "intermediate", attendees_num: 4, host_id: user10.id,
 description: "If you are interested in playing squash with us.")
 event113 = Event.create(city_id: city3.id,name: "Squash For Begineer", location: "Pacific Court",
-start_time: "11:00 AM", end_time: "12:00 PM", date: "01/24/2017", level: "beginner", attendees_num: 10, host_id: user11.id,
+start_time: "11:00 AM", end_time: "12:00 PM", date: "03/24/2017", level: "beginner", attendees_num: 10, host_id: user11.id,
 description: "If you are interested in playing squash with us.")
 
 #running
@@ -484,7 +484,7 @@ event114 = Event.create(city_id: city1.id,name: "Run for Fun", location: "Ferry 
 start_time: "4:00 PM", end_time: "6:00 PM", date: "02/15/2017", level: "all", attendees_num: 10, host_id: user12.id,
 description: "Come join us for a 10 miles run")
 event115 = Event.create(city_id: city4.id,name: "Marathon", location: "Brooklyn Bridge",
-start_time: "6.00 AM", end_time: "10:00 AM", date: "01/20/2017", level: "expert", attendees_num: 15, host_id: user13.id,
+start_time: "6.00 AM", end_time: "10:00 AM", date: "03/20/2017", level: "expert", attendees_num: 15, host_id: user13.id,
 description: "Come join us for a full marathon run in the early morning");
 event116 = Event.create(city_id: city5.id,name: "Healthy Jog", location: "Charles River",
 start_time: "8:00 AM", end_time: "11:00 AM", date: "02/24/2017", level: "all", attendees_num: 10, host_id: user4.id,
@@ -500,15 +500,15 @@ description: "Come play for fun, for the love of the game, and more importantly 
 
 #snow sports
 event119 = Event.create(city_id: city1.id,name: "Snowboarding", location: "Mamoth Ski Resort",
-start_time: "8:30 AM", end_time: "9:00 PM", date: "01/28/2017", level: "all", attendees_num: 30, host_id: user17.id,
+start_time: "8:30 AM", end_time: "9:00 PM", date: "03/28/2017", level: "all", attendees_num: 30, host_id: user17.id,
 description: "Come play for fun, for the love of the game, and more importantly to make good friends for life, exercise and stay sharp and healthy.")
 event120 = Event.create(city_id: city4.id,name: "Skiing", location: "Ski Resort New York",
-start_time: "9.00 AM", end_time: "4:00 PM", date: "01/24/2017", level: "advance", attendees_num: 20, host_id: user18.id,
+start_time: "9.00 AM", end_time: "4:00 PM", date: "03/24/2017", level: "advance", attendees_num: 20, host_id: user18.id,
 description: "Come play for fun, for the love of the game, and more importantly to make good friends for life, exercise and stay sharp and healthy.")
 
 #shooting sports
 event121 = Event.create(city_id: city1.id,name: "Target On", location: "SF Shooting Center",
-start_time: "9:00 AM", end_time: "3:00 PM", date: "01/30/2017", level: "all", attendees_num: 30, host_id: user19.id,
+start_time: "9:00 AM", end_time: "3:00 PM", date: "03/30/2017", level: "all", attendees_num: 30, host_id: user19.id,
 description: "Please feel free to join us. All people are welcomed")
 
 #water sports
@@ -516,7 +516,7 @@ event122 = Event.create(city_id: city1.id,name: "Canoeing", location: "Pier 40",
 start_time: "2:30 PM", end_time: "4:30 PM", date: "02/05/2017", level: "all", attendees_num: 20, host_id: user20.id,
 description: "Come play for fun, for the love of the game, and more importantly to make good friends for life, exercise and stay sharp and healthy.")
 event123 = Event.create(city_id: city2.id, name: "Swimming", location: "Jesse Owen Swimming Pool",
-start_time: "8:30 PM", end_time: "10:30 PM", date: "01/31/2017", level: "advance", attendees_num: 6, host_id: user21.id,
+start_time: "8:30 PM", end_time: "10:30 PM", date: "03/31/2017", level: "advance", attendees_num: 6, host_id: user21.id,
 description: "Come play for fun, for the love of the game, and more importantly to make good friends for life, exercise and stay sharp and healthy.")
 
 EventType.create(category_id: category3.id, event_id: event1.id);
