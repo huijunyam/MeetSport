@@ -14,6 +14,10 @@ class OtherUser extends React.Component {
     this.props.getUser(this.props.userId);
   }
 
+  componentWillUnmount() {
+    this.props.clearProfile();
+  }
+  
   convertTimefromX() {
     let date = this.props.userDetail.created_at;
     let dateIdx = date.indexOf("T");

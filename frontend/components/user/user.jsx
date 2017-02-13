@@ -18,6 +18,10 @@ class User extends React.Component {
     this.props.getUser(this.props.userId);
   }
 
+  componentWillUnmount() {
+    this.props.clearProfile();
+  }
+
   redirect() {
     this.props.router.push(`/users/${this.props.currentUserId}/edit`);
   }

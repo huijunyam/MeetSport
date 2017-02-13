@@ -3,6 +3,7 @@ import * as UserApiUtil from '../util/user_api_util';
 export const RECEIVE_USER = "RECEIVE_USER";
 export const CLEAR_USER_ERROR = "CLEAR_USER_ERROR";
 export const RECEIVE_USER_ERROR = "RECEIVE_USER_ERROR";
+export const CLEAR_PROFILE = "CLEAR_PROFILE";
 
 export const receiveUser = userDetail => ({
   type: RECEIVE_USER,
@@ -16,6 +17,10 @@ export const clearUserError = () => ({
 export const receiveUserError = errors => ({
   type: RECEIVE_USER_ERROR,
   errors
+});
+
+export const clearProfile = () => ({
+  type: CLEAR_PROFILE
 });
 
 export const getUser = id => dispatch => (

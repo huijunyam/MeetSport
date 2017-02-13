@@ -1,4 +1,4 @@
-import { RECEIVE_USER } from '../actions/user_actions';
+import { RECEIVE_USER, CLEAR_PROFILE } from '../actions/user_actions';
 
 const defaultState = {
   id: -1,
@@ -18,6 +18,8 @@ const UserReducer = (state = defaultState, action) => {
   switch (action.type) {
     case RECEIVE_USER:
       return action.userDetail;
+    case CLEAR_PROFILE:
+      return defaultState;
     default:
       return state;
   }
