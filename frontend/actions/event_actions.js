@@ -6,6 +6,7 @@ export const REMOVE_EVENT = "REMOVE_EVENT";
 export const RECEIVE_EVENT_ERRORS = "RECEIVE_EVENT_ERRORS";
 export const CLEAR_ERROR = "CLEAR_ERROR";
 export const SEND_ERROR = "SEND_ERROR";
+export const CLEAR_EVENTS = "CLEAR_EVENTS";
 
 export const requestEvents = events => ({
   type: REQUEST_EVENTS,
@@ -34,6 +35,10 @@ export const clearError = () => ({
 export const sendError = error => ({
   type: SEND_ERROR,
   error
+});
+
+export const clearEvents = () => ({
+  type: CLEAR_EVENTS
 });
 
 export const fetchEvents = (cityId) => dispatch => (

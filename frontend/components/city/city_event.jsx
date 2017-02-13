@@ -8,6 +8,10 @@ class CityEvent extends React.Component {
     this.props.fetchEvents(this.props.cityId);
   }
 
+  componentWillUnmount() {
+    this.props.clearEvents();
+  }
+
   render() {
     const events = union([], this.props.cityEvent);
     return (

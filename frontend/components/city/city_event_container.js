@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import CityEvent from './city_event';
-import { fetchEvents, joinEvent, unjoinEvent } from '../../actions/event_actions';
+import { fetchEvents, joinEvent, unjoinEvent, clearEvents } from '../../actions/event_actions';
 import { checkMember } from '../../reducers/selector';
 import { joinCity } from '../../actions/city_actions';
 
@@ -19,7 +19,8 @@ const mapDispatchToProps = dispatch => ({
   fetchEvents: (cityId) => dispatch(fetchEvents(cityId)),
   joinEvent: (attendee) => dispatch(joinEvent(attendee)),
   unjoinEvent: (id) => dispatch(unjoinEvent(id)),
-  joinCity: (membership) => dispatch(joinCity(membership))
+  joinCity: (membership) => dispatch(joinCity(membership)),
+  clearEvents: () => dispatch(clearEvents())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CityEvent);
