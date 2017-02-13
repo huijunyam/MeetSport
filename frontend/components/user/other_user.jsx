@@ -3,6 +3,7 @@ import HeaderContainer from '../layout/header_container';
 import FooterContainer from '../layout/footer_container';
 import UserJoinEvent from './user_join_event';
 import OtherUserHostEvent from './other_user_host_event';
+import { Link } from 'react-router';
 
 class OtherUser extends React.Component {
   constructor(props){
@@ -17,7 +18,7 @@ class OtherUser extends React.Component {
   componentWillUnmount() {
     this.props.clearProfile();
   }
-  
+
   convertTimefromX() {
     let date = this.props.userDetail.created_at;
     let dateIdx = date.indexOf("T");
@@ -56,7 +57,7 @@ class OtherUser extends React.Component {
               <p className="about-me-description">{userDetail.about_me}</p>
               <h4>{userDetail.name} has joined {userDetail.cities.length} {city}</h4>
               <ul className="user-join-city">
-                {userDetail.cities.map((city, id) => (<li key={`city-event-${id}`} className="user-city-list">{city.name}</li>))}
+                {userDetail.cities.map((city, id) => (<li className="user-city-list" key={`city-event-${id}`}><Link to={`/city/${city.id}`}>{city.name}</Link></li>))}
               </ul>
               <br />
               <h4>{userDetail.name} has hosted {userDetail.events.length} {event}</h4>

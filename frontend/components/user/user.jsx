@@ -79,7 +79,7 @@ class User extends React.Component {
               <p className="about-me-description">{userDetail.about_me}</p>
               <h4>{userDetail.name} has joined {userDetail.cities.length} {city}</h4>
               <ul className="user-join-city">
-                {userDetail.cities.map((city, id) => (<li className="user-city-list" key={`user-city-${id}`}><Link to={`/city/${city.id}/event`}>{city.name}</Link></li>))}
+                {userDetail.cities.map((city, id) => (<li className="user-city-list" key={`user-city-${id}`}><Link to={`/city/${city.id}`}>{city.name}</Link></li>))}
               </ul>
               <br />
               <h4>{userDetail.name} has hosted {userDetail.events.length} {event}</h4>
