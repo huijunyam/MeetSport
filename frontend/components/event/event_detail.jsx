@@ -19,7 +19,7 @@ class EventDetail extends React.Component {
             <li className="event-detail-item"><img className="time-icon" src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1484560455/42_hvqsub.png" /><strong>Start Time: </strong>{eventDetail.start_time}</li>
             <li className="event-detail-item"><img className="time-icon" src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1484560455/42_hvqsub.png" /><strong>End Time: </strong>{eventDetail.end_time}</li>
             <li className="event-detail-item"><img className="location-icon" src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1484560455/google-location-icon-16_fzuyro.png" /><strong>Location: </strong>{eventDetail.location}</li>
-            <li className="event-detail-item-city"><img className="city-icon" src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1484821524/cartoon-city-skyline-black-buildings_214131_fefbkx.png" /><strong>City: </strong><Link to={`/city/${eventDetail.city.id}/event`}>{eventDetail.city.name}</Link></li>
+            <li className="event-detail-item-city"><img className="city-icon" src="https://res.cloudinary.com/dirtnmtpc/image/upload/v1484821524/cartoon-city-skyline-black-buildings_214131_fefbkx.png" /><strong>City: </strong><Link to={`/city/${eventDetail.city.id}`}>{eventDetail.city.name}</Link></li>
             <li className="event-detail-item"><strong>Sport Category: </strong>{eventDetail.category.name}</li>
             <li className="event-detail-item"><strong>Sport Level: </strong>{eventDetail.level}</li>
             <li className="event-detail-item"><strong>Number of Attendees: </strong>{eventDetail.attendees_num}</li>
